@@ -7472,7 +7472,7 @@ Jika sudah dipahami rules-nya, silakan ketik *allmenu* untuk memulai!
 *Jika ada fitur yang gak work harap hubungi owner*
 
 Owner  BOT:
-wa.me/6285815700875`
+wa.me/6289503657396`
 sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:fakerules}, [{buttonId:`${prefix}credits`,buttonText:{displayText:'Thanks🐣'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
@@ -8551,7 +8551,7 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					buttons = [{buttonId: `mks`,buttonText:{displayText: `Makasih☺️`},type:1}]
               imageMsg = (await itsmevall.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Jangan lupa donasi kak︎', imageMessage: imageMsg,
-              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @callme_alya_`,buttons,headerType:4}
+              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @spnx.fauzi`,buttons,headerType:4}
               prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               itsmevall.relayWAMessage(prep)
                     break;
@@ -11252,7 +11252,7 @@ buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
             ini_buf = await getBuffer(`https://itsmevall.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
               imageMsg = (await itsmevall.prepareMessageMedia(ini_buf, "imageMessage", { thumbnail: ini_buf, })).imageMessage
-              buttonsMessage = {footerText:'𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
               prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               itsmevall.relayWAMessage(prep)
@@ -11264,7 +11264,7 @@ buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis�
                 if (args.length < 1) return grupinv(`teksnya mana bruh?\ncontoh ${prefix + command} ${pushname}`)
                 dpuhy = args.join(' ')
                tiyo = `SILAHKAN PILIH SALAH SATU`
-sendButMessage(from, tiyo, `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎`, [
+sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
             {              
               buttonId: `${prefix}nuliskanan ${dpuhy}`,
               buttonText: {
@@ -12252,7 +12252,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
               imageMsg = (await itsmevall.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
               prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               itsmevall.relayWAMessage(prep)
@@ -12296,7 +12296,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
               imageMsg = (await itsmevall.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
               prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               itsmevall.relayWAMessage(prep)
@@ -12459,8 +12459,8 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
         let di = await getBuffer(ac);
 buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await itsmevall.prepareMessageMedia(di, "imageMessage", { thumbnail: di, })).imageMessage
-              buttonsMessage = {footerText:'𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎', imageMessage: imageMsg,
-              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @callme_alya_`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
+              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @spnx.fauzi`,buttons,headerType:4}
               prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
               itsmevall.relayWAMessage(prep)
               limitAdd(sender, limit)
@@ -16032,7 +16032,7 @@ if (!mek.key.fromMe) return;
     } else {
       console.log(
         color("[SELFBOT]", "red"),
-        "𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Alya✓Chan︎",
+        "Created By ZyyXtrime",
         color(sender.split("@")[0])
       );
     }
