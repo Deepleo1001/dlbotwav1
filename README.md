@@ -1,5 +1,5 @@
 <p align="center">
-<img src="hthttps://github.com/Fauzibanh/Realzi-private/blob/v5/image/lol.jpg" alt="REALZI BOT" width="100"/>
+<img src="hthttps://github.com/Fauzibanh/Realzi-wabot/blob/v5/image/lol.jpg" alt="REALZI BOT" width="100"/>
 
 
 </p>
@@ -7,25 +7,25 @@
 <a href="#"><img title="REALZI WA BOT" src="https://img.shields.io/badge/REALZI WA BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/Fauzibanh/Realzi-private"><img title="Recode" src="https://img.shields.io/badge/Recode-Fauzibanh-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot"><img title="Recode" src="https://img.shields.io/badge/Recode-Fauzibanh-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/Fauzibanh/followers"><img title="Followers" src="https://img.shields.io/github/followers/Fauzibanh?color=red&style=flat-square"></a>
-<a href="https://github.com/Fauzibanh/Realzi-private/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Fauzibanh/Realzi-private?color=blue&style=flat-square"></a>
-<a href="https://github.com/Fauzibanh/Realzi-private/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fauzibanh/Realzi-private?color=red&style=flat-square"></a>
-<a href="https://github.com/Fauzibanh/Realzi-private/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Fauzibanh/Realzi-private?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/Fauzibanh/Realzi-private"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
-<a href="https://github.com/Fauzibanh/Realzi-private/"><img title="Size" src="https://img.shields.io/github/repo-size/Fauzibanh/Realzi-private?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FFauzibanh%2FRealzi-private&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/Fauzibanh/Realzi-private/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/Fauzibanh/Realzi-wabot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Fauzibanh/Realzi-wabot?color=blue&style=flat-square"></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fauzibanh/Realzi-wabot?color=red&style=flat-square"></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Fauzibanh/Realzi-wabot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot/"><img title="Size" src="https://img.shields.io/github/repo-size/Fauzibanh/Realzi-wabot?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FFauzibanh%2FRealzi-wabot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/Fauzibanh/Realzi-wabot/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 
 <p align="center">
-  <a href="https://github.com/Fauzibanh/Realzi-private#requirements">Requirements</a> •
-  <a href="https://github.com/Fauzibanh/Realzi-private#instalasi">Installation</a> •
-  <a href="https://github.com/Fauzibanh/Realzi-private#thanks-to">Thanks to</a> •
-  <a href="https://github.com/Fauzibanh/Realzi-private#Official-Group"> Official Group Bot</a> •
-  <a href="https://github.com/Fauzibanh/Realzi-private#donate">Donate</a>
+  <a href="https://github.com/Fauzibanh/Realzi-wabot#requirements">Requirements</a> •
+  <a href="https://github.com/Fauzibanh/Realzi-wabot#instalasi">Installation</a> •
+  <a href="https://github.com/Fauzibanh/Realzi-wabot#thanks-to">Thanks to</a> •
+  <a href="https://github.com/Fauzibanh/Realzi-wabot#Official-Group"> Official Group Bot</a> •
+  <a href="https://github.com/Fauzibanh/Realzi-wabot#donate">Donate</a>
 </p>
 </div>
 
@@ -55,8 +55,8 @@
 
 ## For Windows/RDP
 ```bash
-git clone https://github.com/Fauzibanh/Realzi-private.git
-cd Realzi-private
+git clone https://github.com/Fauzibanh/Realzi-wabot.git
+cd Realzi-wabot
 npm install
 node main
 ```
@@ -65,17 +65,17 @@ node main
 termux-setup-storage
 apt update && apt upgrade
 pkg install nodejs git ffmpeg
-git clone https://github.com/Fauzibanh/Realzi-private.git
-cd Realzi-private
+git clone https://github.com/Fauzibanh/Realzi-wabot.git
+cd Realzi-wabot
 npm install
 node main
 ```
 
 ## Edit file
-- Change ownerNumber on [this section](https://github.com/Fauzibanh/aRealzi-private/blob/7a7ebe69cf44686d8a577f616b38b5d299ffefcc/config.json#L2)
-- Change botName on [this section](https://github.com/Fauzibanh/Realzi-private/blob/7a7ebe69cf44686d8a577f616b38b5d299ffefcc/config.json#L3)
-- You can edit list and display menu or donate on [this section](https://github.com/Fauzibanh/Realzi-private/blob/main/help/ind.js)
-- You can add fiture on [this section](https://github.com/Fauzibanh/Realzi-private/tree/main/message)
+- Change ownerNumber on [this section](https://github.com/Fauzibanh/aRealzi-wabot/blob/7a7ebe69cf44686d8a577f616b38b5d299ffefcc/config.json#L2)
+- Change botName on [this section](https://github.com/Fauzibanh/Realzi-wabot/blob/7a7ebe69cf44686d8a577f616b38b5d299ffefcc/config.json#L3)
+- You can edit list and display menu or donate on [this section](https://github.com/Fauzibanh/Realzi-wabot/blob/main/help/ind.js)
+- You can add fiture on [this section](https://github.com/Fauzibanh/Realzi-wabot/tree/main/message)
 
 
 ## Installing the FFmpeg for Windows

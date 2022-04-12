@@ -202,7 +202,7 @@ potionawal = 1
 targetpc = "6289503657396"; 
 owner = "6289503657396";
 nandoku = "6289503657396";
-fakeyoi = "ZyyXtrime";
+fakeyoi = "zyyXtrime";
 hai = "REALZIBOT";
 AlphaBot = "Alphabot",
 HunterApi = "FuckBitch",
@@ -213,7 +213,7 @@ zeksapi = "vallganz5",
 dapapi = "anakasu",
 ApiZeks = "https://api.zeks.me",
 zeksApikey = "Alphabott",
-lolkey = "nandolovealya",
+lolkey = "fauzibanh",
 melkey = "alyawangy",
 zekskey = "NinoWangy",
 dhakey = "NisaaCantik",
@@ -347,7 +347,7 @@ const runtime = function (seconds) {
   var sDisplay = s > 0 ? s + (s == 1 ? " detik" : " Detik") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
-module.exports = itsmevall = async (itsmevall, mek) => {
+module.exports = zyy = async (zyy, mek) => {
   try {
     if (!mek.hasNewMessage) return;
     mek = mek.messages.all()[0];
@@ -414,9 +414,9 @@ const body = (type === 'listResponseMessage' && mek.message.listResponseMessage.
     const q = args.join(" ");
 		var pes = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''
 		const messagesD = pes.slice(0).trim().split(/ +/).shift().toLowerCase()
-    const botNumber = itsmevall.user.jid;
+    const botNumber = zyy.user.jid;
     
-    const botNumberss = itsmevall.user.jid + "@c.us";
+    const botNumberss = zyy.user.jid + "@c.us";
     const isGroup = from.endsWith("@g.us");
 
     const antilink = JSON.parse(fs.readFileSync("./database/antilink.json"));
@@ -438,24 +438,24 @@ const body = (type === 'listResponseMessage' && mek.message.listResponseMessage.
     const isAntivirtex = isGroup ? antivirtex.includes(from) : false;
     const isAntilink = isGroup ? antilink.includes(from) : false;
 // 𝘼𝙪𝙩𝙤 𝙍𝙚𝙖𝙙 𝙂𝙘
-var ampun = await itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
+var ampun = await zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
 ampun.map( async ({ jid }) => {
 if (readGc === false) return
-await itsmevall.chatRead(jid)
+await zyy.chatRead(jid)
 })
 // 𝘼𝙪𝙩𝙤 𝙍𝙚𝙖𝙙 𝙋𝙘
-var chatss = await itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+var chatss = await zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 chatss.map( async ({ jid }) => {
 if (readPc === false) return
-await itsmevall.chatRead(jid)
+await zyy.chatRead(jid)
 })
 // 𝘼𝙪𝙩𝙤 𝙑𝙣:𝙫
 if (autovn) {
 	if (autovn === false) return
-await itsmevall.updatePresence(from, Presence.recording)
+await zyy.updatePresence(from, Presence.recording)
 } else if (autoketik) {
 	if (autoketik === false) return
-await itsmevall.updatePresence(from, Presence.composing)
+await zyy.updatePresence(from, Presence.composing)
 }
 const createSerial = (size) => {
             return crypto.randomBytes(size).toString('hex').slice(0, size)
@@ -470,20 +470,20 @@ const checkRegisteredUser = (sender) => {
             return status
         }        
     const sender = mek.key.fromMe
-      ? itsmevall.user.jid
+      ? zyy.user.jid
       : isGroup
       ? mek.participant
       : mek.key.remoteJid;
     let senderr = mek.key.fromMe
-      ? itsmevall.user.jid
+      ? zyy.user.jid
       : mek.key.remoteJid.endsWith("@g.us")
       ? mek.participant
       : mek.key.remoteJid;
-    const totalchat = await itsmevall.chats.all();
+    const totalchat = await zyy.chats.all();
     const ownerNumber = [`6289503657396@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
-    const m = simple.smsg(itsmevall, mek);
-    const groupMetadata = isGroup ? await itsmevall.groupMetadata(from) : "";
+    const m = simple.smsg(zyy, mek);
+    const groupMetadata = isGroup ? await zyy.groupMetadata(from) : "";
     const groupName = isGroup ? groupMetadata.subject : "";
     const groupId = isGroup ? groupMetadata.jid : "";
     const itsMe = mek.key.fromMe ? true : false
@@ -504,24 +504,24 @@ const checkRegisteredUser = (sender) => {
     const isVote = isGroup ? voting.includes(from) : false;
     const isLevelingOn = isGroup ? _leveling.includes(from) : false
     const conts = mek.key.fromMe    
-      ? itsmevall.user.jid
-      : itsmevall.contacts[sender] || { notify: jid.replace(/@.+/, "") };
+      ? zyy.user.jid
+      : zyy.contacts[sender] || { notify: jid.replace(/@.+/, "") };
     const pushname = mek.key.fromMe
-      ? itsmevall.user.name
+      ? zyy.user.name
       : conts.notify || conts.vname || conts.name || "-";
     const readmore = "͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏";
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;      
 		try {
-		pporang = await itsmevall.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
+		pporang = await zyy.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 		      } catch {
 		pporang = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 		      }
 		const ofrply = await getBuffer(pporang)
 		const sekarang = new Date().getTime();
 		//F
-const daftar1 = `*Hi ${pushname}* 👋\n*Daftar dulu ya*`
+const daftar1 = `*Hi ${pushname}* 👋\n*Daftar terlebih dahulu ya*`
 const daftar2 = '_KLIK BUTTON INI UNTUK DAFTAR_'
 const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `Daftar`,},type: 1,},]
 
@@ -558,17 +558,17 @@ cmhit.push(command)
     //MESS
     mess = {
       wait: "*[Wait] Tunggu Sebentar..*",
-      success: "Success︎",
-      prem: "Perintah Ini Khusus Pengguna Premium!!!",
+      success: "_SUKSES!!_",
+      prem: "_PERINTAH INI HANYA DAPAT DIGUNAKAN OLEH USER PREMIUM, SILAHKAN MEMBELI AKSES PREMIUM KE OWNER😁!_",
       ban: "Kamu Telah Di Ban Oleh Owner, silahkan chat owner untuk minta di unban",
       wrongFormat: "Format salah, coba lagi di menu",      
       error: {
         stick: "bukan stiker itu:v",
         apiz: "Tulisan Jan adalah singkatan dari Error",
-        Iv: "Link Yang Kamu Berikan Erorr",
+        Iv: "_LINK YANG KAKAK BERIKAN ERROR:(_",
       },
       only: {
-        group: "Perintah Ini Hanya Bisa Digunakan Oleh Admin Grup",
+        group: "_Perintah Ini Hanya Bisa Digunakan Oleh Admin Grup kak_",
         player: `Maaff kak ${pushname} sepertinya kakak bukan petualang!!\nUntuk menjadi petualang silahkan ketik :\n${prefix}joinrpg`,	
       },
     };
@@ -583,27 +583,27 @@ cmhit.push(command)
     };
   /*const reply = (teks) => {    
 
-      itsmevall.sendMessage(from, teks, text, { quoted: mek });
+      zyy.sendMessage(from, teks, text, { quoted: mek });
     };*/
     const textImg = (teks) => {
-           return itsmevall.sendMessage(from, teks, text, {quoted: freply, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+           return zyy.sendMessage(from, teks, text, {quoted: freply, thumbnail: fs.readFileSync('./zyy.jpg')})
         }
 const math = (teks) => {
            return Math.floor(teks)
        }
 /*const reply = (teks) => {
-			itsmevall.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/62858157008612?text=Assalamualaikum`}}})
+			zyy.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/62858157008612?text=Assalamualaikum`}}})
 		}*/
     const sendMess = (hehe, teks) => {
-      itsmevall.sendMessage(hehe, teks, text);
+      zyy.sendMessage(hehe, teks, text);
     };
 
     const mentions = (teks, memberr, id) => {
       id == null || id == undefined || id == false
-        ? itsmevall.sendMessage(from, teks.trim(), extendedText, {
+        ? zyy.sendMessage(from, teks.trim(), extendedText, {
             contextInfo: { mentionedJid: memberr },
           })
-        : itsmevall.sendMessage(from, teks.trim(), extendedText, {
+        : zyy.sendMessage(from, teks.trim(), extendedText, {
             quoted: mek,
             contextInfo: { mentionedJid: memberr },
           });
@@ -629,7 +629,7 @@ const math = (teks) => {
       contextInfo: { forwardingScore: 999, isForwarded: true },
       sendEphemeral: true,
     };
-const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${senderr.split('@')[0]}:${senderr.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./itsmevall.jpg')
+const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${senderr.split('@')[0]}:${senderr.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./zyy.jpg')
         }}}
 const freply7 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '1595603042@s.whatsapp.net' } : {}) }, message: { "productMessage":{"product": {"productImage": {"mimetype":'image/jpeg',"jpegThumbnail": iye, "title": `${ucapanWaktu} ${pushname}`, "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
 }
@@ -792,7 +792,7 @@ const ftex = {
       message: { locationMessage: { name: fake, jpegThumbnail: thumb } },
     };
     const fakestatus = (teks) => {
-      itsmevall.sendMessage(from, teks, text, {
+      zyy.sendMessage(from, teks, text, {
         quoted: {
           key: {
             fromMe: false,
@@ -822,14 +822,14 @@ const ftex = {
       });
     };
     const fakethumb = (teks, yes) => {
-      itsmevall.sendMessage(from, teks, image, {
+      zyy.sendMessage(from, teks, image, {
         thumbnail: fs.readFileSync("./media/fake.jpeg"),
         quoted: mek,
         caption: yes,
       });
     };
     const fakegroup = (teks) => {
-            itsmevall.sendMessage(from, teks, text, {
+            zyy.sendMessage(from, teks, text, {
                 quoted: {
                     key: {
                         fromMe: false,
@@ -864,7 +864,7 @@ const ftex = {
             .on("close", callback);
         });
       };
-itsmevall.on('CB:action,,battery', json => {
+zyy.on('CB:action,,battery', json => {
 		global.batteryLevelStr = json[2][0][1].value
 	   global.batterylevel = parseInt(batteryLevelStr)
 		baterai = batterylevel
@@ -874,7 +874,7 @@ itsmevall.on('CB:action,,battery', json => {
 		console.log('Baterai : ' + batterylevel+'%')
 	})
 	global.batrei = global.batrei ? global.batrei : []
-		itsmevall.on('CB:action,,battery', json => {
+		zyy.on('CB:action,,battery', json => {
 		const batteryLevelStr = json[2][0][1].value
 		const batterylevel = parseInt(batteryLevelStr)
 		global.batrei.push(batterylevel)
@@ -887,7 +887,7 @@ download(url, "./stik" + names + ".png", async function () {
           `ffmpeg -i ${filess} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${asw}`,
           (err) => {
             let media = fs.readFileSync(asw);
-            itsmevall.sendMessage(to, media, MessageType.sticker, { quoted: mek });
+            zyy.sendMessage(to, media, MessageType.sticker, { quoted: mek });
             fs.unlinkSync(filess);
             fs.unlinkSync(asw);
           }
@@ -899,7 +899,7 @@ if (budy.toLowerCase() === `8473`){
 		    register.push(sender)
 		    fs.writeFileSync('./database/user/registered.json', JSON.stringify(register))
 		    teks = `Verification success\n\nPlease send *!menu* to view menu`
-		    itsmevall.sendMessage(from, teks, text, {quoted:mek})
+		    zyy.sendMessage(from, teks, text, {quoted:mek})
 }          /*if (!mek.key.fromMe && banChats === false) return*/
 	              
            
@@ -927,7 +927,7 @@ const sendWebp = async(to, url) => {
            if (err) return reply(`${err}`)
            exec(`webpmux -set exif ./sticker/data.exif ${asw} -o ${asw}`, async (error) => {
            if (error) return reply(`${error}`)
-           itsmevall.sendMessage(from, fs.readFileSync(asw), sticker, {sendEphemeral:true, quoted:mann})
+           zyy.sendMessage(from, fs.readFileSync(asw), sticker, {sendEphemeral:true, quoted:mann})
            fs.unlinkSync(asw)
 });
 });
@@ -955,7 +955,7 @@ if (!itsMe && !isOwner)return
             description: "SELF BOT",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "ItsMeVall",
+            retailerId: "zyy",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -1020,7 +1020,7 @@ key: {
         if (mime.split("/")[0] === "audio") {
           mime = Mimetype.mp4Audio;
         }
-        itsmevall.sendMessage(to, media, type, {
+        zyy.sendMessage(to, media, type, {
           quoted: mek,
           mimetype: mime,
           caption: text,
@@ -1182,7 +1182,7 @@ const isQuotedLocation = type === 'extendedTextMessage' && content.includes('loc
                     for (let lmt of _healt) {
                         if (lmt.id === sender) {
                             const healthCounts = healtawal - lmt.healt
-                            if (healthCounts <= 0) return itsmevall.sendMessage(from,`Limit request anda sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
+                            if (healthCounts <= 0) return zyy.sendMessage(from,`Limit request anda sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
                           //  zee.sendMessage(from, `${healthCounts}`, text, { quoted : mek})
                            if (!isPetualang) return reply(mess.only.player)
  reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
@@ -1223,7 +1223,7 @@ pp = monospace(`📍 𝗣𝗿𝗼𝗳𝗶𝗹𝗲 𝗣𝗹𝗮𝘆𝗲𝗿
                         let obj = { id: sender, healt: 1 }
                         _healt.push(obj)
                         fs.writeFileSync('./lib/healt.json', JSON.stringify(_healt))
-                        itsmevall.sendMessage(from, `${healthCounts}`, text, { quoted : mek})
+                        zyy.sendMessage(from, `${healthCounts}`, text, { quoted : mek})
                     }
 				}				
             //function rank 
@@ -1238,7 +1238,7 @@ pp = monospace(`📍 𝗣𝗿𝗼𝗳𝗶𝗹𝗲 𝗣𝗹𝗮𝘆𝗲𝗿
    	     } else if (levelRole <= 10) {
    	         role = 'Gold'
    	     } else if (levelRole <= 12) {
-   	         role = 'Platinum'
+   	         role = 'Platinnum'
    	     } else if (levelRole <= 15) {
    	         role = 'Mithril'
    	     } else if (levelRole <= 18) {
@@ -1291,12 +1291,12 @@ footerText: desc1,
 buttons: but,
 headerType: 1
 }
-itsmevall.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
+zyy.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
 ///Button Image
 const sendButImage = async(id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
-mhan = await itsmevall.prepareMessage(from, kma, image)
+mhan = await zyy.prepareMessage(from, kma, image)
 const buttonMessages = {
 imageMessage: mhan.message.imageMessage,
 contentText: text1,
@@ -1304,12 +1304,12 @@ footerText: desc1,
 buttons: but,
 headerType: 4
 }
-itsmevall.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+zyy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
 ///Button Video
 const sendButVideo = async(id, text1, desc1, vid1, but = [], options = {}) => {
 kma = vid1
-mhan = await itsmevall.prepareMessage(from, kma, video)
+mhan = await zyy.prepareMessage(from, kma, video)
 const buttonMessages = {
 videoMessage: mhan.message.videoMessage,
 contentText: text1,
@@ -1317,13 +1317,13 @@ footerText: desc1,
 buttons: but,
 headerType: 5
 }
-itsmevall.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+zyy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
 //Button ocument
 const Sendbutdocument = async(id, text1, desc1, file1, doc1, but = [], options = {}) => {
 media = file1
 kma = doc1
-mhan = await itsmevall.prepareMessage(from, media, document, kma)
+mhan = await zyy.prepareMessage(from, media, document, kma)
 const buttonMessages = {
 documentMessage: mhan.message.documentMessage,
 contentText: text1,
@@ -1331,12 +1331,12 @@ footerText: desc1,
 buttons: but,
 headerType: "DOCUMENT"
 }
-itsmevall.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+zyy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
 ///Button Location
 const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
-mhan = await itsmevall.prepareMessage(from, kma, location)
+mhan = await zyy.prepareMessage(from, kma, location)
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
@@ -1344,40 +1344,40 @@ footerText: desc1,
 buttons: but,
 headerType: 6
 }
-itsmevall.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+zyy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
 const nebal = (angka) => {
             return Math.floor(angka)
         }
     const kick = function (from, orangnya) {
       for (let i of orangnya) {
-        itsmevall.groupRemove(from, [i]);
+        zyy.groupRemove(from, [i]);
       }
     };
     const add = function (from, orangnya) {
-      itsmevall.groupAdd(from, orangnya);
+      zyy.groupAdd(from, orangnya);
     };
         const grupinv = (teks) => {
-        	grup = itsmevall.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `[©Apriliya✓Chan]`, "footerText": "*_© Dcode Denpa_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
-            itsmevall.relayWAMessage(grup)
+        	grup = zyy.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `[©Apriliya✓Chan]`, "footerText": "*_© Dcode Denpa_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+            zyy.relayWAMessage(grup)
         }
 const fakeitem = (teks) => {
-            itsmevall.sendMessage(from, teks, text, {
+            zyy.sendMessage(from, teks, text, {
                 quoted: {
         key:{
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./media/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`ItsMeVall`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}                    
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./media/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`zyy`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}                    
 // Reply
 const reply = (teks) => {
-      itsmevall.sendMessage(from, teks, text, { quoted: mek, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true});
+      zyy.sendMessage(from, teks, text, { quoted: mek, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true});
     };
 const fakelinkk = (teks) => {        
-itsmevall.sendMessage(from, teks, text, { thumbnail: ofrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/6285815700875?text=Assalamualaikum`}}})
+zyy.sendMessage(from, teks, text, { thumbnail: ofrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/6285815700875?text=Assalamualaikum`}}})
 		}
 const fakelink = (teks) => {
-itsmevall.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
+zyy.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
@@ -1392,11 +1392,11 @@ sendEphemeral: false,
 };
 //Awok
 const katalog = (teks) => {
-             res = itsmevall.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 499999999999999999, "message": teks, "footerText": "*ItsMevall*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:mek})
-             itsmevall.relayWAMessage(res)
+             res = zyy.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 499999999999999999, "message": teks, "footerText": "*zyy*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:mek})
+             zyy.relayWAMessage(res)
         }
 const fakewa = (teks) => {
-itsmevall.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
+zyy.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
@@ -1411,7 +1411,7 @@ sendEphemeral: false,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
-itsmevall.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
+zyy.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
@@ -1428,15 +1428,15 @@ sendEphemeral: false,
 // Support Di Versi 3.5.2 
     const sendBug = async (target, teks) => {
       if (!teks) teks = ".";
-      await itsmevall.relayWAMessage(
-        itsmevall.prepareMessageFromContent(
+      await zyy.relayWAMessage(
+        zyy.prepareMessageFromContent(
           target,
-          itsmevall.prepareDisappearingMessageSettingContent(0),
+          zyy.prepareDisappearingMessageSettingContent(0),
           {}
         ),
         { waitForAck: true }
       );
-      itsmevall.sendMessage(target, teks, "conversation");
+      zyy.sendMessage(target, teks, "conversation");
     };
 
     //FUNCTION
@@ -1453,7 +1453,7 @@ sendEphemeral: false,
         if (isAfk(mek.key.remoteJid)) return;
         addafk(mek.key.remoteJid);
         heheh = ms(Date.now() - waktu);
-        itsmevall.sendMessage(
+        zyy.sendMessage(
           mek.key.remoteJid,
           `@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`,
           MessageType.text,
@@ -1488,7 +1488,7 @@ sendEphemeral: false,
                   if (isAfk(mek.key.remoteJid)) return;
                   addafk(mek.key.remoteJid);
                   heheh = ms(Date.now() - waktu);
-                  itsmevall.sendMessage(
+                  zyy.sendMessage(
                     mek.key.remoteJid,
                     `@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`,
                     MessageType.text,
@@ -1546,7 +1546,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
             if(mime.split("/")[0] === "audio"){
                 mime = Mimetype.mp4Audio
             }
-            return itsmevall.sendMessage(from, await getBuffer(url), type, {caption: caption, quoted: mek, mimetype: mime, contextInfo: {"mentionedJid": men ? men : []}})
+            return zyy.sendMessage(from, await getBuffer(url), type, {caption: caption, quoted: mek, mimetype: mime, contextInfo: {"mentionedJid": men ? men : []}})
         }
     if (!isGroup && prefix && command)
       console.log(
@@ -1657,19 +1657,19 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         nomor +
         "\n" +
         "END:VCARD";
-      itsmevall.sendMessage(
+      zyy.sendMessage(
         from,
         { displayname: nama, vcard: vcard },
         MessageType.contact,
         { quoted: mek }
       );
     };
-    //•======>> SUBSCRIBE : itsmevall TEKNOLOGI <<====•\\
+    //•======>> SUBSCRIBE : HY FAUZI <<====•\\
 			if (bad.includes(messagesD)) {
 kntl = `${args.join(' ')}`
 nama = ("TOXIC DETECTED\nNIH PERGI KE ARAB")
 impostor = ("BIAR GAK TOXIC")
-itsmevall.sendMessage(from, { degreesLatitude: 21.422487, degreesLongitude: 39.826206,
+zyy.sendMessage(from, { degreesLatitude: 21.422487, degreesLongitude: 39.826206,
 name: nama,
 address: impostor,
 jpegThumbnail: fs.readFileSync('./media/thumb.jpeg')}, MessageType.liveLocation, {quoted:floc})
@@ -1678,8 +1678,8 @@ jpegThumbnail: fs.readFileSync('./media/thumb.jpeg')}, MessageType.liveLocation,
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return reply("admin bebas");
-        reply("ANTILINK DETECTED!! MAAF ANDA AKAN DIKICK ;V");
-        itsmevall.groupRemove(from, [sender]);
+        reply("ANTILINK DETECTED!! MAAF ANDA AKAN DIKICK OLEH SAYA😎👍");
+        zyy.groupRemove(from, [sender]);
       }
     }
 if ((Object.keys(mek.message)[0] === 'ephemeralMessage' && JSON.stringify(mek.message).includes('EPHEMERAL_SETTING')) && mek.message.ephemeralMessage.message.protocolMessage.type === 3) {
@@ -1688,9 +1688,9 @@ if (mek.key.fromMe) return
 nums = mek.participant
 longkapnye = "\n".repeat(420)
 tekuss = `${longkapnye}\`\`\`B U G  G C  T E R D E T E K S I\`\`\`\n@⁨${nums.split('@')[0]} akan dikick\n\n_Clear chat by bot_\n*Jangan maen bug lah*`
-itsmevall.groupRemove(mek.key.remoteJid, [nums]).catch((e) => { reply2(`Gua mau kick tapi gua bukan admin 🤙`) })
-itsmevall.sendMessage(mek.key.remoteJid, 'WAH BUG NIH', MessageType.text)
-itsmevall.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:{mentionedJid:[nums + "@s.whatsapp.net"]}})
+zyy.groupRemove(mek.key.remoteJid, [nums]).catch((e) => { reply2(`Gua mau kick tapi gua bukan admin 🤙`) })
+zyy.sendMessage(mek.key.remoteJid, 'WAH BUG NIH', MessageType.text)
+zyy.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:{mentionedJid:[nums + "@s.whatsapp.net"]}})
 }
     if (isGroup && isAntiviewonce && m.mtype == "viewOnceMessage") {
       reply(
@@ -1699,7 +1699,7 @@ itsmevall.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:
       var msg = { ...mek };
       msg.mek = mek.message.viewOnceMessage.message;
       msg.mek[Object.keys(msg.mek)[0]].viewOnce = false;
-      itsmevall.copyNForward(m.chat, msg);
+      zyy.copyNForward(m.chat, msg);
     }
     if (
       isGroup &&
@@ -1712,13 +1712,13 @@ itsmevall.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:
         color(`@${sender.split("@")[0]} mengirim pesan hidetag`, "white")
       );
       reply(`@${sender.split("@")[0]} Terdeteksi mengirim pesan hidetag!!`);
-      itsmevall.groupRemove(from, [sender]);
+      zyy.groupRemove(from, [sender]);
       }    
     if (isGroup && isAntivirtex && !mek.key.fromMe) {
       if (budy.length > 700) {
         if (isGroupAdmins) return reply("admin bebas");
-        reply("ANTIVIRTEX DETECTED!! MAAF ANDA AKAN DIKICK ;V");
-        itsmevall.groupRemove(from, [sender]);
+        reply("ANTIVIRTEX DETECTED!! MAAF ANDA AKAN DIKICK OLEH SAYA😎👍");
+        zyy.groupRemove(from, [sender]);
       }
     }
     if (isGroup && autojoin == true) {
@@ -1727,7 +1727,7 @@ itsmevall.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:
           color("[AUTO-JOIN]", "red"),
           color("YAHAHAHHAHAH", "white")
         );
-        itsmevall.query({
+        zyy.query({
           json: [
             "action",
             "invite",
@@ -1739,23 +1739,23 @@ itsmevall.sendMessage(mek.key.remoteJid, tekuss, MessageType.text, {contextInfo:
     if (isGroup && isKickarea && !mek.key.fromMe) {
       if (sender.includes("62")) {
         reply("GRUP ONLY +62!");
-        itsmevall.groupRemove(from, [sender]);
+        zyy.groupRemove(from, [sender]);
       }
     }
-    // Runtime Di Bio Bang🌹\\
+    // Runtime Di Bio Bang \\
     let settingstatus = 0;
     if (new Date() * 1 - settingstatus > 1000) {
       let _uptime = process.uptime() * 1000;
       let uptime = clockString(_uptime);
 
-await itsmevall.setStatus(`Aktif Selama ${uptime} | Mode Publik`).catch((_) => _);
+await zyy.setStatus(`Aktif Selama ${uptime} | Mode Publik`).catch((_) => _);
       settingstatus = new Date() * 1;
     }
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
 	case 'verify': 
 	case 'daftar':
-	let bio_nya = await itsmevall.getStatus(sender)
+	let bio_nya = await zyy.getStatus(sender)
 		try {
 			bio_user = `${bio_nya.status}`
 		} catch {
@@ -1776,6 +1776,7 @@ teks = `╭─❒ *Verification*\n│ *Nama :* ${pushname}\n│ *Nomor :* @${sen
 break
 case 'help':        
 case 'menu':
+menuc = fs.readFileSync('./menu.mp3')
 if (isBanned) return reply(mess.ban)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
 let data = fs.readFileSync('./lib/kontol.js');
@@ -1785,12 +1786,13 @@ randKey = jsonData[randIndex];
 hasil = await getBuffer(randKey.result)
 janganti = '6289503657396'
 kontol = '6289503657396'
-totalChat = await itsmevall.chats.all()
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-thu = await itsmevall.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
-menuh = `${ucapanWaktu} @${sender.split('@')[0]}\n\nSaya REALZIBOT, Bot WhatsApp yg membantu kamu untuk mempermudah sesuatu seperti Membuat Sticker dan Lainnya, Ada Butuh Info Dariku?`
-itsmevall.sendMessage(from, { contentText: `${menuh}`, 
+zyy.sendMessage(from, menuc, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+totalChat = await zyy.chats.all()
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+thu = await zyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
+menuh = `${ucapanWaktu} @${sender.split('@')[0]}\n\nSaya REALZIBOT, Bot WhatsApp yg membantu kamu untuk mempermudah sesuatu seperti Membuat Sticker dan Lainnya, apakah anda Butuh Info Dariku?\nREALZI V3`
+zyy.sendMessage(from, { contentText: `${menuh}`, 
 footerText: `Note: Kalo kamu pakai wa lama atau mod, dan button ga keliatan, langsung aja ketik ${prefix}allmenu, catatan patuhi rules bot atau kamu akan di blokir oleh bot
 Dipersembahkan oleh : ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎@${owner}
 `, buttons: [{ buttonId: `${prefix}comand`, buttonText: { displayText: 'MENU BOT' }, type: 1 },{ buttonId: `${prefix}sewa`, buttonText: { displayText: 'SEWA BOT' }, type: 1 },{ buttonId: `${prefix}syarat`, buttonText: { displayText: 'RULES BOT' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: hasil, contextInfo: {mentionedJid: [sender, owner]}}}, 'buttonsMessage')
@@ -1804,7 +1806,7 @@ let nombokr = 1
   title: `${ucapanWaktu} ${pushname}`,
   buttonText: 'List Menu',
   description: `Silahkan pilih menu nya disini`,
-  footerText: `jangan lupa donasi kak`,  
+  footerText: `Silahkan klik button cmd di bawah ini untuk mengetahui menu pada realzi bot`,  
   sections: [
 {
 "title": `LIST MENU KE 1`, 
@@ -1962,12 +1964,20 @@ let nombokr = 1
    "title": "LIST MENU KE 20", 
  "rows" : [
   {
+ "title": "🎵 Sound menu",
+ "description": "Lagu yang ada di bot, tidak perlu download",
+ "rowId": `!menusound`
+  }]
+  },{
+   "title": "LIST MENU KE 21", 
+ "rows" : [
+  {
  "title": "☘️ Menu Fun",
  "description": "Mau bermain sama bot? Klik disini", 
  "rowId": `!menufun`
   }]
   },{
-   "title": "LIST MENU KE 21", 
+   "title": "LIST MENU KE 22", 
  "rows" : [
   {
  "title": "📒 Rules Bot",
@@ -1975,7 +1985,15 @@ let nombokr = 1
  "rowId": `!ofc`
   }]
   },{
-   "title": "LIST MENU KE 22", 
+   "title": "LIST MENU KE 23", 
+ "rows" : [
+  {
+ "title": "🌙 Islamic menu",
+ "description": "fitur2 untuk tobat",
+ "rowId": `!islamicmenu`
+ }]
+ },{
+   "title": "LIST MENU KE 24", 
  "rows" : [
   {
  "title": "🌐 Official Grup",
@@ -1986,16 +2004,16 @@ let nombokr = 1
   ],
   listType: 1
   }
-  itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]}, quoted:mek })
+  zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]}, quoted:mek })
   break
 case 'allmenu3':
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -2007,7 +2025,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                {buttonId:`${prefix}command`,buttonText:{displayText:'Donasi'},type:1}]
 
 
-               imageMsg = (await itsmevall.prepareMessageMedia(fs.readFileSync(`./media/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/oksip.jpeg`)})).imageMessage
+               imageMsg = (await zyy.prepareMessageMedia(fs.readFileSync(`./media/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/oksip.jpeg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${txtt}`,
@@ -2366,8 +2384,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                buttons: buttons,
                headerType: 4
 }
-prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/KO4sly3zHa0"}}})
-               itsmevall.relayWAMessage(prep)
+prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/KO4sly3zHa0"}}})
+               zyy.relayWAMessage(prep)
              
                break
 case 'menuajaj2':
@@ -2883,7 +2901,7 @@ case "keranjang":
 │_/\_ ${prefix}rulesbot
 │_/\_ ${prefix}sharelock
 │
-│  ⬣ 𝙁𝙄𝙏𝙐𝙍 𝙐𝙋𝙎𝙒 
+│  ⬣ 𝙁𝙄𝙏𝙐𝙍 ??𝙋𝙎𝙒 
 │_/\_ ${prefix}upswteks
 │_/\_ ${prefix}upswlokasi
 │_/\_ ${prefix}upswsticker
@@ -2994,13 +3012,13 @@ case "keranjang":
 └──────────────────❒`)
 break
 case 'location':
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -3009,7 +3027,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─❒ *LIST ALL MENU BOT*
@@ -3594,9 +3612,9 @@ Jangan lupa donasi ya kak
    
             [ *POWERED BY ©REALZIBOT* ]
 `
-var imgs = await itsmevall.prepareMessage('0@c.us', thumb, image, { thumbnail: thumb })
+var imgs = await zyy.prepareMessage('0@c.us', thumb, image, { thumbnail: thumb })
             var imgCatalog = imgs.message.imageMessage
-            var ctlg = await itsmevall.prepareMessageFromContent(from, {
+            var ctlg = await zyy.prepareMessageFromContent(from, {
                 "productMessage": {
                     "product": {
                         "productImage": imgCatalog,
@@ -3614,15 +3632,15 @@ var imgs = await itsmevall.prepareMessage('0@c.us', thumb, image, { thumbnail: t
                     },
                     "businessOwnerJid": "6289503657396@s.whatsapp.net",
                 }
-            }, { quoted: mek, mimetype: 'itsmevall/jpeg' })
-            itsmevall.relayWAMessage(ctlg)
+            }, { quoted: mek, mimetype: 'zyy/jpeg' })
+            zyy.relayWAMessage(ctlg)
             break
 case 'document':
 if (isBanned) return reply(mess.ban)
         ptod = "6289503657396@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 tescok = `${menunya(prefix)}`
 Sendbutdocument(from, tescok, "©Wa.me×Owner/alya*", fs.readFileSync('./media/Alya✓Bot.pdf'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./media/image/thumbnaildokumen.jpg'), filename:`Alya✓Bot.pdf`, pageCount: 9999999 }, [{buttonId:`!000`,buttonText:{displayText:'Hai‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎\n\nSemuanya aku mau Jujur Kalau aku itu Gay dan Lagi Pengen Sama Cowok berotot untuk jadi Pacarku, yang Berminat Bisa Chat aku yahh 😋'},type:1}], {quoted:foncevid, contextInfo: { mentionedJid: [ptod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`${ucapanWaktu} - ${pushname}\nJangan Lupa Donasi Kak`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/x-O0WHkv3uc`}}})
@@ -3643,18 +3661,18 @@ if (isBanned) return reply(mess.ban)
  🌹 : wa.me/${dtod3.split('@')[0]}
  🌹 : wa.me/${dtod4.split('@')[0]}
  `
-     credit = itsmevall.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 121, "message": `${yez}`, "footerText": "hehe", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
-            itsmevall.relayWAMessage(credit)
+     credit = zyy.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 121, "message": `${yez}`, "footerText": "hehe", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
+            zyy.relayWAMessage(credit)
         break
 case 'tovn':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})  
 encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					mediam = await itsmevall.downloadAndSaveMediaMessage(encmediam)
+					mediam = await zyy.downloadAndSaveMediaMessage(encmediam)
 					cokmatane = Number(args[0])
 					hah = fs.readFileSync(mediam)
-						itsmevall.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', duration: cokmatane, ptt: true, quoted:mek})
+						zyy.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', duration: cokmatane, ptt: true, quoted:mek})
 						fs.unlinkSync(mediam)
 						limitAdd(sender, limit)
 				break                                     
@@ -3741,7 +3759,7 @@ if (isBanned) return reply(mess.ban)
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
               teks = args.join(' ')
               grupinv('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
-              itsmevall.sendMessage('6285815700875@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              zyy.sendMessage('6285815700875@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               
               break
 case 'restart':
@@ -3776,7 +3794,7 @@ if (args.length == 0) return reply(`◯ USAGE : ${prefix + command} nik|provinsi
    until = get_args[14]
    img = get_args[15]
    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/ktpmaker?apikey=${lolkey}&nik=${nik}&prov=${prov}&kabu=${kabu}&name=${name}&ttl=${ttl}&jk=${jk}&jl=${jl}&rtrw=${rtrw}&lurah=${lurah}&camat=${camat}&agama=${agama}&nikah=${nikah}&kerja=${kerja}&warga=${warga}&until=${until}&img=${img}`)
-   itsmevall.sendMessage(from, ini_buffer, image, {caption: 'KTPNYA DAH JADI KAK', quoted: mek })
+   zyy.sendMessage(from, ini_buffer, image, {caption: 'KTPNYA DAH JADI KAK', quoted: mek })
    limitAdd(sender, limit)
   break
                     case 'distance': case 'jarak':
@@ -3825,7 +3843,7 @@ if (isBanned) return reply(mess.ban)
               case 't':
        titid =  `SILAHKAN PILIH DI BAWAH UNTUK MELANJUTKAN`
           
-                   sendButMessage(from, titid, `crated ℎ𝑒𝑟𝑚𝑎𝑛 𝐵𝑜𝑡𝑧☕︎`, [
+                   sendButMessage(from, titid, `crated Realzibot︎`, [
           {
             buttonId: `Y`,
             buttonText: {
@@ -3846,18 +3864,8 @@ if (isBanned) return reply(mess.ban)
             
              
               break                         
-                case 'quotesanime':
-                if (isBanned) return reply(mess.ban)
-                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=${setting.lolkey}`)
-                    quotes = quotes.result
-                    quote = quotes.quote
-                    char = quotes.character
-                    anime = quotes.anime
-                    episode = quotes.episode
-                    reply(`_${quote}_\n\n*• ${char}*\n*• ${anime} ${episode}*`)
-                    break
                 case 'quotesdilan':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/quotes/diLan?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/quotes/diLan?apikey=${lolkey}`)
                      reply(get_result.result)
 
                    break
@@ -3881,7 +3889,7 @@ for (let o of groupMembers) {
 if (!Number(teks)) return reply('Jumlah harus berupa angka!')
 if (Number(teks) >= 1000) return reply('Kebanyakan!')
 	  for (let i = 0; i < teks; i++) {
-	  itsmevall.sendMessage(from, teks1, MessageType.text, {contextInfo: {mentionedJid: gmem}})
+	  zyy.sendMessage(from, teks1, MessageType.text, {contextInfo: {mentionedJid: gmem}})
 	  }
 			} else if (isGroup && budy.length > 13) {
 teks = body.slice(9)
@@ -3895,7 +3903,7 @@ if (!teks1) teks1 = '-'
 if (!Number(teks2)) return reply('Jumlah harus berupa angka!')
 if (Number(teks2) >= 50) return reply('Kebanyakan!')
 	  for (let i = 0; i < teks2; i++) {
-	  itsmevall.sendMessage(from, teks1, MessageType.text, {contextInfo: {mentionedJid: gmem}})
+	  zyy.sendMessage(from, teks1, MessageType.text, {contextInfo: {mentionedJid: gmem}})
 	  }
 						} else if (!isGroup) {
 							bodom = new RegExp('[-+/ +/()]', 'gi')
@@ -3907,7 +3915,7 @@ if (Number(teks2) >= 50) return reply('Kebanyakan!')
 		if (!Number(bodo2)) return reply('Jumlah harus berupa angka!')
 if (Number(bodo2) >= 50) return reply('Kebanyakan!')
 	  for (let i = 0; i < bodo2; i++) {
-	  itsmevall.sendMessage(from, `@${orange.split('@')[0]}`, MessageType.text, {contextInfo: {mentionedJid: [orange]}})
+	  zyy.sendMessage(from, `@${orange.split('@')[0]}`, MessageType.text, {contextInfo: {mentionedJid: [orange]}})
 	  }
 						}			
 	  break
@@ -3917,7 +3925,7 @@ if (Number(bodo2) >= 50) return reply('Kebanyakan!')
 				if (args.length == 0) return reply(`Masukkan Nomer nya\ncontoh ${prefix}spamcall 0882XXX`)
 			call = `${body.slice(11)}`
 			anu = await fetchJson(`https://api.caliph71.xyz/api/spamcall?no=${call}&apikey=cq9j7Nma`, {method: 'get'})
-			itsmevall.sendMessage(from, `${anu.result.logs}`, text, {quoted: mek})
+			zyy.sendMessage(from, `${anu.result.logs}`, text, {quoted: mek})
 			reply("Spam Message Succes Terkirim")
 			break
 			case 'spamsms':{
@@ -3953,7 +3961,7 @@ if (Number(bodo2) >= 50) return reply('Kebanyakan!')
               reply('Sending '+ ini_sticker.length +' stickers...')
               for (sticker_ in ini_sticker) {
               ini_buffer = await getBuffer(ini_sticker[sticker_])
-              itsmevall.sendMessage(from, ini_buffer, sticker, {})
+              zyy.sendMessage(from, ini_buffer, sticker, {})
 }
               break
               case 'lk21':
@@ -3975,7 +3983,7 @@ if (Number(bodo2) >= 50) return reply('Kebanyakan!')
                     ini_txt += `Language : ${get_result.Language}\n`
                     ini_txt += `Link Download : ${get_result.link_dl}`
                     thumbnail = await getBuffer(get_result.thumbnail)
-                    await itsmevall.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
+                    await zyy.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
                     break
                 case 'drakorongoing':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/drakorongoing?apikey=${lolkey}`)
@@ -4008,7 +4016,7 @@ if (Number(bodo2) >= 50) return reply('Kebanyakan!')
                     ini_txt += `Description : ${get_result.desc}\n\n`
                     ini_txt += `Story : \n${get_result.story}`
                     thumbnail = await getBuffer(get_result.photo)
-                    await itsmevall.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
+                    await zyy.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
                     break
                 case 'wattpadsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Tere Liye`)
@@ -4032,8 +4040,8 @@ if (Number(bodo2) >= 50) return reply('Kebanyakan!')
 if (args.length < 1) return reply(`*Teks nya mana?*\n_Contoh : ${prefix + command} namamu_`) 
 teks = args.join(" ")
 reply(mess.wait)
-harta = await getBuffer(`https://apidhani.herokuapp.com/api/maker/harta-tahta?apikey=${dhakey}&text=${teks}`)
-itsmevall.sendMessage(from, harta, image, {quoted: mek, caption: '*Nih Kak Dah Jadi*'})
+harta = await getBuffer(`https://api.lolhuman.xyz/api/hartatahta?apikey=${lolkey}&text=${teks}`)
+zyy.sendMessage(from, harta, image, {quoted: mek, caption: '*Nih Kak Dah Jadi*'})
 break
 				case "ngewe":
 				if (isBanned) return reply(mess.ban)
@@ -4058,7 +4066,7 @@ break
 					bisakah = args.join(" ")
 					const bisa =['Bisa','Tidak Bisa','Hmmm gimana ya','Gak bisa ajg awoakwok','mana mungkin su','Bisa banget tuh, keren kayaknya']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 					await limitAdd(sender)
 					break
 		            case "kapankah":
@@ -4070,7 +4078,7 @@ break
 					kapankah = args.join(" ")
 					const kapan =['Besok','Lusa','1 Hari Lagi','2 Hari Lagi','3 Hari Lagi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','7 Bulan Lagi','8 Bulan Lagi','9 Bulan Lagi','10 Bulan Lagi','11 Bulan Lagi','1 Tahun lagi','2 Tahun lagi','3 Tahun lag0i','4 Tahun lagi','5 Tahun lagi','6 Tahun lagi','7 Tahun lagi','8 Tahun lagi','9 Tahun lagi','10 Tahun lagi']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 					await limitAdd(sender)
 					break
 		            case "apakah":
@@ -4082,7 +4090,7 @@ break
 					apakah = args.join(" ")
 					const apa =['Iya','Tidak','Bisa Jadi','Hmmm gimana ya']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					await limitAdd(sender)
 					break
 case "belah":
@@ -4094,7 +4102,7 @@ case "belah":
 					iyas = args.join(" ")
 					const iya =['Bener','Salah','Bener dong','Salah!!!']
 					const salah = iya[Math.floor(Math.random() * iya.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *bener atau salah '+iyas+'*\n\nJawaban : '+ salah, text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *bener atau salah '+iyas+'*\n\nJawaban : '+ salah, text, { quoted: mek })
 					await limitAdd(sender)
 					break
 		            case "bagaimanakah":
@@ -4106,7 +4114,7 @@ case "belah":
 					bagaimanakah = args.join(" ")
 					const bagai =['Kita Kenal?','Nanya Terus deh','Tidak Tahu','Hmmm gimana ya','Cari Aja Sendiri','Kurang Tahu','Mana Saya Tahu, Saya kan ikan']
 					const mana = bagai[Math.floor(Math.random() * bagai.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+bagaimanakah+'*\n\nJawaban : '+ mana, text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+bagaimanakah+'*\n\nJawaban : '+ mana, text, { quoted: mek })
 					await limitAdd(sender)
 					break
 		            case "rate":
@@ -4118,7 +4126,7 @@ case "belah":
 					rate = args.join(" ")
 					const ra =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const te = ra[Math.floor(Math.random() * ra.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
 					await limitAdd(sender)
 					break
                     case "sangecek":
@@ -4129,7 +4137,7 @@ if (!isRegistered) return reply(mess.ban)
 					sange = args.join(" ")
 					const sang =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const nge = sang[Math.floor(Math.random() * sang.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+sange+'*\n\nJawaban : '+ nge+'%', text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+sange+'*\n\nJawaban : '+ nge+'%', text, { quoted: mek })
 					await limitAdd(sender)
 					break
 case "gaycek":
@@ -4140,7 +4148,7 @@ case "gaycek":
 					gayy = args.join(" ")
 					const gay =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const yag = gay[Math.floor(Math.random() * gay.length)]
-					itsmevall.sendMessage(from, 'Pertanyaan : *'+gayy+'*\n\nJawaban : '+ yag+'%', text, { quoted: mek })
+					zyy.sendMessage(from, 'Pertanyaan : *'+gayy+'*\n\nJawaban : '+ yag+'%', text, { quoted: mek })
 					await limitAdd(sender)
 					break
 				case "jadian":
@@ -4160,135 +4168,135 @@ case "gaycek":
 					case 'ytsilver':
 					if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 					if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(10)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/splaybutton?text=${F}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    limitAdd(sender, limit)
                    break
 				case 'wolf':
 				if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 				if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(6)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/wolflogo?apikey=${zeksApikey}&text1=zeeoneofc&text2=${F}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?`, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?`, quoted: mek})
                    limitAdd(sender, limit)
                    break
                 case 'phcomment':
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall&lol*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy&lol*`)
                    var F = body.slice(10)
 				   var F1 = F.split("|")[0];
 				   var F2 = F.split("|")[1]; 
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/phub?apikey=${zeksApikey}&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara%2Bbuat%2Bfoto%2Bprofil%2Bdi%2Bwhatsapp%2Bmenjadi%2Bunik.jpg&username=${F1}&msg=${F2}`)
-                  itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nhow is it?`, quoted: mek})
+                  zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nhow is it?`, quoted: mek})
                   limitAdd(sender, limit)
                    break                           
          case 'tfire':  
          if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
          if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(7)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/tfire?text=${F}&apikey=${zeksApikey}`)                   
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    limitAdd(sender, limit)
                    break             
        case 'ytgol':  
        if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(8)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/gplaybutton?text=${F}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    limitAdd(sender, limit)
                    break       
        case 't3d':
        if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(5)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/text3dbox?apikey=${zeksApikey}&text=${F}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    limitAdd(sender, limit)
                    break
        case 'logoa':
        if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall&lol*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy&lol*`)
                    var F = body.slice(7)
 				   var F1 = F.split("|")[0];
 				   var F2 = F.split("|")[1]; 
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    limitAdd(sender, limit)
                    break
        case 'phlogo':
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall&lol*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy&lol*`)
                    var F = body.slice(9)
 				   var F1 = F.split("|")[0];
 				   var F2 = F.split("|")[1]; 
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/phlogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
        case 'marvel':
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall&lol*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy&lol*`)
                    var F = body.slice(8)
 				   var F1 = F.split("|")[0];
 				   var F2 = F.split("|")[1]; 
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
        case 'leavest':  
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(9)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/leavest?text=${F}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break                   
        case 'notewrite':
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(7)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/nulis?text=${F}&apikey=${zeksApikey}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
        case 'neon2':
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(7)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/bneon?apikey=${zeksApikey}&text=${F}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break                   
        case 'wall':
        if (isBanned) return reply(mess.ban)
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} itsmevall*`)
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} zyy*`)
                    F = body.slice(6)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
-                   itsmevall.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?q`, quoted: mek})
+                   zyy.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?q`, quoted: mek})
                    break   	
                  case 'bucin':
                     case 'quotebucin':
                     if (isBanned) return reply(mess.ban)
                       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})    
                     hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]
-                    itsmevall.sendMessage(from, '*'+hasil+'*', text, {quoted: mek})
+                    zyy.sendMessage(from, '*'+hasil+'*', text, {quoted: mek})
             break
             case 'setppgrup':
           if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})
@@ -4297,20 +4305,20 @@ case "gaycek":
    if (!isBotGroupAdmins) return reply(`Jadikan Bot Sebagai Admin Group!`)
    if (isQuotedImage) {
    let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-   let media = await itsmevall.downloadMediaMessage(encmedia)
-   itsmevall.updateProfilePicture(from, media)
+   let media = await zyy.downloadMediaMessage(encmedia)
+   zyy.updateProfilePicture(from, media)
   .then((res) => reply(jsonformat(res)))
   .catch((err) => reply(jsonformat(err)))
    } else if (isQuotedSticker){
    if (mek.message.videoMessage) return grupinv('Error Bro Wkwkwk')
    encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-   media = await itsmevall.downloadAndSaveMediaMessage(encmedia)
+   media = await zyy.downloadAndSaveMediaMessage(encmedia)
    ran = getRandom('.png')
    exec(`ffmpeg -i ${media} ${ran}`, (err) => {
    fs.unlinkSync(media)
    if (err) return grupinv('Gagal, hehehe')
    buffer = fs.readFileSync(ran)
-   itsmevall.updateProfilePicture(from, buffer)
+   zyy.updateProfilePicture(from, buffer)
    fs.unlinkSync(ran)
    })
    } else {
@@ -4328,7 +4336,7 @@ if (args[1]=="detik") {var timer = args[0]+"000"
 } else {return reply("*pilih:*\ndetik\nmenit\njam\n\n*contoh*\n10 detik")}
 setTimeout( () => {
 var nomor = mek.participant
-itsmevall.groupSettingChange (from, GroupSettingChange.messageSend, true);
+zyy.groupSettingChange (from, GroupSettingChange.messageSend, true);
 }, timer)
 break
 case 'bukatime':
@@ -4342,17 +4350,17 @@ if (args[1]=="detik") {var timer = args[0]+"000"
 } else {return reply("*pilih:*\ndetik\nmenit\njam\n\n*contoh*\n10 detik")}
 setTimeout( () => {
 var nomor = mek.participant
-itsmevall.groupSettingChange (from, GroupSettingChange.messageSend, false);
+zyy.groupSettingChange (from, GroupSettingChange.messageSend, false);
 }, timer)
 break
 case 'maker3d': 
 if (isBanned) return reply(mess.ban)
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} itsmevall`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} zyy`)
 					makell = body.slice(8)
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
-					itsmevall.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+					zyy.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 					break					
 					case 'throne': 
 					if (isBanned) return reply(mess.ban)
@@ -4360,7 +4368,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 tahta = args.join(" ")
 reply(mess.wait)
 tahta = await getBuffer(`https://api.zeks.me/api/hartatahta?text=${tahta}&apikey=apivinz`)
-itsmevall.sendMessage(from, tahta, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, tahta, image, { quoted:mek,caption:'Here you go' })
 break
 case 'pubg': 
 if (isBanned) return reply(mess.ban)
@@ -4369,7 +4377,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 pubg = args.join(" ")
 reply(mess.wait)
 pubg = await getBuffer(`https://api.zeks.me/api/pubglogo?text1=PUBG&text2=${pubg}&apikey=apivinz`)
-itsmevall.sendMessage(from, pubg, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, pubg, image, { quoted:mek,caption:'Here you go' })
 break
 case 'smoke': 
 if (isBanned) return reply(mess.ban)
@@ -4378,7 +4386,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 smoke = args.join(" ")
 reply(mess.wait)
 smoke = await getBuffer(`https://api.zeks.me/api/smoketext?text=${smoke}&apikey=apivinz`)
-itsmevall.sendMessage(from, smoke, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, smoke, image, { quoted:mek,caption:'Here you go' })
 break
 case 'bneon': 
 if (isBanned) return reply(mess.ban)
@@ -4387,7 +4395,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 bneon = args.join(" ")
 reply(mess.wait)
 bneon = await getBuffer(`https://api.zeks.me/api/bneon?apikey=apivinz&text=${bneon}`)
-itsmevall.sendMessage(from, bneon, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, bneon, image, { quoted:mek,caption:'Here you go' })
 break
 case 'matrix': 
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -4397,7 +4405,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 matrix = args.join(" ")
 reply(mess.wait)
 matrix = await getBuffer(`https://api.zeks.me/api/matrix?apikey=apivinz&text=${matrix}`)
-itsmevall.sendMessage(from, matrix, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, matrix, image, { quoted:mek,caption:'Here you go' })
 limitAdd(sender, limit)
 break
 case 'gplay': 
@@ -4407,7 +4415,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 gplay = args.join(" ")
 reply(mess.wait)
 gplay = await getBuffer(`https://api.zeks.me/api/gplaybutton?text=${gplay}&apikey=apivinz`)
-itsmevall.sendMessage(from, gplay, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, gplay, image, { quoted:mek,caption:'Here you go' })
 break
 case 'splay': 
 if (isBanned) return reply(mess.ban)
@@ -4416,7 +4424,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 splay = args.join(" ")
 reply(mess.wait)
 splay = await getBuffer(`https://api.zeks.me/api/splaybutton?text=${splay}&apikey=apivinz`)
-itsmevall.sendMessage(from, splay, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, splay, image, { quoted:mek,caption:'Here you go' })
 break
 case 'text3d': 
 if (isBanned) return reply(mess.ban)
@@ -4425,7 +4433,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 text3d = args.join(" ")
 reply(mess.wait)
 text3d = await getBuffer(`https://api.zeks.me/api/text3dbox?apikey=apivinz&text=${text3d}`)
-itsmevall.sendMessage(from, text3d, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, text3d, image, { quoted:mek,caption:'Here you go' })
 break
 case 'tfire': 
 if (isBanned) return reply(mess.ban)
@@ -4434,7 +4442,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 tfire = args.join(" ")
 reply(mess.wait)
 tfire = await getBuffer(`https://api.zeks.me/api/tfire?text=${tfire}&apikey=apivinz`)
-itsmevall.sendMessage(from, tfire, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, tfire, image, { quoted:mek,caption:'Here you go' })
 break
 case 'light': 
 if (isBanned) return reply(mess.ban)
@@ -4443,7 +4451,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 lithg = args.join(" ")
 reply(mess.wait)
 lithg = await getBuffer(`https://api.zeks.me/api/lithgtext?text=${lithg}&apikey=apivinz`)
-itsmevall.sendMessage(from, lithg, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, lithg, image, { quoted:mek,caption:'Here you go' })
 break
 case 'wall': 
 if (isBanned) return reply(mess.ban)
@@ -4452,7 +4460,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 wall = args.join(" ")
 reply(mess.wait)
 wall = await getBuffer(`https://api.zeks.me/api/breakwall?apikey=apivinz&text=${wall}`)
-itsmevall.sendMessage(from, wall, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, wall, image, { quoted:mek,caption:'Here you go' })
 break
 case 'dropair': 
 if (isBanned) return reply(mess.ban)
@@ -4461,7 +4469,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 dropair = args.join(" ")
 reply(mess.wait)
 dropair = await getBuffer(`https://api.zeks.me/api/dropwater?apikey=apivinz&text=${dropair}`)
-itsmevall.sendMessage(from, dropair, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, dropair, image, { quoted:mek,caption:'Here you go' })
 break
 case 'logocrs': 
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -4471,7 +4479,7 @@ if (args.length < 1) return reply('*Where is the text??*')
 logocrs = args.join(" ")
 reply(mess.wait)
 logocrs = await getBuffer(`https://api.zeks.me/api/crosslogo?text=${apivinz}&apikey=logocrs`)
-itsmevall.sendMessage(from, logocrs, image, { quoted:mek,caption:'Here you go' })
+zyy.sendMessage(from, logocrs, image, { quoted:mek,caption:'Here you go' })
 limitAdd(sender, limit)
 break
 					case 'tiktok2':
@@ -4494,7 +4502,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/8bit?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'pornhub':
@@ -4507,20 +4515,18 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/pornhub?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
-case 'glitch':
+case "glitch":
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
-if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
-var F = body.slice(7)
-var F1 = F.split("&")[0];
-var F2 = F.split("&")[1]; 
+if (args.length < 1) return reply(`*Teks nya mana?*\n_Contoh : ${prefix + command} namamu_`) 
+var F1 = args[0];
+var F2 = args[1];
 reply(mess.wait)
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/glitch?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
-pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+anu = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/glitch?apikey=${lolkey}&text1=${F1}&text2=${F2}`)
+zyy.sendMessage(from, anu, image, {quoted: mek, caption: '*Nih Kak Dah Jadi*'})
 limitAdd(sender, limit)
 break
 case 'glitch2':
@@ -4533,7 +4539,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/glitch2?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'layered':
@@ -4546,7 +4552,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/layered?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case '3dsteel':
@@ -4559,7 +4565,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/3dsteel?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'realistic':
@@ -4572,7 +4578,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/realistic?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'lionlogo':
@@ -4585,10 +4591,10 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/lionlogo?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
-case 'ninjalogo':
+case 'ninjalogo3':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4598,7 +4604,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/ninjalogo?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'wolf':
@@ -4609,7 +4615,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/logowolf?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'wolf2':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4619,7 +4625,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/logowolf2?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'halloween2':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4629,7 +4635,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/halloween2?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'marvel':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4639,7 +4645,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/marvelstudio?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'marvel2':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4649,7 +4655,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/marvelstudio2?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'cinematichorror':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4659,7 +4665,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/cinematichorror?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'avengers':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} nama1&nama2*`)
@@ -4669,7 +4675,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/avengerslogo?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'wonderfulgraffitiart':
 if (args.length < 1) return reply(`*Contoh : ${prefix + command} namalu*`)
@@ -4679,7 +4685,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/wonderfulgraffitiart?apikey=$dhakey}&text=${F}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 break
 case 'graffiti3':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -4691,7 +4697,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/coolwallgraffiti?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'captainamerica':
@@ -4704,7 +4710,7 @@ var F2 = F.split("&")[1];
 reply(mess.wait)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/captainamerica?apikey=${dhakey}&text1=${F1}&text2=${F2}`)
 pornhub = await getBuffer(anu.result)
-itsmevall.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, pornhub, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'girlneko':
@@ -4716,7 +4722,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/girlneko?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'sadboy':
@@ -4728,7 +4734,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/sadboy?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case "keneki":
@@ -4740,7 +4746,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/kaneki?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'rem':
@@ -4752,7 +4758,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/rem?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'lolimaker':
@@ -4764,7 +4770,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/lolimaker?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 case 'gura':
@@ -4776,7 +4782,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 reply(mess.wait)
 girlneko = await getBuffer(`https://apidhani.herokuapp.com/api/maker/gura?apikey=${dhakey}&text=${F1}&text2=${F2}`)
-itsmevall.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+zyy.sendMessage(from, girlneko, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
 limitAdd(sender, limit)
 break
 //══════════[ APIKEY ALPHA ]════════════════════════════//
@@ -4786,7 +4792,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/blackpink?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'pipe':
 if (isBanned) return reply(mess.ban)
@@ -4794,7 +4800,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/water_pipe?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'heloween':
 if (isBanned) return reply(mess.ban)
@@ -4802,7 +4808,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/halloween?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'heloween2':
 if (isBanned) return reply(mess.ban)
@@ -4810,7 +4816,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/halloween2?text=${query}&text2=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'horor':
 if (isBanned) return reply(mess.ban)
@@ -4818,15 +4824,15 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/horror?text=${query}&text2=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'nulis':
 if (isBanned) return reply(mess.ban)
 if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + command} Kontol`)
 reply(mess.wait)
 query = args.join (" ")
-bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/sketch?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+bf = await getBuffer(`https://api.lolhuman.xyz/api/nulis?apikey=${lolkey}&text=${teks}`)
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'sirkuit':
 if (isBanned) return reply(mess.ban)
@@ -4834,7 +4840,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/sircuit?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'discovery':
 if (isBanned) return reply(mess.ban)
@@ -4842,7 +4848,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/discovery?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'fiction':
 if (isBanned) return reply(mess.ban)
@@ -4850,7 +4856,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/fiction?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case '8bit':
 if (isBanned) return reply(mess.ban)
@@ -4858,7 +4864,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/game8bit?text=${query}&text2=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'demon':
 if (isBanned) return reply(mess.ban)
@@ -4866,7 +4872,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/demon?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'transformer':
 if (isBanned) return reply(mess.ban)
@@ -4874,7 +4880,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/transformer?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'berry':
 if (isBanned) return reply(mess.ban)
@@ -4882,7 +4888,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/berry?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'leyered':
 if (isBanned) return reply(mess.ban)
@@ -4890,7 +4896,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/layered?text=${query}&text2=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'thunder':
 if (isBanned) return reply(mess.ban)
@@ -4898,7 +4904,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/thunder?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'magma':
 if (isBanned) return reply(mess.ban)
@@ -4906,7 +4912,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/magma?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'stone':
 if (isBanned) return reply(mess.ban)
@@ -4914,7 +4920,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/3dstone?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'neon3':
 if (isBanned) return reply(mess.ban)
@@ -4922,15 +4928,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/neon?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
-break
-case 'glitch':
-if (isBanned) return reply(mess.ban)
-if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + command} Kontol`)
-reply(mess.wait)
-query = args.join (" ")
-bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glitch?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'glitch2':
 if (isBanned) return reply(mess.ban)
@@ -4938,7 +4936,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glitch2?text=${query}&text2=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'herrypoter':
 if (isBanned) return reply(mess.ban)
@@ -4946,7 +4944,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/harry_potter?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'embosed':
 if (isBanned) return reply(mess.ban)
@@ -4954,7 +4952,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/embossed?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'broken':
 if (isBanned) return reply(mess.ban)
@@ -4962,7 +4960,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/broken?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'nulis2':
 if (isBanned) return reply(mess.ban)
@@ -4970,7 +4968,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/papercut?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'gradient':
 if (isBanned) return reply(mess.ban)
@@ -4978,7 +4976,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/gradient?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'glossy':
 if (isBanned) return reply(mess.ban)
@@ -4986,7 +4984,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glossy?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'watercolor':
 if (isBanned) return reply(mess.ban)
@@ -4994,7 +4992,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/watercolor?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'multicolor':
 if (isBanned) return reply(mess.ban)
@@ -5002,7 +5000,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/multicolor?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'neondevil':
 if (isBanned) return reply(mess.ban)
@@ -5010,7 +5008,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/neon_devil?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'underwater':
 if (isBanned) return reply(mess.ban)
@@ -5018,7 +5016,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/underwater?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'bear':
 if (isBanned) return reply(mess.ban)
@@ -5026,7 +5024,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/bear?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'glitter7':
 if (isBanned) return reply(mess.ban)
@@ -5034,7 +5032,7 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glitter7?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 case 'metale':
 if (isBanned) return reply(mess.ban)
@@ -5042,79 +5040,89 @@ if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + c
 reply(mess.wait)
 query = args.join (" ")
 bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/metale?text=${query}&apikey=${AlphaBot}`)
-itsmevall.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
+zyy.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo maker' })
 break
 //══════════[ ANIMASI HEWAN ]════════════════════════════//
                    case 'fox':  
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/fox`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'dog':  
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/dog`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'cat':
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/cat`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'panda':  
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/panda`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'panda1':  
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/red_panda`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'bird': 
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/birb`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
                    case 'koala':  
                    if (isBanned) return reply(mess.ban)
                    anu = await fetchJson(`https://some-random-api.ml/img/koala`)
                    anu1 = await getBuffer(anu.link)
-                   itsmevall.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
+                   zyy.sendMessage(from, anu1, image, {caption: `nih kak mirip kamu`, quoted: mek})
                    break
 case 'wallpaperhacker':
-case 'wallpaperharley':
-case 'wallpaperjoker':
+case 'wallpaperanime':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
-oke = await getBuffer(`https://apidhani.herokuapp.com/api/random/${command}?apikey=${dhakey}`)
-buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(oke, "imageMessage", { thumbnail: oke, })).imageMessage
+oke = await getBuffer(`https://api.lolhuman.xyz/api/random/wallnime?apikey=${lolkey}`)
+buttons = [{buttonId: `WALLPAPER ANIME`,buttonText:{displayText: `Next Wallpaper`},type:1}]
+              imageMsg = (await zyy.prepareMessageMedia(oke, "imageMessage", { thumbnail: oke, })).imageMessage
               buttonsMessage = {footerText:'©Realzibot', imageMessage: imageMsg,
               contentText:`Random Wallpaper`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
+              limitAdd(sender, limit)
+        break
+case 'wallpaper':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await getBuffer(`https://api.lolhuman.xyz/api/random2/wallpaper?apikey=${lolkey}`)
+buttons = [{buttonId: `RANDOM WALLPAPER`,buttonText:{displayText: `✔️Next`},type:1}]
+              imageMsg = (await zyy.prepareMessageMedia(oke, "imageMessage", { thumbnail: oke, })).imageMessage
+              buttonsMessage = {footerText:'©Realzibot', imageMessage: imageMsg,
+              contentText:`Random Wallpaper`,buttons,headerType:4}
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
         break
 case 'quotesimage':
 case 'renungan':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/${command}?apikey=${dhakey}`)
-oke = await getBuffer(anu.result)
-buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(oke, "imageMessage", { thumbnail: oke, })).imageMessage
+oke = await getBuffer(`https://api.lolhuman.xyz/api/random/quotesimage?apikey=${lolkey}`);
+buttons = [{buttonId: `QUOTES`,buttonText:{displayText: `Next`},type:1}]
+              imageMsg = (await zyy.prepareMessageMedia(oke, "imageMessage", { thumbnail: oke, })).imageMessage
               buttonsMessage = {footerText:'©Realzibot', imageMessage: imageMsg,
               contentText:`Random quotes image`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
-        break      
+        break
 case "deltrash":
 if (isBanned) return reply(mess.ban)
         if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})
@@ -5127,14 +5135,14 @@ if (isBanned) return reply(mess.ban)
                 .extendedTextMessage.contextInfo
             : mek;
           reply("Loading.....");
-          owgi = await itsmevall.downloadAndSaveMediaMessage(ted);
+          owgi = await zyy.downloadAndSaveMediaMessage(ted);
           //	  console.log(owgi)
           anu = await imgbb("3395a377ebac7e9f744c3683b44a2a59", owgi);
           console.log(anu);
           hehe = await getBuffer(
             `https://fdz-app.herokuapp.com/api/maker/deltrash?imgurl=${anu.display_url}`
           );
-          itsmevall.sendMessage(from, hehe, image, {
+          zyy.sendMessage(from, hehe, image, {
             quoted: mek,
             thumbnail: Buffer.alloc(0),
           });
@@ -5168,23 +5176,105 @@ case 'malaysia':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
 cecan = await getBuffer(`https://apidhani.herokuapp.com/api/cecan/${command}?apikey=${dhakey}`)
-itsmevall.sendMessage(from, cecan, image, {quoted: mek, caption: '_Nih Kak_'})
+zyy.sendMessage(from, cecan, image, {quoted: mek, caption: '_Nih Kak_'})
 limitAdd(sender, limit)
 break
               case 'puisi':
+              if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/puisi?apikey=${lolkey}`)
+lolhuman = `Puisi : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'faktaunik':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/faktaunik?apikey=${lolkey}`)
+lolhuman = `Fakta unik : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'katabijak':
-case 'katailham':
-case 'katasindiran':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/katabijak?apikey=${lolkey}`)
+lolhuman = `Kata bijak : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'katabucin':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/bucin?apikey=${lolkey}`)
+lolhuman = `Kata bucin : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'katabucin2':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/katabucin?apikey=${lolkey}`)
+lolhuman = `Kata bucin : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'quotesislami':
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+oke = await fetchJson(`https://api.lolhuman.xyz/api/quotes/islami?apikey=${lolkey}`)
+lolhuman = `Quotes : ${oke.result}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `${prefix + command}`,
+buttonText: {
+displayText: `ɴᴇxᴛ`,
+},
+type: 1,
+},]);
+limitAdd(sender, limit)
+break;
 case 'quotesanime':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 if (isBanned) return reply(mess.ban)
-oke = await fetchJson(`https://apidhani.herokuapp.com/api/random/${command}?apikey=${dhakey}`)
-dhani = (oke.result)
-sendButMessage(from, dhani, `Klik Untuk Ke ${command} Selanjutnya`, [
+oke = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=${lolkey}`)
+lolhuman = `Quote : ${oke.result.quote}\nCharacter : ${oke.result.character}\nAnime : ${oke.result.anime}\nEpisode : ${oke.result.episode}`
+sendButMessage(from, lolhuman, `Klik Untuk Ke ${command} Selanjutnya`, [
 {
 buttonId: `${prefix + command}`,
 buttonText: {
@@ -5203,7 +5293,7 @@ if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit
 if (isBanned) return reply(mess.ban)
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/other/${command}?apikey=${dhakey}`)
 oke = await getBuffer(anu.result)
-itsmevall.sendMessage(from, oke, image, {quoted: mek, caption: '_Nih Kak_'})
+zyy.sendMessage(from, oke, image, {quoted: mek, caption: '_Nih Kak_'})
 limitAdd(sender, limit)
 break
 case 'leavetime':
@@ -5229,7 +5319,7 @@ case 'leavetime':
 				reply(kata)
 				break    
                 case 'randomnama':
-                    anu = await fetchJson(`https://api.lolhuman.xyz/api/random/nama?apikey=${setting.lolkey}`)
+                    anu = await fetchJson(`https://api.lolhuman.xyz/api/random/nama?apikey=${lolkey}`)
                     kyyi = anu.result
                    sendButMessage(from, kyyi, `Klik Untuk Ke Quotes Selanjutnya`, [
           {
@@ -5293,10 +5383,10 @@ kodi = `*_CLICK NEXT UNTUK SELANJUTNYA_*`
                     break
                     case 'clearall':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					anu = await itsmevall.chats.all()
-					itsmevall.setMaxListeners(26)
+					anu = await zyy.chats.all()
+					zyy.setMaxListeners(26)
 					for (let _ of anu) {
-						itsmevall.deletechat(_.jid)
+						zyy.deletechat(_.jid)
 					}
 					reply('Sukses membersihkan semua pesan')
 					break
@@ -5311,13 +5401,13 @@ kodi = `*_CLICK NEXT UNTUK SELANJUTNYA_*`
       case 'statice':
       case 'botstatus':
       if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
               stats = await getBuffer(`https://telegra.ph/file/f0758ad3f93835a86d1fb.jpg`);
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5326,7 +5416,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `*BOT STATISTICS*
@@ -5341,11 +5431,11 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 \`\`\` Platform : ${os.platform()}\`\`\`
 \`\`\` Hostname : ${os.hostname()}\`\`\`
 \`\`\` Uptime : ${runtime(process.uptime())}\`\`\`
-\`\`\` Wa Version: ${itsmevall.user.phone.wa_version}\`\`\`
-\`\`\` Os Version: ${itsmevall.user.phone.os_version}\`\`\`
-\`\`\` Device Manufacturer: ${itsmevall.user.phone.device_manufacturer}\`\`\`
-\`\`\` Device Model: ${itsmevall.user.phone.device_model}\`\`\`
-\`\`\` Os Build Number: ${itsmevall.user.phone.os_build_number}\`\`\``
+\`\`\` Wa Version: ${zyy.user.phone.wa_version}\`\`\`
+\`\`\` Os Version: ${zyy.user.phone.os_version}\`\`\`
+\`\`\` Device Manufacturer: ${zyy.user.phone.device_manufacturer}\`\`\`
+\`\`\` Device Model: ${zyy.user.phone.device_model}\`\`\`
+\`\`\` Os Build Number: ${zyy.user.phone.os_build_number}\`\`\``
 sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:stats}, [{buttonId:`${prefix}cekme`,buttonText:{displayText:'Chekme🐣'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
@@ -5360,12 +5450,12 @@ if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit
 if (isBanned) return reply(mess.ban)
 if (!isGroup) return reply("Khusus di grup");
 try {
-              profil = await itsmevall.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
+              profil = await zyy.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
               } catch {
               profil = errorImg
 }
-              thu = await itsmevall.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
-              me = itsmevall.user
+              thu = await zyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
+              me = zyy.user
               uptime = process.uptime()
               buff = await getBuffer(profil)
 caption = `-----[ *USER INFO* ]-----\n\n➸ *Username:* ${pushname}\n➸ *Status:* ${thu.status}\n➸ *Premium*: ${isPremium ? 'Ya' : 'No'}\n➸ *Terdaftar*: ${isRegistered ? 'Ya' : 'No'}\n➸ *Terbaned*: ${isBanned ? 'Ya' : 'No'}\n➸ *Admin*: ${isGroupAdmins ? 'Ya' : 'No'}\n➸ *Prefix :* Multi Prefix\n\n=_=_=_=_=_=_=_=_=_=_=_=_=\n\nYour progress:\n➸ *Limit*: ${getLimit(sender, limitCount, limit)}\n➸ *Balance*: ${getBalance(sender, balance)}\n➸ *Level*: 0-1\n➸ *XP*: 0 / 1`
@@ -5377,9 +5467,9 @@ if (isBanned) return reply(mess.ban)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
                 reply(mess.wait)
                 dapuhy = await getBuffer(`https://dapuhy-api.herokuapp.com/api/randomimage/quotesyt?apikey=${dapapi}`)
-                itsmevall.sendMessage(from, dapuhy, image, {quoted: mek})        
+                zyy.sendMessage(from, dapuhy, image, {quoted: mek})        
                 break    
-case 'auu': // by itsmevall
+case 'auu': // by zyy
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
        reply('Enggak Kak')
         sendButMessage(from, `Hai Kak ${pushname} 🐤`, `Mau Jawab Apa?`, [
@@ -5480,7 +5570,7 @@ case 'lock':
     "localPath": "/data/user/0/com.gbwhatsapp/files/ViewOnce/IMG-20210905-WA0047.jpg"
   }
 }
-itsmevall.sendMessage(from, { "degreesLatitude": '', "degreesLongitude": '', "jpegThumbnail": iye}, MessageType.location, {quoted: ikymemek})
+zyy.sendMessage(from, { "degreesLatitude": '', "degreesLongitude": '', "jpegThumbnail": iye}, MessageType.location, {quoted: ikymemek})
            break          
 case 'mengyoi':
 if (!mek.key.fromMe) return;
@@ -5488,7 +5578,7 @@ sendBug(from)
 break
 case 'readall':
               totalchat.map( async ({ jid }) => {
-              await itsmevall.chatRead(jid)
+              await zyy.chatRead(jid)
 })
               reply(`\`\`\`Berhasil membaca Seluruh Chat !\`\`\``)
               console.log(totalchat.length)
@@ -5520,7 +5610,7 @@ case 'readall':
 								console.log('Finish')
 								exec(`webpmux -set exif ./sticker/data.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
                                     if (error) return reply(mess.error.api)
-									 itsmevall.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: freply})
+									 zyy.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: freply})
 								
                                     fs.unlinkSync(media)	
 									fs.unlinkSync(`./sticker/${sender}.webp`)	
@@ -5549,7 +5639,7 @@ case 'readall':
 								console.log('Finish')
 								exec(`webpmux -set exif ./sticker/data.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
 									if (error) return reply(mess.error.api)
-									 itsmevall.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: freply})
+									 zyy.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: freply})
 									
                                     fs.unlinkSync(media)
 									fs.unlinkSync(`./sticker/${sender}.webp`)
@@ -5565,17 +5655,17 @@ case 'readall':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
 			random = Math.floor(Math.random() * 6) + 1
 		damdu = fs.readFileSync(`./sticker/${random}.webp`)
-			itsmevall.sendMessage(from, damdu, sticker, {quoted: mek})
+			zyy.sendMessage(from, damdu, sticker, {quoted: mek})
 			break 
 case 'kerang':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5584,7 +5674,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *KERANG AJAIB* ]    
@@ -5601,13 +5691,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'downloader':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5616,7 +5706,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *DOWNLOADER* ]  
@@ -5645,13 +5735,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'sesion':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5660,7 +5750,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *BAILEYS* ]
@@ -5673,13 +5763,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'about':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5688,7 +5778,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *ABOUT* ]
@@ -5710,13 +5800,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'group':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5725,7 +5815,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭──[ *MENU GROUP* ]
@@ -5756,13 +5846,13 @@ break
 case 'fitur':
 case 'ownermenu':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5771,7 +5861,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *OWNER* ]
@@ -5817,16 +5907,117 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:fakeown}, [{buttonId:`${prefix}credits`,buttonText:{displayText:'Thanks🐣'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
-case 'wibu':
-case 'bawang':
+case 'soundmenu':
+fs.readFileSync('./media/image/sound.jpg')
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
+              latensie = speed() - timestampe
+              total = math(`${groups.length}*${privat.length}`)
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
+        ptod = "6289503657396@s.whatsapp.net"
+        dtod = '6289503657396'
+        stod = `${sender}`
+        uwuu = '```'
+        yoii = '*'
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
+			menu = `╭─[ *SOUND MENU* ]
+│• ${prefix}sound1
+│• ${prefix}sound2
+│• ${prefix}sound3
+│• ${prefix}sound4
+│• ${prefix}sound5
+│• ${prefix}lirik
+└──────`
+sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:fakeown}, [{buttonId:`${prefix}credits`,buttonText:{displayText:'THANKS'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+
+break//MENU SOUND BY FAUZI !!
+case 'islamicmenu':
+fs.readFileSync('./media/image/islamic.jpg')
+if (isBanned) return reply(mess.ban)
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+              ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+           
+              uptime = process.uptime();
+              timestampe = speed();
+              totalChat = await zyy.chats.all()
+              latensie = speed() - timestampe
+              total = math(`${groups.length}*${privat.length}`)
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
+        ptod = "6289503657396@s.whatsapp.net"
+        dtod = '6289503657396'
+        stod = `${sender}`
+        uwuu = '```'
+        yoii = '*'
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
+			menu = `╭─[ *ISLAMIC MENU* ]
+│• ${prefix}jadwalsholat
+│• ${prefix}asmaulhusna
+└──────`
+sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:fakeown}, [{buttonId:`${prefix}credits`,buttonText:{displayText:'THANKS'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+
+break//TOBAT BANG TOBAT
+case "jadwalsholat":
+var axios = require("axios");
+                const {data: json} = await axios.get("https://zenzapi.xyz/islami/jadwalshalat?kota=" + args.join`` + "&apikey=8423e19c13");
+                reply(`BERIKUT JADWAL SHOLAT DI ${json.result[0].daerah}\nDaerah: ${json.result[0].daerah}\nTanggal: ${json.result[0].tanggal}\nshubuh: ${json.result[0].shubuh}\nduha: ${json.result[0].duha}\ndzuhur: ${json.result[0].dzuhur}\nashar: ${json.result[0].ashar}\nmaghrib: ${json.result[0].maghrib}\nisya: ${json.result[0].isya}`)
+case "asmaulhusna":
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+var axios = require("axios");
+               var dataa = await axios.get(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=${lolkey}`);
+                reply(`BERIKUT ADALAH ASMAUL-HUSNA\nKe: ${dataa.data.result.index}\nLatin: ${dataa.data.result.latin}\nArab: ${dataa.data.result.ar}\nIndonesia: ${dataa.data.result.id}\nEnglish: ${dataa.data.result.en}`)
+break
+case 'sound1':
+sound1 = fs.readFileSync('./sound1.mp3')
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+zyy.sendMessage(from, sound1, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+break//SUBREK YT HY FAUZI
+case 'sound2':
+sound2 = fs.readFileSync('./sound2.mp3')
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+zyy.sendMessage(from, sound2, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+break//SOUND SHOLAWAT
+case 'sound3':
+sound3 = fs.readFileSync('./sound3.mp3')
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+zyy.sendMessage(from, sound3, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+break//By zyyXtrime
+case 'sound4':
+sound4 = fs.readFileSync('./sound4.mp3')
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+zyy.sendMessage(from, sound4, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+break//By Fauziiiii
+case 'sound5':
+sound5 = fs.readFileSync('./sound5.mp3')
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+zyy.sendMessage(from, sound5, audio, { quoted: mek, mimetype: 'audio/mp4', ptt:true })
+break//YOUTUBE HY FAUZI
+case 'wibu':
+case 'bawang':
+if (isBanned) return reply(mess.ban)
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+              ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+           
+              uptime = process.uptime();
+              timestampe = speed();
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5835,7 +6026,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *WIBU* ]
@@ -5864,13 +6055,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'upload':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5879,7 +6070,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *UPLOAD* ]
@@ -5895,13 +6086,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'other':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5910,7 +6101,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `*╭─[ OTHER ]*
@@ -5961,13 +6152,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'maker':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -5976,7 +6167,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *MAKER* ]
@@ -6116,13 +6307,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'tools':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -6131,7 +6322,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *TOOLS* ]
@@ -6160,13 +6351,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'text':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -6175,7 +6366,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *TEXTMAKER* ]
@@ -6314,13 +6505,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'database':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -6329,7 +6520,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `
@@ -6356,13 +6547,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'photoxy':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -6371,7 +6562,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *PHOTOXY* ]
@@ -6409,13 +6600,13 @@ sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${ru
 break
 case 'game':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -6424,7 +6615,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *GAME* ]
@@ -6440,14 +6631,14 @@ case 'allmenu':
 case 'menuall':
 if (isBanned) return reply(mess.ban)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
-janganti = '6285815700875'
+janganti = '6289503657396'
 kontol = '6285815700861'
-totalChat = await itsmevall.chats.all()
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-thu = await itsmevall.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
+totalChat = await zyy.chats.all()
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+thu = await zyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
 menuh = `${ucapanWaktu} @${sender.split('@')[0]}`
-itsmevall.sendMessage(from, { contentText: `${menuh}`, 
+zyy.sendMessage(from, { contentText: `${menuh}`, 
 footerText: `*(OWNER)*
 › ${prefix}off
 › ${prefix}isbaileys
@@ -6844,8 +7035,9 @@ footerText: `*(OWNER)*
 *(RANDOM IMAGE)*
 › ${prefix}quotesimage (limit)
 › ${prefix}renungan (limit)
+› ${prefix}wallpaperanime (limit)
 › ${prefix}wallpaperhacker (limit)
-› ${prefix}wallpaperharley (limit)
+› ${prefix}wallpaper (limit)
 › ${prefix}wallpaperjoker (limit)
 › ${prefix}wallpapermuslim (limit)
 › ${prefix}wallpapercyberspace 
@@ -7113,13 +7305,13 @@ case 'official':
        return reply('Official Group : https://chat.whatsapp.com/JVis47FKk6bAmIwTxtAYOx')
        break
 case 'aRllmenu':
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -7128,7 +7320,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `*╭─[ ALL MENU ]*
@@ -7436,13 +7628,13 @@ case 'syarat':
 case '📒':
 case 'rules':
 if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -7451,7 +7643,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `*RULES BOT*
@@ -7502,7 +7694,7 @@ var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
 }
-itsmevall.sendMessage(`6285815700875@s.whatsapp.net`, options, text, { quoted: ftrol })
+zyy.sendMessage(`6285815700875@s.whatsapp.net`, options, text, { quoted: ftrol })
 reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
 break
 case 'wangy':
@@ -7518,12 +7710,12 @@ if (isBanned) return reply(mess.ban)
                     if (isBanned) return reply(mess.ban)
                       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})    
                     hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]
-                    itsmevall.sendMessage(from, '*'+hasil+'*', text, {quoted: mek})
+                    zyy.sendMessage(from, '*'+hasil+'*', text, {quoted: mek})
             break
               case 'wiki':
               if (isBanned) return reply(mess.ban)
 					anu = await fetchJson(`https://leyscoders-api.herokuapp.com/api/wiki?kata=${q}&apikey=IkyOgiwara`)
-					itsmevall.sendMessage(from, `「 RESULT FOUND 」\n• Hasil Pencarian Dari: ${anu.result.from}\n• Hasil: ${anu.hasil}`, text, {quoted: mek})
+					zyy.sendMessage(from, `「 RESULT FOUND 」\n• Hasil Pencarian Dari: ${anu.result.from}\n• Hasil: ${anu.hasil}`, text, {quoted: mek})
 					break
               case "cekme":
   case "cakme":
@@ -7555,7 +7747,7 @@ if (isBanned) return reply(mess.ban)
 					const berani = berhani[Math.floor(Math.random() * berhani.length)]
 					const takut = mengheikan[Math.floor(Math.random() * mengheikan.length)]
 					try {
-					profil = await itsmevall.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
+					profil = await zyy.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 					} catch {
 					profil = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
@@ -7602,22 +7794,22 @@ Owner  BOT:
 wa.me/62858157008612
 `
   buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER BOT`},type:1},{buttonId: `${prefix}menu`,buttonText:{displayText: `KEMBALI KE MENU`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = (await zyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'closed in your informations︎ ', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted:mek})
-                                          itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted:mek})
+                                          zyy.relayWAMessage(prep)
       break
       case 'donasi':
       case 'donasibot':
       if (isBanned) return reply(mess.ban)
-groups = itsmevall.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = itsmevall.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+groups = zyy.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = zyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
            
               uptime = process.uptime();
               timestampe = speed();
-              totalChat = await itsmevall.chats.all()
+              totalChat = await zyy.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -7626,7 +7818,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
        menu = `╭─[ *Donasi om buat umroh:v ]*
@@ -7643,7 +7835,7 @@ case 'sewaew':
         case '0':
         if (isBanned) return reply(mess.ban)
         stod = `${sender}`
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			
        menu = `0`
@@ -7686,7 +7878,7 @@ case 'sewa1':
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:mek})
 break
 case '🕐sewa':
 case '🕑sewa':
@@ -7695,7 +7887,7 @@ case '🕓sewa':
 case '🕔sewa':
         case '0':
         stod = `${sender}`
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			
        menu = `0`
@@ -7704,7 +7896,7 @@ break
 case 'py':
         case '0':
         stod = `${sender}`
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			
        menu = `0`
@@ -7713,14 +7905,14 @@ break
 case 'qrsewa':
         case '0':
         stod = `${sender}`
-       stst = await itsmevall.getStatus(`${sender.split('@')[0]}@c.us`)
+       stst = await zyy.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			
        menu = `0`
 sendButLocation(from, `_Hai ${pushname}🌹_\n\nSilahkan pilih metode pembayaran`, "*Sewa Bot © 2021*", {jpegThumbnail:fakeimage}, [{buttonId:`${prefix}qrg1`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qro1`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrd1`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [stod]}})
 break
 case 'qro1':
-itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
+zyy.sendMessage(from, `*[❗] OPEN SEWA BOT*
 ╭───────────────
 │ *Harga Sewa MINGGUAN*
 │ 1 minggu : Rp 3.000 
@@ -7739,10 +7931,10 @@ itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
 *📌 MINAT?*
 _CHAT : wa.me/6289503657396_
 
-*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE OVO",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/itsmevall.jpg'),sourceUrl:"OV1876"}}})
+*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE OVO",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/zyy.jpg'),sourceUrl:"OV1876"}}})
 break
 case 'qrg1':
-itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
+zyy.sendMessage(from, `*[❗] OPEN SEWA BOT*
 ╭───────────────
 │ *Harga Sewa MINGGUAN*
 │ 1 minggu : Rp 3.000 
@@ -7761,10 +7953,10 @@ itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
 *📌 MINAT?*
 _CHAT : wa.me/6289503657396_
 
-*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/itsmevall.jpg'),sourceUrl:"GPY18ui876"}}})
+*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/zyy.jpg'),sourceUrl:"GPY18ui876"}}})
 break
 case 'qrg1':
-itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
+zyy.sendMessage(from, `*[❗] OPEN SEWA BOT*
 ╭───────────────
 │ *Harga Sewa MINGGUAN*
 │ 1 minggu : Rp 3.000 
@@ -7783,7 +7975,7 @@ itsmevall.sendMessage(from, `*[❗] OPEN SEWA BOT*
 *📌 MINAT?*
 _CHAT : wa.me/6289503657396_
 
-*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE DANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/itsmevall.jpg'),sourceUrl:"DNA187736"}}})
+*════〘 BOT 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE DANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/zyy.jpg'),sourceUrl:"DNA187736"}}})
 break
 case 'o1':
 menu = `*[❗] OPEN SEWA BOT*
@@ -7823,7 +8015,7 @@ listMsg = {
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case 'd1':
 menu = `*[❗] OPEN SEWA BOT*
@@ -7863,7 +8055,7 @@ listMsg = {
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case 'g1':
 menu = `*[❗] OPEN SEWA BOT*
@@ -7903,7 +8095,7 @@ listMsg = {
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case '👍':
 listMsg = {
@@ -7922,7 +8114,7 @@ listMsg = {
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case 'gk':
 listMsg = {
@@ -7945,11 +8137,11 @@ listMsg = {
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case 'sewa':
 case 'sewabot':
-      list = await itsmevall.prepareMessageFromContent(from, {
+      list = await zyy.prepareMessageFromContent(from, {
     "listMessage": {
       "title": "PAYMENT",
       "description": "*REALZI BOT*\n\n*List Harga*\n- Rp 10.000/ Gopay-Ovo-Saweria\nRp 15.000/ Pulsa\n\nMinat langsung chat\nwa.me/6289503657396",
@@ -7981,7 +8173,7 @@ case 'sewabot':
       "footerText": "SEWA BOT REALZI!!"
     }
   }, {quoted:mek})
-  itsmevall.relayWAMessage(list, {waitForAck: true})      
+  zyy.relayWAMessage(list, {waitForAck: true})      
   break
   case "caklontong":
   if (isBanned) return reply(mess.ban)
@@ -8000,7 +8192,7 @@ case 'sewabot':
    reply('_30 Detik lagi_…', text) // ur cods
    }, 2500) // 1000 = 1s,
    setTimeout( () => {
-   itsmevall.sendMessage(from, cak, text, {quoted: mek }) // ur cods
+   zyy.sendMessage(from, cak, text, {quoted: mek }) // ur cods
    }, 0) // 1000 = 1s,
    break      
   case 'official':  
@@ -8015,9 +8207,9 @@ if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMes
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 let { jid, idk, notify } = groupMembers.find(x => x.jid === mentioned)
 try {
-var pp = await itsmevall.getProfilePicture(idk)
+var pp = await zyy.getProfilePicture(idk)
 buffer = await getBuffer(pp)
-itsmevall.updateProfilePicture(botNumber, buffer)
+zyy.updateProfilePicture(botNumber, buffer)
 mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
 } catch (e) {
 reply('Emror')
@@ -8030,7 +8222,7 @@ case 'blurple':
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
 					reply(`Bentar Nyett....`)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
-					owgi = await  itsmevall.downloadAndSaveMediaMessage(ger)
+					owgi = await  zyy.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("0ffc503f79f9b051b82e643eb3e3a746", owgi)
 					teks = `${anu.display_url}`
 					ranp = getRandom('.gif')
@@ -8039,7 +8231,7 @@ case 'blurple':
 					exec(`wget ${anu8} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					itsmevall.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
+					zyy.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					console.log(color(time, 'magenta'), color('Succes send sticker...'))
 					fs.unlinkSync(rano)
 					})
@@ -8059,7 +8251,7 @@ break
 	   	  _petualang.push(sender)
 		  fs.writeFileSync('./lib/inventori.json', JSON.stringify(_petualang))
 		  capt = `🎉Selamat ${pushname}🎊\nKamu terdaftar sebagai petualang!\nSilahkan ketik ${prefix}rpgmenu`
-		  itsmevall.sendMessage(from, capt, text, {quoted: mek})		
+		  zyy.sendMessage(from, capt, text, {quoted: mek})		
 		  addInventori(sender)
 	      addLevelingId(sender)
 		  break
@@ -8070,11 +8262,11 @@ if (isBanned) return reply(mess.ban)
 					nm = body.slice(7)
 					if (!nm) return reply('Nama vn nya apa?')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
-					delb = await itsmevall.downloadMediaMessage(boij)
+					delb = await zyy.downloadMediaMessage(boij)
 					vien.push(`${nm}`)
 					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
 					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
-					itsmevall.sendMessage(from, `Sukses, silahkan cek dengan *${prefix}listvn*`, MessageType.text, { quoted: mek })
+					zyy.sendMessage(from, `Sukses, silahkan cek dengan *${prefix}listvn*`, MessageType.text, { quoted: mek })
 					break
 					case 'delvn':
 					if (!isOwner && !mek.key.fromMe) return sticOwner(from)
@@ -8148,13 +8340,13 @@ if (isBanned) return reply(mess.ban)
           sendButLocation(from, caption, 'Memancing', {jpegThumbnail:cing}, but, {quoted: mek})      
           }, 6000)
           setTimeout( () => {
-		  itsmevall.sendMessage(from, 'Berhasil Mendapatkan Ikan. . .', text) 
+		  zyy.sendMessage(from, 'Berhasil Mendapatkan Ikan. . .', text) 
 		  }, 5000) // 1000 = 1s,
 	      setTimeout( () => {
-		  itsmevall.sendMessage(from, '🎣Meanarik kail. . .', text) 
+		  zyy.sendMessage(from, '🎣Meanarik kail. . .', text) 
 		  }, 3000) // 1000 = 1s,
 		  setTimeout( () => {
-		  itsmevall.sendMessage(from, '🎣Mulai memancing. . .', text) 
+		  zyy.sendMessage(from, '🎣Mulai memancing. . .', text) 
 		  }, 1500) // 1000 = 1s,
 		  addLevelingLevel(sender, ditangkap)
 		  addLevelingXp(sender, xp)
@@ -8190,13 +8382,13 @@ if (isBanned) return reply(mess.ban)
           sendButLocation(from, caption, 'Memancing', {jpegThumbnail:hasm}, but, {quoted: mek})   
           }, 7000)
           setTimeout( () => {
-		  itsmevall.sendMessage(from, `Awass`, text) 
+		  zyy.sendMessage(from, `Awass`, text) 
 		  }, 5000) // 1000 = 1s,
 	      setTimeout( () => {
-		  itsmevall.sendMessage(from, `Tiba tiba ada ${sesuatu}`, text) 
+		  zyy.sendMessage(from, `Tiba tiba ada ${sesuatu}`, text) 
 		  }, 3000) // 1000 = 1s,
 		  setTimeout( () => {
-		  itsmevall.sendMessage(from, `${pushname} sedang bertualang`, text) 
+		  zyy.sendMessage(from, `${pushname} sedang bertualang`, text) 
 		  }, 1500) // 1000 = 1s,
 		  addLevelingXp(sender, adven)
 		  addBalance(sender, money, balance) 
@@ -8222,16 +8414,16 @@ if (isBanned) return reply(mess.ban)
           sendButMessage(from, done, 'Mining', but)
 		  }, 9000) // 1000 = 1s,
 		  setTimeout( () => {
-		  itsmevall.sendMessage(from, '🚧 selesai menguli. . .🪙👷', text) 
+		  zyy.sendMessage(from, '🚧 selesai menguli. . .🪙👷', text) 
 		  }, 7000) // 1000 = 1s,
 	      setTimeout( () => {
-		  itsmevall.sendMessage(from, '🚧 menemukan emas. . .⚒️🏔️️️', text) 
+		  zyy.sendMessage(from, '🚧 menemukan emas. . .⚒️🏔️️️', text) 
 		  }, 4000) // 1000 = 1s,
 		  setTimeout( () => {
-		  itsmevall.sendMessage(from, '🚧 mulai menambang. . .⚒️🏔️️', text) 
+		  zyy.sendMessage(from, '🚧 mulai menambang. . .⚒️🏔️️', text) 
 		  }, 1500) // 1000 = 1s,
 		  setTimeout( () => {
-		  itsmevall.sendMessage(from, mining, text, {quoted: mek}) 
+		  zyy.sendMessage(from, mining, text, {quoted: mek}) 
 		  }, 0) // 1000 = 1s,
 		  limitAdd(sender, limit)
 	      break	 
@@ -8245,13 +8437,13 @@ if (isBanned) return reply(mess.ban)
               let requiredXp = 10 * Math.pow(userLevel, 2) + 50 * userLevel + 100
               let userRank = level.getUserRank(sender, _level)
               try {
-              profilePic = await itsmevall.getProfilePicture(sender)
+              profilePic = await zyy.getProfilePicture(sender)
               } catch {
               profilePic = errorImg
 }
               ikyads = await getBuffer(`http://hardianto.xyz/api/rankcard?profile=${profilePic}&name=${encodeURI(pushname)}&bg=https://bit.ly/walpamikel&needxp=${requiredXp}&curxp=${userXp}&level=${userLevel}&logorank=https://i.ibb.co/vHYR7pV/20210930-090929.png`)
               teks = `*「 LEVEL 」*\n\n➸ *Nama :* ${pushname}\n➸ *Xp :* ${userXp} / ${requiredXp}\n➸ *Level :* ${userLevel}\n➸ *Role*: *${role}*\n\n*Note : Kumpulin Xp Jika Ingin Menaikkan Level*`
-              itsmevall.sendMessage(from, buffer, image, { caption: teks, quoted: freply})
+              zyy.sendMessage(from, buffer, image, { caption: teks, quoted: freply})
               break
               case 'buylimit':
               if (isBanned) return reply(mess.ban)
@@ -8284,7 +8476,7 @@ if (isBanned) return reply(mess.ban)
 						teks += `- ${awokwkwk}\n`
 					}
 					teks += `\n*Total : ${vien.length}*\n\n_Untuk mengambil vn silahkan reply pesan ini dengan caption nama vn_`
-					itsmevall.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": vien } })
+					zyy.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": vien } })
 					break
 case 'script':
 		case 'sc':
@@ -8357,32 +8549,24 @@ case 'script':
               sendFileFromUrl(random, image, {quoted: mek, caption: `*Hasil Pencarian Dari :* ${teks}`})
 }
 }
-             break                                   
-case 'ppcp':
-if (isBanned) return reply(mess.ban)
-            reply(mess.wait)
-			anu = await fetchJson(`https://ziyy.herokuapp.com/api/ppcouple?apikey=xZiyy`) 
-			cowo = await getBuffer(anu.result.cowo_image)
-			itsmevall.sendMessage(from, cowo, image, {caption: 'Ini Untuk »  *COWOK*'})
-       cewe = await getBuffer(anu.result.cewe_image)
-		    pll = `Ini Untuk » *CEWEK*`
-   sendButImage(from, pll, `By REALZIBOT`, cewe, [                      
-          {
-            buttonId: `${prefix}ppcouple`,
-            buttonText: {
-              displayText: `Next︎`,
-            },
-            type: 1,
-          },
-        ]);                 
-                    break
+             break      
+             case 'couple':
+             case 'ppcouple':
+             case 'ppcp':
+             cpnya = fs.readFileSync('./scrape/couple.js');
+                 jsonData = JSON.parse(cpnya);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+sendFileFromUrl(m.chat, randKey.male, 'Cowo', m)
+sendFileFromUrl(m.chat, randKey.female, 'cewe', m)
+break
 case 'wanted':  
   if (isBanned) return reply(mess.ban)
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(`Limit Lo Abis Tot`)
   if (!q) return reply('Penggunaan /wanted : Contoh, /wanted https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
-  uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/wanted?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  uhyy = await getBuffer(`https://api.lolhuman.xyz/api/creator1/wanted?apikey=${lolkey}&img=${q}`)
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8391,8 +8575,8 @@ case 'triggered':
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(`Limit Lo Abis Tot`)
   if (!q) return reply('Penggunaan /triggered : Contoh, /triggered https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
-  uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/triggered?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  uhyy = await getBuffer(`https://api.lolhuman.xyz/api/editor/triggered?apikey=${lolkey}&img=${q}`)
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8401,8 +8585,8 @@ limitAdd(sender, limit)
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(`Limit Lo Abis Tot`)
   if (!q) return reply('Penggunaan /rip : Contoh, /rip https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
-  uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/rip?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  uhyy = await getBuffer(`https://api.lolhuman.xyz/api/creator1/rip?apikey=${lolkey}&img=${q}`)
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8412,7 +8596,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /burn : Contoh, /burn https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/burn?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8422,7 +8606,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /gay : Contoh, /gay https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/gay?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8432,7 +8616,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /instagramefect : Contoh, /instagramefect https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/instagram?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8442,7 +8626,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /scary : Contoh, /scary https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/scary?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8452,7 +8636,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /fire : Contoh, /fire https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/fire?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8462,7 +8646,7 @@ limitAdd(sender, limit)
   if (!q) return reply('Penggunaan /redple : Contoh, /redple https://telegra.ph/file/31a2ddd6c83c04456a6d1.png')
   reply(mess.wait)  
   uhyy = await getBuffer(`https://api-alphabot.herokuapp.com/api/image_editor/redple?apikey=Alphabot&url=${q}`)
-  itsmevall.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
+  zyy.sendMessage(from, uhyy, image, {thumbnail:uhyy, quoted: mek})
   reply('Sending Images')
 limitAdd(sender, limit)
   break
@@ -8470,14 +8654,14 @@ limitAdd(sender, limit)
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (args.length < 1) return grupinv('Teksnya?')
                     teks = body.slice(10)
-                    itsmevall.sendMessage('status@broadcast', teks, MessageType.text)
+                    zyy.sendMessage('status@broadcast', teks, MessageType.text)
                     reply(`Sukses upload status:\n${teks}`)
                     break	
                     case 'upswlokasi':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
   if (args.length < 1) return grupinv('Teksnya?')
                     teks = body.slice(12)
-                    itsmevall.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`${fakeyoi}`}, MessageType.location)
+                    zyy.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`${fakeyoi}`}, MessageType.location)
                     reply(`Sukses upload lokasi:\n${teks}`)
                     break	
                     case 'upswsticker':
@@ -8485,8 +8669,8 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (!isQuotedSticker) return grupinv('Reply stikernya!')
 if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
-						itsmevall.sendMessage('status@broadcast', buff, sticker)
+						buff = await zyy.downloadMediaMessage(encmedia)
+						zyy.sendMessage('status@broadcast', buff, sticker)
 						}
 						reply(`Sukses upload sticker`)
                     break
@@ -8495,8 +8679,8 @@ if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 if (!isQuotedAudio) return grupinv('Reply audionya!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
-						itsmevall.sendMessage('status@broadcast', buff, audio, {mimetype: 'audio/mp4', duration: 359996400})
+						buff = await zyy.downloadMediaMessage(encmedia)
+						zyy.sendMessage('status@broadcast', buff, audio, {mimetype: 'audio/mp4', duration: 359996400})
 						}
 						reply(`Sukses upload audio`)
 						break
@@ -8505,8 +8689,8 @@ if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 if (!isQuotedAudio) return grupinv('Reply audionya!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
-						itsmevall.sendMessage('status@broadcast', buff, audio, {mimetype: 'audio/mp4', duration: 359996400, ptt: true})
+						buff = await zyy.downloadMediaMessage(encmedia)
+						zyy.sendMessage('status@broadcast', buff, audio, {mimetype: 'audio/mp4', duration: 359996400, ptt: true})
 						}
 						reply(`Sukses upload voice`)
 						break
@@ -8515,9 +8699,9 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                     var konti = body.slice(11)
                     reply(mess.wait)
                     var enmediap = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					var mediap = await itsmevall.downloadAndSaveMediaMessage(enmediap)
+					var mediap = await zyy.downloadAndSaveMediaMessage(enmediap)
                     const buffer3 = fs.readFileSync(mediap)
-                    itsmevall.sendMessage('status@broadcast', buffer3, MessageType.video, {duration: 359996400, caption: `${konti}`})
+                    zyy.sendMessage('status@broadcast', buffer3, MessageType.video, {duration: 359996400, caption: `${konti}`})
                     reply(`Sukses upload video:\n${konti}`)
                         break
                            case 'upswgif':
@@ -8525,9 +8709,9 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                     var konti = body.slice(7)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					media = await itsmevall.downloadAndSaveMediaMessage(enmedia)
+					media = await zyy.downloadAndSaveMediaMessage(enmedia)
                     const buffer6 = fs.readFileSync(media)
-                    itsmevall.sendMessage('status@broadcast', buffer6, MessageType.video, {mimetype : 'video/gif', caption: `${konti}`})
+                    zyy.sendMessage('status@broadcast', buffer6, MessageType.video, {mimetype : 'video/gif', caption: `${konti}`})
                     reply(`Sukses upload gif:\n${konti}`)
                         break
                         case 'upswimage':
@@ -8535,9 +8719,9 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                     var teksyy = body.slice(11)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					media = await itsmevall.downloadAndSaveMediaMessage(enmedia)
+					media = await zyy.downloadAndSaveMediaMessage(enmedia)
                     buffer = fs.readFileSync(media)
-                    itsmevall.sendMessage('status@broadcast', buffer, MessageType.image, {quoted: mek, caption: `${teksyy}`})
+                    zyy.sendMessage('status@broadcast', buffer, MessageType.image, {quoted: mek, caption: `${teksyy}`})
                     reply(`Sukses upload image:\n${teksyy}`)
                         break                        
             case 'ssweb':
@@ -8549,11 +8733,11 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					anu = await fetchJson(`https://shot.screenshotapi.net/screenshot?&url=${teks}`)
 					buff = await getBuffer(anu.screenshot)
 					buttons = [{buttonId: `mks`,buttonText:{displayText: `Makasih☺️`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = (await zyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Jangan lupa donasi kak︎', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @spnx.fauzi`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
                     break;
                     case 'mks':
                     return reply('Sama Sama Kak:V')
@@ -8655,7 +8839,7 @@ case 'matrix':
 					case 'shutdown':
 					if (isBanned) return reply(mess.ban)
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				return itsmevall.sendMessage(from, JSON.stringify(eval(process.exit())))
+				return zyy.sendMessage(from, JSON.stringify(eval(process.exit())))
 				reply('Okey')
 				break
 				case 'ceritapendek':
@@ -8709,9 +8893,9 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 						teks += `- ${manikgans}\n`
 					}
 					teks += `\n*Total : ${ban.length}*`
-					itsmevall.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": ban } })
+					zyy.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": ban } })
 					break
-        // banchat fixed by itsmevall
+        // banchat fixed by zyy
 case 'banchat':
 if (!isOwner && !mek.key.fromMe) return reply('Only Owner')
 if (!itsMe && !isOwner && !isGroupAdmins)return mentions(`*Perintah ini Khusus @${ownerN} !*`, [`${ownerN}@s.whatsapp.net`], true)
@@ -8734,7 +8918,7 @@ break
 case 'listbanchat': case 'listbc':
  teks = `*List Banchat Group!*\n_Total : ${bancht.length}_\n\n`
 for(let i of bancht){
-met = await itsmevall.groupMetadata(i)
+met = await zyy.groupMetadata(i)
 teks += 'Id : ' + i + '\n'
 teks += 'Nama Group : ' + met.subject + '\n\n'
 }
@@ -8941,16 +9125,16 @@ break
               case '#dc':
 				if (!isGroup) return reply(mess.only.group)
 					anu = from
-			   metadete = await itsmevall.groupMetadata(anu)
-				itsmevall.sendMessage(from, metadete.desc, text, {quoted:mek})
+			   metadete = await zyy.groupMetadata(anu)
+				zyy.sendMessage(from, metadete.desc, text, {quoted:mek})
 				  break
 				  case 'leave':
 				  case 'endgc':
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins && !mek.key.fromMe) return grupinv('Only Admin');
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				itsmevall.updatePresence(from, Presence.composing)
-				itsmevall.groupLeave(from)
+				zyy.updatePresence(from, Presence.composing)
+				zyy.groupLeave(from)
 						break					
 case 'blackpink':                
                 case 'greenneon':
@@ -8985,18 +9169,16 @@ case 'blackpink':
                 case 'thunder':
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (isBanned) return reply(mess.ban)
-                if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                     if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolkey}&text=${ini_txt}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih`, quoted : mek})
+                        zyy.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih`, quoted : mek})
                     })
                     limitAdd(sender, limit)
                     break
                     case 'pornhub':                
                 case 'avenger':
                 case 'space':
-                case 'ninjalogo':
                 case 'marvelstudio':
                 case 'lionlogo':
                 case 'wolflogo':
@@ -9004,12 +9186,11 @@ case 'blackpink':
                 case 'wallgravity':
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (isBanned) return reply(mess.ban)
-                if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                     if (args.length == 0) return reply(`Example: ${prefix + command} tolol`)
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=${lolkey}&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih`, quoted : mek})
+                        zyy.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih`, quoted : mek})
                     })
                     limitAdd(sender, limit)
                     break
@@ -9062,9 +9243,8 @@ if (isBanned) return reply(mess.ban)
 if (args.length < 1) return reply(`*Teks nya mana?*\n_Contoh : ${prefix + command} namamu_`) 
 teks = args.join(" ")
 reply(mess.wait)
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/${command}?apikey=${dhakey}&text=${teks}`)
-oke = await getBuffer(anu.result)
-itsmevall.sendMessage(from, oke, image, {quoted: mek, caption: '*Nih Tot Dah Jadi*'})
+oke = await getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolkey}&text=${teks}&text2=.`)
+zyy.sendMessage(from, oke, image, {quoted: mek, caption: '*Nih Kak Udah Jadi*'})
 limitAdd(sender, limit)
 break
       case "autojoin":
@@ -9178,7 +9358,7 @@ case 'rainbow': case 'scfi': case 'blue': case 'juice': case 'purple': case 'tox
 			reply(mess.wait)						
 			nyz5 = await fetchJson(`https://myselfff.herokuapp.com/docs/textpro/${command}?text=${q}`) 
 			nyz4 = await getBuffer(nyz5.result)
-			itsmevall.sendMessage(from, nyz4, image, {caption:`NIH KAK`,quoted:mek}) 					
+			zyy.sendMessage(from, nyz4, image, {caption:`NIH KAK`,quoted:mek}) 					
 			break
       //------------------< Fitur Grup >-------------------
       case "listonline":
@@ -9187,10 +9367,10 @@ case 'rainbow': case 'scfi': case 'blue': case 'juice': case 'purple': case 'tox
         let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat;
         try {
           let online = [
-            ...Object.keys(itsmevall.chats.get(id).presences),
-            itsmevall.user.jid,
+            ...Object.keys(zyy.chats.get(id).presences),
+            zyy.user.jid,
           ];
-          itsmevall.reply(
+          zyy.reply(
             m.chat,
             "┌─〔 Daftar Online 〕\n" +
               online.map((v) => "├ @" + v.replace(/@.+/, "")).join`\n` +
@@ -9225,11 +9405,11 @@ if (isBanned) return reply(mess.ban)
                     txt += `*Mohon tunggu sebentar, sedang proses pengiriman...*`
                     halo = await getBuffer(data.medias[1].url);                    
                     buttons = [{buttonId: `${prefix}tiktokaudio ${q}`,buttonText:{displayText: `TiktokMisic ( ${data.medias[1].formattedSize} )`},type:1},{buttonId: `${prefix}tiktoknowm ${q}`,buttonText:{displayText: `TiktokNowm ( ${data.medias[0].formattedSize} )`},type:1}]
-              videoMsg = (await itsmevall.prepareMessageMedia(halo, "videoMessage", { thumbnail: halo, })).videoMessage
+              videoMsg = (await zyy.prepareMessageMedia(halo, "videoMessage", { thumbnail: halo, })).videoMessage
               buttonsMessage = {footerText:'© REALZIBOT', videoMessage: videoMsg,
               contentText:`${txt}`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)          
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)          
 					})
                 .catch((err) => {
                     reply(`Server Erorr`)
@@ -9252,7 +9432,7 @@ if (!isPremium && !isOwner && !mek.key.fromMe) return reply(mess.prem)
 				.then(async (a) => {
 					me = `*Link* : ${a.data}`
 					weem = await getBuffer(wm)
-					itsmevall.sendMessage(from, weem, video, {mimetype: 'video/mp4', quoted: mek})
+					zyy.sendMessage(from, weem, video, {mimetype: 'video/mp4', quoted: mek})
 					})
 				}).catch((err) => reply(`Link tidak valid`))
 				limitAdd(sender, limit)
@@ -9263,7 +9443,7 @@ if (!isPremium && !isOwner && !mek.key.fromMe) return reply(mess.prem)
   if (isBanned) return reply(mess.ban)
   if (!isUrl(args[0]) && !args[0].includes('tiktok')) return reply('Link Error')
   buffer = await getBuffer(`http://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolkey}&url=${args[0]}`)
-  itsmevall.sendMessage(from, buffer, MessageType.document, {mimetype: 'audio/mp4',filename: `Tiktok Music.mp3`,quoted: mek})
+  zyy.sendMessage(from, buffer, MessageType.document, {mimetype: 'audio/mp4',filename: `Tiktok Music.mp3`,quoted: mek})
   limitAdd(sender, limit)
   break
 case 'tiktokwmtol':
@@ -9274,7 +9454,7 @@ if (!q) return reply('Linknya?')
 			reply(mess.wait)
 anu = await fetchJson (`https://docs-jojo.herokuapp.com/api/tiktok_nowm?url=${args.join(' ')}`)
 buffer = await getBuffer(anu.download)
-itsmevall.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek})
+zyy.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek})
 			 limitAdd(sender)
              break   
 case 'wiki': case 'wikipedia':
@@ -9303,7 +9483,7 @@ case 'remlogo':
                     txt = args.join(" ")
                     reply(mess.wait)
                     buffer = await getBuffer(`https://hardianto-chan.herokuapp.com/api/bot/gfx5?apikey=${hardikey}&text=${txt}`)
-                    itsmevall.sendMessage(from, buffer, image, { quoted: mek, caption: mess.success})
+                    zyy.sendMessage(from, buffer, image, { quoted: mek, caption: mess.success})
                     limitAdd(sender, limit)
                     break
                     case 'slot':
@@ -9334,22 +9514,22 @@ ly100 = Math.floor(Math.random() * fami.length);
 randKey = fami[ly100];
 Pertanyaan = randKey.result.soal
 setTimeout( () => {
-itsmevall.sendMessage(from, '*➸ Jawaban :* \n```'+randKey.result.jawaban +'```', text, {quoted: mek}) // ur cods
+zyy.sendMessage(from, '*➸ Jawaban :* \n```'+randKey.result.jawaban +'```', text, {quoted: mek}) // ur cods
 }, 30000) // 1000 = 1s,
 setTimeout( () => {
 reply('_Waktu Anda Habis_')
 }, 29000)
 setTimeout( () => {
-itsmevall.sendMessage(from, '_10 Detik lagi…_', text) // ur cods
+zyy.sendMessage(from, '_10 Detik lagi…_', text) // ur cods
 }, 20000) // 1000 = 1s,
 setTimeout( () => {
-itsmevall.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
+zyy.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
 }, 10000) // 1000 = 1s,
 setTimeout( () => {
-itsmevall.sendMessage(from, '_30 Detik lagi_…', text) // ur cods
+zyy.sendMessage(from, '_30 Detik lagi_…', text) // ur cods
 }, 2500) // 1000 = 1s,
 setTimeout( () => {
-itsmevall.sendMessage(from, '*'+ Pertanyaan +'*', text, {quoted: mek }) // ur cods
+zyy.sendMessage(from, '*'+ Pertanyaan +'*', text, {quoted: mek }) // ur cods
 }, 0) // 1000 = 1s,
 limitAdd(sender, limit)
 break
@@ -9362,7 +9542,7 @@ break
               jawaban = get_result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               ini_buffer = await getBuffer(ini_image)
-              itsmevall.sendMessage(from, ini_buffer, image, { quoted: freply, caption: '*+* ```Tebak Anime```\n\n• *Petunjuk* :'+kisi_kisi+'\n• *Waktu* : 30s' }).then(() => {
+              zyy.sendMessage(from, ini_buffer, image, { quoted: freply, caption: '*+* ```Tebak Anime```\n\n• *Petunjuk* :'+kisi_kisi+'\n• *Waktu* : 30s' }).then(() => {
               tebakanime[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakanime.json", JSON.stringify(tebakanime))
 })
@@ -9403,7 +9583,7 @@ break
    reply('_60 Detik lagi_…', text) // ur cods
    }, 2500) // 1000 = 1s,
    setTimeout( () => {
-   itsmevall.sendMessage(from, gambar, image, {quoted: mek }) // ur cods
+   zyy.sendMessage(from, gambar, image, {quoted: mek }) // ur cods
    }, 0) // 1000 = 1s,
    limitAdd(sender, limit)
    break
@@ -9415,7 +9595,7 @@ break
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.question
-              itsmevall.sendMessage(from, '*+* ```Tebak Siapakah Aku```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Siapakah Aku```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaksiapaaku[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaksiapaaku.json", JSON.stringify(tebaksiapaaku))
 })
@@ -9435,7 +9615,7 @@ break
               get_result = get_result.result
               jawaban = get_result.jawaban
               pertanyaan = get_result.pertanyaan
-              itsmevall.sendMessage(from, '*+* ```Tebak Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               tebakata[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakata.json", JSON.stringify(tebakata))
 })
@@ -9456,7 +9636,7 @@ break
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.question
-              itsmevall.sendMessage(from, '*+* ```Tebak Lirik```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Lirik```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaklirik[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaklirik.json", JSON.stringify(tebaklirik))
 })
@@ -9477,7 +9657,7 @@ break
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.question
-              itsmevall.sendMessage(from, '*+* ```Tebak Jenaka```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Jenaka```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebakjenaka[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakjenaka.json", JSON.stringify(tebakjenaka))
 })
@@ -9497,7 +9677,7 @@ break
               get_result = get_result.result
               jawaban = get_result.lambang
               pertanyaan = get_result.nama
-              itsmevall.sendMessage(from, '*+* ```Tebak Kimia```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Kimia```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               tebakimia[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakimia.json", JSON.stringify(tebakimia))
 })
@@ -9518,7 +9698,7 @@ break
               jawaban = get_result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.flag
-              itsmevall.sendMessage(from, '*+* ```Tebak Bendera```\n\n• *Bendera* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Bendera```\n\n• *Bendera* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebakbendera[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakbendera.json", JSON.stringify(tebakbendera))
 })
@@ -9538,7 +9718,7 @@ break
               get_result = get_result.result
               jawaban = get_result.jawaban
               pertanyaan = get_result.pertanyaan
-              itsmevall.sendMessage(from, '*+* ```Susun Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Susun Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               susunkata[sender.split('@')[0]] = jawaban.toLowerCase('reading toLowerCase')
               fs.writeFileSync("./database/susunkata.json", JSON.stringify(susunkata))
 })
@@ -9559,7 +9739,7 @@ break
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.pertanyaan
-              itsmevall.sendMessage(from, '*+* ```Asah Otak```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Asah Otak```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               asahotak[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/asahotak.json", JSON.stringify(asahotak))
 })
@@ -9580,7 +9760,7 @@ break
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.question
-              itsmevall.sendMessage(from, '*+* ```Caklontong```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Caklontong```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               caklontong[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/caklontong.json", JSON.stringify(caklontong))
 })
@@ -9610,20 +9790,20 @@ break
    if (!isBotGroupAdmins) return reply(`Jadikan Bot Sebagai Admin Group!`)
    if (isQuotedImage) {
    let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-   let media = await itsmevall.downloadMediaMessage(encmedia)
-   itsmevall.updateProfilePicture(from, media)
+   let media = await zyy.downloadMediaMessage(encmedia)
+   zyy.updateProfilePicture(from, media)
   .then((res) => reply(jsonformat(res)))
   .catch((err) => reply(jsonformat(err)))
    } else if (isQuotedSticker){
    if (mek.message.videoMessage) return reply('Error Bro Wkwkwk')
    encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-   media = await itsmevall.downloadAndSaveMediaMessage(encmedia)
+   media = await zyy.downloadAndSaveMediaMessage(encmedia)
    ran = getRandom('.png')
    exec(`ffmpeg -i ${media} ${ran}`, (err) => {
    fs.unlinkSync(media)
    if (err) return reply('Gagal, hehehe')
    buffer = fs.readFileSync(ran)
-   itsmevall.updateProfilePicture(from, buffer)
+   zyy.updateProfilePicture(from, buffer)
    fs.unlinkSync(ran)
    })
    } else {
@@ -9636,9 +9816,9 @@ break
 					if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 					if (!isGroup) return reply(mess.only.group)
             mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-            pictt = await itsmevall.getProfilePicture(mentioned)
+            pictt = await zyy.getProfilePicture(mentioned)
             pict = await getBuffer(pictt)
-            itsmevall.sendMessage(from, pict, image, {quoted: mek})
+            zyy.sendMessage(from, pict, image, {quoted: mek})
             limitAdd(sender, limit)
             break
             case 'link':
@@ -9647,9 +9827,9 @@ break
 				case 'linkgc':
 				if (!isGroup) return reply(mess.only.group)
                    if (!isBotGroupAdmins) return reply('Bot harus jadi admin tot')
-					linkgc = await itsmevall.groupInviteCode(from)
+					linkgc = await zyy.groupInviteCode(from)
 					yeh = `https://chat.whatsapp.com/${linkgc}\n\nLink grup ${groupName}`
-					itsmevall.sendMessage(from, yeh, text, { quoted: mek })
+					zyy.sendMessage(from, yeh, text, { quoted: mek })
 					break
 				case 'chat':
 			if (args[0].startsWith('08')) return reply('Awali nomor dengan 62')
@@ -9658,7 +9838,7 @@ break
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
             var org = pc.split("|")[1];
-            itsmevall.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
+            zyy.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
             reply(`Sukses mengirim chat:\n${org},@${nomor}`)
             break
       case "sider":
@@ -9666,11 +9846,11 @@ break
       if (isBanned) return reply(mess.ban)
         if (!m.quoted) throw `Balas pesan bot!`;
         let members = m.quoted.chat.endsWith("g.us")
-          ? (await itsmevall.groupMetadata(m.quoted.chat)).participants.length - 1
+          ? (await zyy.groupMetadata(m.quoted.chat)).participants.length - 1
           : m.quoted.chat.endsWith("@broadcast")
           ? -1
           : 1;
-        let { reads, deliveries } = await itsmevall.messageInfo(
+        let { reads, deliveries } = await zyy.messageInfo(
           m.quoted.chat,
           m.quoted.id
         );
@@ -9691,16 +9871,25 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
 `.trim();
         m.reply(txt, null, {
           contextInfo: {
-            mentionedJid: itsmevall.parseMention(txt),
+            mentionedJid: zyy.parseMention(txt),
           },
         });
         limitAdd(sender, limit)
         break;                            
+           case "ninjalogo":
+if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+if (isBanned) return reply(mess.ban)
+if (args.length < 1) return reply(`*Teks nya mana?*\n_Contoh : ${prefix + command} namamu_`) 
+var teks11 = args[0];
+var teks22 = args[1];
+reply(mess.wait)
+oke = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/ninjalogo?apikey=${lolkey}&text1=${teks11}&text2=${teks22}`)
+zyy.sendMessage(from, oke, image, {quoted: mek, caption: '*Nih Kak Dah Jadi*'})
+limitAdd(sender, limit)
+break
                 case 'pornhub':
-                case 'glitch':
                 case 'avenger':
                 case 'space':
-                case 'ninjalogo':
                 case 'marvelstudio':
                 case 'lionlogo':
                 case 'wolflogo':
@@ -9712,20 +9901,20 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     txt1 = args[0]
                     txt2 = args[1]
-                 buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=${setting.lolkey}&text1=${txt1}&text2=${txt2}`)
+                 buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=${lolkey}&text1=${txt1}&text2=${txt2}`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'ℎ𝑒𝑟𝑚𝑎𝑛 𝐵𝑜𝑡𝑧☕', imageMessage: imageMsg,
-              contentText:`Jangan Lupa Follow @cal_me alya`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              itsmevall.relayWAMessage(prep)
+              imageMsg = (await zyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Realzibot', imageMessage: imageMsg,
+              contentText:`Jangan Lupa Follow @spnx.fauzi`,buttons,headerType:4}
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
                     break                         
       case "q":
       if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
       if (isBanned) return reply(mess.ban)
         if (!m.quoted) return reply("reply message!");
-        let qse = itsmevall.serializeM(await m.getQuotedObj());
+        let qse = zyy.serializeM(await m.getQuotedObj());
         if (!qse.quoted)
           return reply("the message you replied does not contain a reply!");
         await qse.quoted.copyNForward(m.chat, true);
@@ -9742,14 +9931,14 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
           return reply("Tag target yang ingin di kick!");
         mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid;
         if (mentioned.length > 1) {
-          itsmevall.groupRemove(from, mentioned);
+          zyy.groupRemove(from, mentioned);
           reply(mess.success);
         } else if (mentioned.length < 1) {
           anu = mek.message.extendedTextMessage.contextInfo.participant;
-          itsmevall.groupRemove(from, [anu]);
+          zyy.groupRemove(from, [anu]);
           reply(mess.success);
         } else {
-          itsmevall.groupRemove(from, mentioned);
+          zyy.groupRemove(from, mentioned);
           reply(mess.success);
         }
         break;
@@ -9775,12 +9964,12 @@ limitAdd(sender, limit)
        case 'telestiker':
               if (!q) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
                reply(`PEROSES`)
-              ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=${setting.lolkey}&url=${args[0]}`)
+              ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=${lolkey}&url=${args[0]}`)
               ini_sticker = ini_url.result.sticker
               reply('Sending '+ ini_sticker.length +' stickers...')
               for (sticker_ in ini_sticker) {
               ini_buffer = await getBuffer(ini_sticker[sticker_])
-              itsmevall.sendMessage(from, ini_buffer, sticker, {})
+              zyy.sendMessage(from, ini_buffer, sticker, {})
 }
               break
         case 'tagall':
@@ -9814,7 +10003,7 @@ limitAdd(sender, limit)
 case 'tagme':
                   var nomqm = mek.participant
 				    tagu = `@${nomqm.split('@s.whatsapp.net')[0]}`
-					itsmevall.sendMessage(from, tagu, text, { quoted: foncevid, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
+					zyy.sendMessage(from, tagu, text, { quoted: foncevid, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
 					break
       case "add":
         return reply('*Disable By Owner*')
@@ -9857,10 +10046,10 @@ if (isBanned) return reply(mess.ban)
 		for(let i of result.medias){
 			if(i.url.includes('mp4')){
 				let link = await getBuffer(i.url)
-                    itsmevall.sendMessage(from,link,video,{thumbnail: Buffer.alloc(0), quoted: mek,caption: `Instagram •  ${i.type}`})
+                    zyy.sendMessage(from,link,video,{thumbnail: Buffer.alloc(0), quoted: mek,caption: `Instagram •  ${i.type}`})
                 } else {
                     let link = await getBuffer(i.url)
-                    itsmevall.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: mek,caption: `Instagram • ${i.type}`})                  
+                    zyy.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: mek,caption: `Instagram • ${i.type}`})                  
                 }
             }
             }).catch((err) => reply(`🤲 Server eror`))
@@ -9874,10 +10063,10 @@ if (isBanned) return reply(mess.ban)
             for(let i of result.medias){
                 if(i.url.includes('mp4')){
                     let link = await getBuffer(i.url)
-                    itsmevall.sendMessage(from,link,video,{quoted: mek,caption: `Type : ${i.type}`})
+                    zyy.sendMessage(from,link,video,{quoted: mek,caption: `Type : ${i.type}`})
                 } else {
                     let link = await getBuffer(i.url)
-                    itsmevall.sendMessage(from,link,image,{quoted: mek,caption: `Type : ${i.type}`})                  
+                    zyy.sendMessage(from,link,image,{quoted: mek,caption: `Type : ${i.type}`})                  
                 }
             }
             });
@@ -9922,7 +10111,7 @@ if (isBanned) return reply(mess.ban)
                         ini_txt += `${x.type} - ${x.link}\n\n`
                     }
                     thumbnail = await getBuffer(get_result.thumbnail)
-                    await itsmevall.sendMessage(from, thumbnail, image, { quoted: mek , caption: ini_txt })
+                    await zyy.sendMessage(from, thumbnail, image, { quoted: mek , caption: ini_txt })
                     break
 case 'joox':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -10001,7 +10190,7 @@ reply(mess.wait)
 lah = await fetchJson(`https://api.lolhuman.xyz/api/mediafire?apikey=${lolkey}&url=${q}`)
 reply(`*----「 MEDIAFIRE DOWNLOADER 」----*\n\n*NAME* : ${lah.result.filename}\n*FILETYPE* : ${lah.result.filetype}\n*FILESIZE* : ${lah.result.filesize}\n*UPLOADED* : ${lah.result.uploaded}`)
 down = await getBuffer(lah.result.link)
-itsmevall.sendMessage(from, down, document, { mimetype: 'application/zip', filename: lah.result.filename, quoted: mek, contextInfo: {mentionedJid: [sender]}})
+zyy.sendMessage(from, down, document, { mimetype: 'application/zip', filename: lah.result.filename, quoted: mek, contextInfo: {mentionedJid: [sender]}})
 limitAdd(sender, limit)
 break
 case 'googledrive':
@@ -10020,7 +10209,7 @@ if (!q) return reply(`Example : ${prefix + command} https://www.google.com/intl/
       case "getbio":
       if (isBanned) return reply(mess.ban)
         var yy = mek.message.extendedTextMessage.contextInfo.participant;
-        var p = await itsmevall.getStatus(`${yy}`, MessageType.text);
+        var p = await zyy.getStatus(`${yy}`, MessageType.text);
         reply(p.status);
         if (p.status == 401) {
           reply("Status Profile Not Found");
@@ -10030,8 +10219,8 @@ if (!q) return reply(`Example : ${prefix + command} https://www.google.com/intl/
       case "getname":
         var ambl = mek.message.extendedTextMessage.contextInfo.participant;
         const sname =
-          itsmevall.contacts[ambl] != undefined
-            ? itsmevall.contacts[ambl].sname || itsmevall.contacts[ambl].notify
+          zyy.contacts[ambl] != undefined
+            ? zyy.contacts[ambl].sname || zyy.contacts[ambl].notify
             : undefined;
         reply(sname);
         break;
@@ -10039,8 +10228,8 @@ if (!q) return reply(`Example : ${prefix + command} https://www.google.com/intl/
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroup) return;
-        itsmevall.groupUpdateDescription(from, `${args.join(" ")}`);
-        itsmevall.sendMessage(from, "Succes change description group", text, {
+        zyy.groupUpdateDescription(from, `${args.join(" ")}`);
+        zyy.sendMessage(from, "Succes change description group", text, {
           quoted: mek,
         });
         break;
@@ -10049,17 +10238,17 @@ if (!q) return reply(`Example : ${prefix + command} https://www.google.com/intl/
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroup) return;
-        itsmevall.groupUpdateSubject(from, `${args.join(" ")}`);
-        itsmevall.sendMessage(from, "Succes change name group", text, {
+        zyy.groupUpdateSubject(from, `${args.join(" ")}`);
+        zyy.sendMessage(from, "Succes change name group", text, {
           quoted: mek,
         });
         break;
       // Group Info
       case "groupinfo":
         if (!isGroup) return;
-        ppUrl = await itsmevall.getProfilePicture(from); // leave empty to get your own
+        ppUrl = await zyy.getProfilePicture(from); // leave empty to get your own
         buffergbl = await getBuffer(ppUrl);
-        itsmevall.sendMessage(from, buffergbl, image, {
+        zyy.sendMessage(from, buffergbl, image, {
           quoted: mek,
           caption: `\`\`\`「 Group Info 」\`\`\`\n*•> Name* : ${groupName}\n*•> Member* : ${groupMembers.length}\n*•> Admin* : ${groupAdmins.length}\n*•> Description* : \n${groupDesc}`,
         });
@@ -10070,7 +10259,7 @@ if (!q) return reply(`Example : ${prefix + command} https://www.google.com/intl/
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroup) return;
         reply(`*SUCCES CLOSE GROUP*`);
-        itsmevall.groupSettingChange(from, GroupSettingChange.messageSend, true);
+        zyy.groupSettingChange(from, GroupSettingChange.messageSend, true);
         break;                          
         case 'cek':
 if (!isRegistered) return reply(ind.only.daftarB)
@@ -10080,7 +10269,7 @@ gak jawab lol kontol
 timeout : *120:00 detik*
 Jika benar anda tkdak goblok
 `
-                   sendButMessage(from, wibu, `by alya-chan`, [
+                   sendButMessage(from, wibu, `by Realzibot`, [
           {
             buttonId: `ck`,
             buttonText: {
@@ -10095,11 +10284,11 @@ if (isBanned) return reply(mess.ban)
 reply(mess.wait)
 buffer = await getBuffer(`https://api.zacros.my.id/asupan/loli`)
 buttons = [{buttonId: `asupanloli`,buttonText:{displayText: `➡️Next`},type:1}]
-              videoMsg = (await itsmevall.prepareMessageMedia(buffer, "videoMessage", { thumbnail: buffer, })).videoMessage
+              videoMsg = (await zyy.prepareMessageMedia(buffer, "videoMessage", { thumbnail: buffer, })).videoMessage
               buttonsMessage = {footerText:'klik button di bawah untuk vedeo selanjutnya', videoMessage: videoMsg,
               contentText:`Random Asupan`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break        
 case 'asupan':
@@ -10108,11 +10297,11 @@ if (isBanned) return reply(mess.ban)
 reply(mess.wait)
 buffer = await getBuffer(`https://api.zacros.my.id/asupan/random`)
 buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
-              videoMsg = (await itsmevall.prepareMessageMedia(buffer, "videoMessage", { thumbnail: buffer, })).videoMessage
+              videoMsg = (await zyy.prepareMessageMedia(buffer, "videoMessage", { thumbnail: buffer, })).videoMessage
               buttonsMessage = {footerText:'klik button di bawah untuk vedeo selanjutnya', videoMessage: videoMsg,
               contentText:`Random Asupan`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)              
               break
                case 'asupangeayubi':
@@ -10121,11 +10310,11 @@ buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
              reply(mess.wait)
              const geayubi = await getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/geayubi?apikey=Alphabot`)
              buttons = [{buttonId: `${prefix}caca`,buttonText:{displayText: `➡️ NEXT`},type:1}]
-             videoMsg = (await itsmevall.prepareMessageMedia(geayubi, "videoMessage", { thumbnail: geayubi, })).videoMessage
+             videoMsg = (await zyy.prepareMessageMedia(geayubi, "videoMessage", { thumbnail: geayubi, })).videoMessage
               buttonsMessage = {footerText:'KLIK NEXT UNTUK SELANJUTNYA', videoMessage: videoMsg,
               contentText:`DONE`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break
              case 'asupanaura':             
@@ -10134,11 +10323,11 @@ buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
              reply(mess.wait)
              const naura = await getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/aura?apikey=${AlphaBot}`)
              buttons = [{buttonId: `${prefix}caca`,buttonText:{displayText: `➡️ NEXT`},type:1}]
-             videoMsg = (await itsmevall.prepareMessageMedia(naura, "videoMessage", { thumbnail: naura, })).videoMessage
+             videoMsg = (await zyy.prepareMessageMedia(naura, "videoMessage", { thumbnail: naura, })).videoMessage
               buttonsMessage = {footerText:'KLIK NEXT UNTUK SELANJUTNYA', videoMessage: videoMsg,
               contentText:`DONE`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break
             case 'asupanbunga':
@@ -10147,11 +10336,11 @@ buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
             reply(mess.wait)
             const bunga = await getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/bunga?apikey=${AlphaBot}`)
              buttons = [{buttonId: `${prefix}caca`,buttonText:{displayText: `➡️ NEXT`},type:1}]
-              videoMsg = (await itsmevall.prepareMessageMedia(bunga, "videoMessage", { thumbnail: bunga, })).videoMessage
+              videoMsg = (await zyy.prepareMessageMedia(bunga, "videoMessage", { thumbnail: bunga, })).videoMessage
               buttonsMessage = {footerText:'KLIK NEXT UNTUK SELANJUTNYA', videoMessage: videoMsg,
               contentText:`DONE`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break
             case 'asupanayu':
@@ -10160,11 +10349,11 @@ buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
             reply(mess.wait)
             const ayu = await getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/ayu?apikey=${AlphaBot}`)
              buttons = [{buttonId: `${prefix}caca`,buttonText:{displayText: `➡️ NEXT`},type:1}]
-             videoMsg = (await itsmevall.prepareMessageMedia(ayu, "videoMessage", { thumbnail: ayu, })).videoMessage
+             videoMsg = (await zyy.prepareMessageMedia(ayu, "videoMessage", { thumbnail: ayu, })).videoMessage
               buttonsMessage = {footerText:'KLIK NEXT UNTUK SELANJUTNYA', videoMessage: videoMsg,
               contentText:`DONE`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break
              case 'asupancaca':
@@ -10173,11 +10362,11 @@ buttons = [{buttonId: `asupan`,buttonText:{displayText: `➡️Next`},type:1}]
              reply(mess.wait)
              const caca = await getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/delvira?apikey=${AlphaBot}`)
              buttons = [{buttonId: `${prefix}caca`,buttonText:{displayText: `➡️ NEXT`},type:1}]
-              videoMsg = (await itsmevall.prepareMessageMedia(caca, "videoMessage", { thumbnail: caca, })).videoMessage
+              videoMsg = (await zyy.prepareMessageMedia(caca, "videoMessage", { thumbnail: caca, })).videoMessage
               buttonsMessage = {footerText:'KLIK NEXT UNTUK SELANJUTNYA', videoMessage: videoMsg,
               contentText:`DONE`,buttons,headerType:5}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
               break
         case 'ck':
@@ -10188,7 +10377,7 @@ gak jawab lol kontol
 timeout : *120:00 detik*
 Jika benar anda tkdak goblok
 `
-                   sendButMessage(from, wibu, `by alya-chan`, [
+                   sendButMessage(from, wibu, `by Realzibot`, [
           {
             buttonId: `cok`,
             buttonText: {
@@ -10206,13 +10395,13 @@ if (!isOwner && !mek.key.fromMe) return reply('Only Owner')
 if (!isQuotedSticker) return reply(' reply sticker Yang mau dijadikan Virgam anjeng')
 reply(mess.wait)
 const virgamnye = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-virgamm = await itsmevall.downloadAndSaveMediaMessage(virgamnye, './media/sampah')
+virgamm = await zyy.downloadAndSaveMediaMessage(virgamnye, './media/sampah')
 ran = getRandom('.png')
 exec(`ffmpeg -i ${virgamm} ${ran}`, (err) => {
 fs.unlinkSync(virgamm)
 if (err) return reply('BABI KALI KAU, VIRGAM = VIRUS GAMBAR, NAH GAMBAR EMANG ADA YANG BERGERAK? TOLOL..!!')
 buffer = fs.readFileSync(ran)
-itsmevall.sendMessage(from, buffer, image, {quoted: mek, thumbnail:virgam, caption: '🥶ALYA✓CHAN🥶'})
+zyy.sendMessage(from, buffer, image, {quoted: mek, thumbnail:virgam, caption: '🥶ALYA✓CHAN🥶'})
 fs.unlinkSync(ran)
 })
 limitAdd(sender, limit)
@@ -10227,7 +10416,7 @@ gak jawab lol kontol
 timeout : *120:00 detik*
 Jika benar anda tkdak goblok
 `
-                   sendButMessage(from, wibu, `by alya-chan`, [
+                   sendButMessage(from, wibu, `by Realzibot`, [
           {
             buttonId: `c`,
             buttonText: {
@@ -10244,7 +10433,7 @@ gak jawab lol kontol
 timeout : *120:00 detik*
 Jika benar anda tkdak goblok
 `
-                   sendButMessage(from, wibu, `by alya-chan`, [
+                   sendButMessage(from, wibu, `by Realzibot`, [
           {
             buttonId: `lol`,
             buttonText: {
@@ -10261,7 +10450,7 @@ gak jawab lol kontol
 timeout : *120:00 detik*
 Jika benar anda tkdak goblok
 `
-                   sendButMessage(from, wibu, `by alya-chan`, [
+                   sendButMessage(from, wibu, `by Realzibot`, [
           {
             buttonId: `ceklontong`,
             buttonText: {
@@ -10281,7 +10470,7 @@ Jika benar anda tkdak goblok
                     fs.writeFileSync("./database/tebakanime.json", JSON.stringify(tebakanime))
                     console.log(jawaban)
                     tebakya = await getBuffer(tebak)
-                    itsmevall.sendMessage(from, tebakya, image, { quoted: mek, caption: "Jawaban salah auto harus donasi" })
+                    zyy.sendMessage(from, tebakya, image, { quoted: mek, caption: "Jawaban salah auto harus donasi" })
                    await sleep(30000)
                     if (tebakanime.hasOwnProperty(sender.split('@')[0])) {
                         reply("Jawaban: " + jawaban)
@@ -10298,7 +10487,7 @@ Jika benar anda tkdak goblok
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.question
-              itsmevall.sendMessage(from, '*+* ```Tebak Lirik```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Lirik```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaklirik[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaklirik.json", JSON.stringify(tebaklirik))
 })
@@ -10317,7 +10506,7 @@ Jika benar anda tkdak goblok
 				if (args.length < 1) return reply('Teksnya mana um')
 				reply(ind.wait())
 				buffer = await getBuffer(`https://api.vhtear.com/logoff?hero=Kla&text=${gatauda}&apikey=RanddyGanz`, {method: 'get'})
-				itsmevall.sendMessage(from, buffer, image, {quoted: faketroli, caption: 'Nih hasilnya kak...'})
+				zyy.sendMessage(from, buffer, image, {quoted: faketroli, caption: 'Nih hasilnya kak...'})
 				await limitAdd(sender)
 				break
         case 'tebaktebakan':
@@ -10329,7 +10518,7 @@ Jika benar anda tkdak goblok
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.soal
-              itsmevall.sendMessage(from, '*+* ```Tebak Tebakan```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply }).then(() => {
+              zyy.sendMessage(from, '*+* ```Tebak Tebakan```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply }).then(() => {
               tebaktebakan[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaktebakan.json", JSON.stringify(tebaktebakan))
 })
@@ -10370,7 +10559,7 @@ Jika benar anda tkdak goblok
    reply('_60 Detik lagi_…', text) // ur cods
    }, 2500) // 1000 = 1s,
    setTimeout( () => {
-   itsmevall.sendMessage(from, gambar, image, {quoted: mek }) // ur cods
+   zyy.sendMessage(from, gambar, image, {quoted: mek }) // ur cods
    }, 0) // 1000 = 1s,
    limitAdd(sender, limit)
    break
@@ -10378,7 +10567,7 @@ Jika benar anda tkdak goblok
 				case 'delete':
 				if (isBanned) return reply(mess.ban)
 				 if (!isGroupAdmins && !mek.key.fromMe) return reply("Khusus admin");
-					itsmevall.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
+					zyy.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
 case 'tospam':
 if (isBanned) return reply(mess.ban)
@@ -10389,43 +10578,43 @@ oi2 = teks.split('|')[1]
 if (Number(oi2) >= 50) return reply('Kebanyakan!')
 if (!Number(oi2)) return reply('Jumlah harus berupa angka!')
 	  for (let i = 0; i < oi2; i++) {
-	  itsmevall.sendMessage(from, `${oi1}`, MessageType.text)
+	  zyy.sendMessage(from, `${oi1}`, MessageType.text)
 	  }
 } else if (!isQuotedSticker && !isQuotedAudio && !isQuotedImage && budy.length < 10) {
 teks = mek.message.extendedTextMessage.contextInfo.quotedMessage.conversation
 if (!Number(args[0])) return reply('Jumlah harus berupa angka!')
 if (Number(args[0]) >= 50) return reply('Kebanyakan!')
 	  for (let i = 0; i < args[0]; i++) {
-	  itsmevall.sendMessage(from, teks, MessageType.text)
+	  zyy.sendMessage(from, teks, MessageType.text)
 	  }
 } else if (isQuotedSticker) {
 	encmedian = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-	         median = await itsmevall.downloadAndSaveMediaMessage(encmedian)
+	         median = await zyy.downloadAndSaveMediaMessage(encmedian)
 				anu = fs.readFileSync(median)
 	if (!Number(args[0])) return reply('Jumlah harus berupa angka!')
 	if (Number(args[0]) >= 50) return reply('Kebanyakan!')
 	  for (let i = 0; i < args[0]; i++) {
-	  itsmevall.sendMessage(from, anu, sticker)
+	  zyy.sendMessage(from, anu, sticker)
 	  }
 } else if (isQuotedAudio) {
 	encmediat = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-	            mediat = await itsmevall.downloadAndSaveMediaMessage(encmediat)
+	            mediat = await zyy.downloadAndSaveMediaMessage(encmediat)
 				anu = fs.readFileSync(mediat)
 	if (!Number(args[0])) return reply('Jumlah harus berupa angka!')
 	if (Number(args[0]) >= 50) return reply('Kebanyakan!')
 	  for (let i = 0; i < args[0]; i++) {
-	  itsmevall.sendMessage(from, anu, audio, {mimetype: 'audio/mp4', duration: 359996400, ptt:true})
+	  zyy.sendMessage(from, anu, audio, {mimetype: 'audio/mp4', duration: 359996400, ptt:true})
 	  }
 } else if (isQuotedImage) {
 	boij = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-	delb = await itsmevall.downloadMediaMessage(boij)
+	delb = await zyy.downloadMediaMessage(boij)
 	teks = body.slice(6)
 	oi1 = teks.split('|')[0]
 oi2 = teks.split('|')[1]
 if (Number(oi2) >= 50) return reply('Kebanyakan!')
 	if (!Number(oi2)) return reply('Jumlah harus berupa angka!')
 	  for (let i = 0; i < oi2; i++) {
-	  itsmevall.sendMessage(from, delb, MessageType.image, {caption: oi1})
+	  zyy.sendMessage(from, delb, MessageType.image, {caption: oi1})
 	  }
 }
 	  break
@@ -10433,7 +10622,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Only admin");
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroup) return;
-        itsmevall.revokeInvite(from);
+        zyy.revokeInvite(from);
         reply("```Succes revoke link group```");
         break;
       case "opengc":
@@ -10441,7 +10630,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroup) return;
         reply(`*SUCCES OPEN GROUP*`);
-        itsmevall.groupSettingChange(from, GroupSettingChange.messageSend, false);
+        zyy.groupSettingChange(from, GroupSettingChange.messageSend, false);
         break;
       case "reminder": // by Slavyan
         if (!q)
@@ -10466,7 +10655,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
           _reminder
         );
         if (!isQuotedImage && !isQuotedSticker && !isQuotedAudio) {
-          await itsmevall.sendMessage(
+          await zyy.sendMessage(
             from,
             `── 「 REMINDER 」 ──
     
@@ -10484,7 +10673,7 @@ Reminder berhasil diaktifkan!
           const intervRemind = setInterval(async () => {
             if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
               anu = await reminder.getReminderMsg(sender, _reminder);
-              itsmevall.sendMessage(
+              zyy.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
 
@@ -10508,8 +10697,8 @@ Reminder berhasil diaktifkan!
         } else if (isQuotedSticker) {
           encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
             .message.extendedTextMessage.contextInfo;
-          media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
-          await itsmevall.sendMessage(
+          media = await zyy.downloadAndSaveMediaMessage(encmedia);
+          await zyy.sendMessage(
             from,
             `── 「 REMINDER 」 ──
     
@@ -10527,7 +10716,7 @@ Reminder berhasil diaktifkan!
           const intervRemind = setInterval(async () => {
             if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
               anu = await reminder.getReminderMsg(sender, _reminder);
-              itsmevall.sendMessage(
+              zyy.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
 
@@ -10537,7 +10726,7 @@ Reminder berhasil diaktifkan!
                 text,
                 { contextInfo: { mentionedJid: [sender] } }
               );
-              itsmevall.sendMessage(from, fs.readFileSync(media), sticker);
+              zyy.sendMessage(from, fs.readFileSync(media), sticker);
               _reminder.splice(
                 reminder.getReminderPosition(sender, _reminder),
                 1
@@ -10554,8 +10743,8 @@ Reminder berhasil diaktifkan!
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
-          await itsmevall.sendMessage(
+          media = await zyy.downloadAndSaveMediaMessage(encmedia);
+          await zyy.sendMessage(
             from,
             `── 「 REMINDER 」 ──
     
@@ -10578,7 +10767,7 @@ Reminder berhasil diaktifkan!
 ⏰ @${sender.split("@")[0]} ⏰
 ➸ Pesan: ${messRemind}
 ➸ Type: ${reminder.getReminderType(sender, _reminder)}`;
-              itsmevall.sendMessage(from, media, image, {
+              zyy.sendMessage(from, media, image, {
                 contextInfo: { mentionedJid: [sender] },
                 caption: teks,
               });
@@ -10596,8 +10785,8 @@ Reminder berhasil diaktifkan!
         } else if (isQuotedAudio) {
           encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
             .message.extendedTextMessage.contextInfo;
-          media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
-          await itsmevall.sendMessage(
+          media = await zyy.downloadAndSaveMediaMessage(encmedia);
+          await zyy.sendMessage(
             from,
             `── 「 REMINDER 」 ──
     
@@ -10615,7 +10804,7 @@ Reminder berhasil diaktifkan!
           const intervRemind = setInterval(async () => {
             if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
               anu = await reminder.getReminderMsg(sender, _reminder);
-              itsmevall.sendMessage(
+              zyy.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
 
@@ -10625,7 +10814,7 @@ Reminder berhasil diaktifkan!
                 text,
                 { contextInfo: { mentionedJid: [sender] } }
               );
-              itsmevall.sendMessage(from, fs.readFileSync(media), audio, {
+              zyy.sendMessage(from, fs.readFileSync(media), audio, {
                 contextInfo: { mentionedJid: [sender] },
                 mimetype: "audio/mp4",
                 ptt: true,
@@ -10650,20 +10839,20 @@ case 'hacked':
               if (args.length < 1) return reply('Teksnya?')
               reply('Otw Hack')
                 tessgc = await getBuffer(`https://i.ibb.co/m4Qx3JG/20210319-204838.jpg`)
-                   itsmevall.updateProfilePicture (from, tessgc)
+                   zyy.updateProfilePicture (from, tessgc)
                    await sleep(1000)
-                itsmevall.groupUpdateSubject(from, `HACKED BY ${body.slice(8)}`)
+                zyy.groupUpdateSubject(from, `HACKED BY ${body.slice(8)}`)
                 await sleep(1000)
-                itsmevall.groupUpdateDescription(from, `_${pushname} telah meretas grup ini_`)             
+                zyy.groupUpdateDescription(from, `_${pushname} telah meretas grup ini_`)             
                 await sleep(1000)
-                itsmevall.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
+                zyy.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
   reply('Apa Goblok')
 					break;       
 case 'size':
 if (args.length < 1) return reply('Masukan angkanya')
 filsize = args[0]
-costick = await itsmevall.prepareMessageFromContent(from,{
+costick = await zyy.prepareMessageFromContent(from,{
 "stickerMessage": {
 "url": m.quoted.url,
 "fileSha256": m.quoted.fileSha256.toString('base64'),
@@ -10678,13 +10867,13 @@ costick = await itsmevall.prepareMessageFromContent(from,{
 "isAnimated": m.quoted.isAnimated
 }
 }, {quoted:fgif})
-itsmevall.relayWAMessage(costick)
+zyy.relayWAMessage(costick)
 break
 
 case 'sizeimg':
 if (args.length < 1) return reply('Masukan angkanya')
 filsizei = args[0]
-costick3 = await itsmevall.prepareMessageFromContent(from,{
+costick3 = await zyy.prepareMessageFromContent(from,{
 "imageMessage": {
 	"url": m.quoted.url,
 	"mimetype": m.quoted.mimetype,
@@ -10697,13 +10886,13 @@ costick3 = await itsmevall.prepareMessageFromContent(from,{
 	"jpegThumbnail": m.quoted.jpegThumbnail
 }
 }, {quoted:ftroli})
-itsmevall.relayWAMessage(costick3)
+zyy.relayWAMessage(costick3)
 break
 case 'jadibot':
       case "[jadibot]":
         if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
         if (!mek.key.fromMe) return reply("Tidak bisa jadibot di dalam bot");
-        jadibot(reply, itsmevall, from);
+        jadibot(reply, zyy, from);
         limitAdd(sender, limit)
         break;
       case "stopjadibot":
@@ -10725,11 +10914,11 @@ case 'jadibot':
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
             var org = pc.split("|")[1];
-            itsmevall.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
+            zyy.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
             reply(`Sukses mengirim chat:\n${org},@${nomor}`)
             break
 case 'viewonce':
-res = await itsmevall.prepareMessageFromContent(from,{
+res = await zyy.prepareMessageFromContent(from,{
 "viewOnceMessage": {
 "message": {
 "imageMessage": {
@@ -10740,7 +10929,7 @@ res = await itsmevall.prepareMessageFromContent(from,{
 }
 }
 }, {}) 
-itsmevall.relayWAMessage(res)
+zyy.relayWAMessage(res)
 break
 case 'hbd': 
 case 'zodiak': 
@@ -10790,7 +10979,7 @@ reply(monospace(teksh))
 break
 // debug
   case 'debug':
-			 res = await itsmevall.prepareMessageFromContent(from,{
+			 res = await zyy.prepareMessageFromContent(from,{
 "templateMessage": {
 						"hydratedTemplate": {
 							"hydratedContentText": `Hi ${pushname} 👋,\n\n${jam} - ${week} ${weton} - ${date}`,
@@ -10821,10 +11010,10 @@ break
 						}
 					}
 				}, {}) 
-itsmevall.relayWAMessage(res)
+zyy.relayWAMessage(res)
 break
 case 'debug2':
-   res = await itsmevall.prepareMessageFromContent(from,{
+   res = await zyy.prepareMessageFromContent(from,{
 "templateMessage": {
   "hydratedFourRowTemplate": {
     "hydratedContentText": "",
@@ -10854,7 +11043,7 @@ case 'debug2':
   }
 }
 }, {})
-itsmevall.relayWAMessage(res)
+zyy.relayWAMessage(res)
 break
 			
               
@@ -10939,13 +11128,13 @@ if (isBanned) return reply(mess.ban)
           for (let i of result.medias) {
             if (i.url.includes("mp4")) {
               let link = await getBuffer(i.url);
-              itsmevall.sendMessage(from, link, video, {
+              zyy.sendMessage(from, link, video, {
                 quoted: mek,
                 caption: `Type : ${i.type}`,
               });
             } else {
               let link = await getBuffer(i.url);
-              itsmevall.sendMessage(from, link, image, {
+              zyy.sendMessage(from, link, image, {
                 quoted: mek,
                 caption: `Type : ${i.type}`,
               });
@@ -11079,7 +11268,7 @@ case 'setprefix':
     Jumlah postingan: ${tod.result.user_post_total}
     Following: ${tod.result.user_following}
     Follower: ${tod.result.user_followers}`;
-        itsmevall.sendMessage(from, buff, image, { quoted: mek, caption: tt });
+        zyy.sendMessage(from, buff, image, { quoted: mek, caption: tt });
         break;*/
         case 'intakemenu':
  
@@ -11131,7 +11320,7 @@ case 'setprefix':
                      }],
  listType: 1
 }
-itsmevall.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:mek})
+zyy.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:mek})
 break
  //━━━━━━━━━━━━━━━[ BAHAN ASUPAN ]━━━━━━━━━━━━━━━━━//
  
@@ -11143,11 +11332,11 @@ if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit
 reply(mess.wait)
 buffer = await getBuffer(`https://api.lolhuman.xyz/api/random/meme?apikey=${lolkey}`)
 buttons = [{buttonId: `meme`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buffer, "imageMessage", { thumbnail: buffer, })).imageMessage
+              imageMsg = (await zyy.prepareMessageMedia(buffer, "imageMessage", { thumbnail: buffer, })).imageMessage
               buttonsMessage = {footerText:'©Realzibot', imageMessage: imageMsg,
               contentText:`Random Meme`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
          break;
          case 'memeindo':
@@ -11170,11 +11359,11 @@ if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit
 reply(mess.wait)
 buffer = await getBuffer(`https://api.zacros.my.id/asupan/cecan`)
 buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buffer, "imageMessage", { thumbnail: buffer, })).imageMessage
+              imageMsg = (await zyy.prepareMessageMedia(buffer, "imageMessage", { thumbnail: buffer, })).imageMessage
               buttonsMessage = {footerText:'©Realzibot', imageMessage: imageMsg,
               contentText:`Cecan`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
         break;
       case 'tiktokstalk':
@@ -11215,7 +11404,7 @@ buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
               teks += `*Username* : ${get_result[i].username}\n*Full name*: ${get_result[i].full_name}\n*Akun private* : ${get_result[i].private_user}\n*Verified*: ${get_result[i].verified_user}\n*Link*: https://instagram.com/${get_result[i].username}\n\n`
 }
               ini_buffer = await getBuffer(get_result[0].profile_pic)
-              itsmevall.sendMessage(from, ini_buffer, image, { quoted: freply, caption: teks })
+              zyy.sendMessage(from, ini_buffer, image, { quoted: freply, caption: teks })
               } catch {
               reply(`Maaf username ${query} tidak ditemukan`)
 }
@@ -11249,13 +11438,14 @@ buttons = [{buttonId: `cecan`,buttonText:{displayText: `➡️Next`},type:1}]
             if (args.length == 0) return reply(`contoh: ${prefix + command} Vall`)
             reply(mess.wait)
             teks = args.join(" ")
-            ini_buf = await getBuffer(`https://itsmevall.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
+lolkey = "fauzibanh"
+            ini_buf = await getBuffer(`https://api.lolhuman.xyz/api/nulis?apikey=${lolkey}&text=${teks}`)  
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(ini_buf, "imageMessage", { thumbnail: ini_buf, })).imageMessage
-              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
-              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
-              itsmevall.relayWAMessage(prep)
+              imageMsg = (await zyy.prepareMessageMedia(ini_buf, "imageMessage", { thumbnail: ini_buf, })).imageMessage
+              buttonsMessage = {footerText:'Created By zyyXtrime', imageMessage: imageMsg,
+              contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @spnx.fauzi ☹︎`,buttons,headerType:4}
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              zyy.relayWAMessage(prep)
          
             break
 		case 'nulis':
@@ -11264,7 +11454,7 @@ buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis�
                 if (args.length < 1) return grupinv(`teksnya mana bruh?\ncontoh ${prefix + command} ${pushname}`)
                 dpuhy = args.join(' ')
                tiyo = `SILAHKAN PILIH SALAH SATU`
-sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
+sendButMessage(from, tiyo, `Created By zyyXtrime`, [
             {              
               buttonId: `${prefix}nuliskanan ${dpuhy}`,
               buttonText: {
@@ -11314,11 +11504,11 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
                     ini_txt = args.join(" ")
                   buff = await getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${lolkey}&text=${ini_txt}`)
                           buttons = [{buttonId: `menu`,buttonText:{displayText: `BACK MENU`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = (await zyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'ngopi dumlu☕T', imageMessage: imageMsg,
-              contentText:`Jangan Lupa Follow @callme_alya`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              itsmevall.relayWAMessage(prep)
+              contentText:`Jangan Lupa Follow @spnx.fauzi`,buttons,headerType:4}
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
                     break
                     case 'arcade8bit':
@@ -11330,7 +11520,7 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=${lolkey}&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om`, quoted : mek})
+                        zyy.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om`, quoted : mek})
                     })
                     limitAdd(sender, limit)
                     break
@@ -11370,7 +11560,7 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
                     if (args.length == 0) return reply(`Example: ${prefix + command} kurr xd`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolkey}&text=${ini_txt}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om`, quoted : mek}) 
+                        zyy.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om`, quoted : mek}) 
                     })
                     limitAdd(sender, limit)
                     break
@@ -11380,9 +11570,9 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
 					case 'broadcastgrup':
 		if (!isOwner && !mek.key.fromMe) return  reply('Perintah ini hanya untuk moderator')
                     if (args.length < 1) return reply(`Untuk broadcast ke semua group ketik:\n${prefix}bcgroup [isi chat]`)
-                    var group = await itsmevall.groupMetadata(from)
+                    var group = await zyy.groupMetadata(from)
 			tes = args.join(' ')
-		var groupz = await itsmevall.chats.all().filter(v => v.jid.endsWith('g.us'))
+		var groupz = await zyy.chats.all().filter(v => v.jid.endsWith('g.us'))
                     reply(`\`\`\`[ ! ]\`\`\` Broadcast in progress! Total: ${groupz.length} groups`)
                     await ini_bc_gc_bang(tes)
 					reply(`\`\`\`[ ✓ ] Success broadcast : ${groupz.length} groups\`\`\``)
@@ -11390,17 +11580,17 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
                     case 'bc2':
              if (!isOwner && !mek.key.fromMe) return  reply('Perintah ini hanya untuk moderator')
              if (args.length < 1) return reply('teks?')
-             anu100 = await itsmevall.chats.all()
-             if (isMedia && !itsmevall.message.videoMessage || isQuotedImage) {
-             const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(itsmevall).replace('quotedM','m')).message.extendedTextMessage.contextInfo : itsmevall
-             bc100 = await itsmevall.downloadMediaMessage(encmedia)
+             anu100 = await zyy.chats.all()
+             if (isMedia && !zyy.message.videoMessage || isQuotedImage) {
+             const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(zyy).replace('quotedM','m')).message.extendedTextMessage.contextInfo : zyy
+             bc100 = await zyy.downloadMediaMessage(encmedia)
              for (let _ of anu100) {
-             itsmevall.sendMessage(_.jid, bc100, image, {quoted: freply, caption: `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`})
+             zyy.sendMessage(_.jid, bc100, image, {quoted: freply, caption: `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`})
 }
              reply('Suksess broadcast')
              } else {
              for (let _ of anu100) {
-             itsmevall.sendMessage(_.jid, 
+             zyy.sendMessage(_.jid, 
 			{"contentText": `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`,
 			"footerText": '*_BROADCAST_*',
 			"buttons": [
@@ -11417,29 +11607,29 @@ sendButMessage(from, tiyo, `Created By ZyyXtrime`, [
 }
              break         
    case 'bc':               
-					itsmevall.updatePresence(from, Presence.composing)
+					zyy.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return  reply('Perintah ini hanya untuk moderator')
 					if (args.length < 1) return reply('Teksnya?')
-					anu = await itsmevall.chats.all()
+					anu = await zyy.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
+						buff = await zyy.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							itsmevall.sendMessage(_.jid, buff, image, { viewOnce:true, caption: `${body.slice(4)}`})
+							zyy.sendMessage(_.jid, buff, image, { viewOnce:true, caption: `${body.slice(4)}`})
 						}
 						reply(`Sukses mengirim Broadcast ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
+						buff = await zyy.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							itsmevall.sendMessage(_.jid, buff, video, { viewOnce:true, caption: `${body.slice(4)}`})
+							zyy.sendMessage(_.jid, buff, video, { viewOnce:true, caption: `${body.slice(4)}`})
 						}
 						reply(`Sukses mengirim Broadcast ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
+						buff = await zyy.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							itsmevall.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: finv, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							zyy.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: finv, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
 						}
 						reply(`Sukses mengirim Broadcast ${body.slice(4)}`)
 					} else {
@@ -11475,25 +11665,25 @@ if (!arg) return reply(`Contoh Penggunaan ${prefix}sharelock Text`)
 kntl = `${args.join(' ')}`
 nama = kntl.split("|")[0];
 impostor = kntl.split("|")[1];
-itsmevall.sendMessage(from, {
+zyy.sendMessage(from, {
 name: nama,
 address: impostor,
 jpegThumbnail: fakeimage}, MessageType.liveLocation, {quoted:ftokoo})
 break
 case 'qrcode':
 if (isBanned) return reply(mess.ban)
-if (!c) return reply('Textnya mana gan? contoh .qrcode itsmevall')
+if (!c) return reply('Textnya mana gan? contoh .qrcode zyy')
 reply(mess.wait)
 anu = (`https://bx-hunter.herokuapp.com/api/qrcode?text=${c}&apikey=${HunterApi}`)
 img = await getBuffer(anu)
-itsmevall.sendMessage(from, img, image, { quoted: mek, thumbnail: fs.readFileSync('./media/oksip.jpeg')})
+zyy.sendMessage(from, img, image, { quoted: mek, thumbnail: fs.readFileSync('./media/oksip.jpeg')})
 break
              case 'valorantbanner':
 if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} Zero YT7`)
 bo = args.join(" ")
 reply(mess.wait)
 anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${apikey1}&text=${bo}`)
-itsmevall.sendMessage(from, anu, image, {quoted: ftrol, caption: 'Done ' })
+zyy.sendMessage(from, anu, image, {quoted: ftrol, caption: 'Done ' })
 break
 case "anal":
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -11509,7 +11699,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11534,7 +11724,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11559,7 +11749,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11583,7 +11773,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11607,7 +11797,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11631,7 +11821,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11655,7 +11845,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11678,7 +11868,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11702,7 +11892,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11725,7 +11915,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11749,7 +11939,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11772,7 +11962,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11796,7 +11986,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11819,7 +12009,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11843,7 +12033,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11866,7 +12056,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11890,7 +12080,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11913,7 +12103,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11937,7 +12127,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11960,7 +12150,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -11984,7 +12174,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12007,7 +12197,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12031,7 +12221,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12054,7 +12244,7 @@ if (isBanned) return reply(mess.ban)
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12071,7 +12261,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 break
 case  'blowjob':
 if (isBanned) return reply(mess.ban)
@@ -12080,7 +12270,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 reply(mess.wait)
 anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 break
 case  'hentai': 
 if (isBanned) return reply(mess.ban)
@@ -12089,7 +12279,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 break
 case  'megumin2':
 if (isBanned) return reply(mess.ban)
@@ -12099,7 +12289,7 @@ if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: $
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
 break
 case  'megumin':
 if (isBanned) return reply(mess.ban)
@@ -12108,7 +12298,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 break
 case 'neko':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -12117,13 +12307,13 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
                if (!isRegistered) return reply (mess.banned)
                reply(mess.wait)
                 buffer = await getBuffer(`https://api.dhamzxploit.my.id/api/nsfw/neko`)
-                const bbc = await itsmevall.prepareMessage(from, buffer, MessageType.image)
+                const bbc = await zyy.prepareMessage(from, buffer, MessageType.image)
 
             const button = [{buttonId:`${prefix}neko`,buttonText: {displayText: 'Next️'}, type: 1}]
 
             const ButonMessages = {
 
-            contentText: `_© By Alya✓Chan_`,
+            contentText: `_©ZyyXtrime_`,
 
             buttons: button,
 
@@ -12135,7 +12325,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 
             }
 
-            await itsmevall.sendMessage(from, ButonMessages, MessageType.buttonsMessage, {quoted :mek})
+            await zyy.sendMessage(from, ButonMessages, MessageType.buttonsMessage, {quoted :mek})
             limitAdd(sender, limit)
                 break
 case  'trapnime':
@@ -12145,7 +12335,7 @@ if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}n
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
 buffer = await getBuffer(anu.url)
-itsmevall.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./itsmevall.jpg')})
+zyy.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./zyy.jpg')})
 break
 //Done
 				case 'nuliskiri':
@@ -12157,7 +12347,7 @@ break
                res = await axios.get(`https://dt-04.herokuapp.com/nulis?text=${nulis}`)
                if (res.data.error) return reply(res.data.error)
                buff = Buffer.from(res.data.result.split(',')[1], 'base64')
-               itsmevall.sendMessage(from, buff, image, {quoted: mek, caption: mess.success}).catch(e => {
+               zyy.sendMessage(from, buff, image, {quoted: mek, caption: mess.success}).catch(e => {
                return reply('_[ ! ] Error Gagal Dalam Mendownload Dan Mengirim File_')
 })
                break
@@ -12170,7 +12360,7 @@ break
                res = await axios.get(`https://dt-04.herokuapp.com/nulis?text=${nulis}`)
                if (res.data.error) return reply(res.data.error)
                buff = Buffer.from(res.data.result.split(',')[1], 'base64')
-               itsmevall.sendMessage(from, buff, image, {quoted: mek, caption: mess.success}).catch(e => {
+               zyy.sendMessage(from, buff, image, {quoted: mek, caption: mess.success}).catch(e => {
                return reply('_[ ! ] Error Gagal Dalam Mendownload Dan Mengirim File_')
 })
                break                                           		
@@ -12206,7 +12396,7 @@ Url = args.join(' ')
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/download/ytmp4?url=${Url}&apikey=${dhakey}`)
 ytmp4 = await getBuffer(anu.result.url)
 reply(`_*document sedang diproses, silahkan tunggu beberapa saat lagi*_`)
-itsmevall.sendMessage(from, ytmp4, MessageType.document, {mimetype: 'audio/mp4',filename: `${anu.result.title}`,quoted: mek})
+zyy.sendMessage(from, ytmp4, MessageType.document, {mimetype: 'audio/mp4',filename: `${anu.result.title}`,quoted: mek})
 limitAdd(sender, limit)
 break
                case "pubglogo":
@@ -12218,7 +12408,7 @@ break
      memek2 = ct.split("|")[1];
      anu = await fetchJson(`https://rest-api-megumin1.herokuapp.com/api/textmaker/game?text=${memek1}&text2=${memek2}&theme=pubg&apikey=beta`)
      buffer = await getBuffer(anu.result.url)
-     itsmevall.sendMessage(from, buffer, image, {quoted: mek, caption: 'Here'})
+     zyy.sendMessage(from, buffer, image, {quoted: mek, caption: 'Here'})
      break
      case 'addprem':  
 					if (!isOwner && !mek.key.fromMe) return reply('Only Owner')    
@@ -12242,7 +12432,7 @@ break
 						teks += `- ${manikgans}\n`
 					}
 					teks += `\n*Total : ${prem.length}*`
-					itsmevall.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": prem } })
+					zyy.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": prem } })
 					break
         case "foliokiri":
 case 'foliokanan':
@@ -12251,11 +12441,11 @@ if (!c) return reply('Textnya mana gan?')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
+              imageMsg = (await zyy.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
+              buttonsMessage = {footerText:'Created By zyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              zyy.relayWAMessage(prep)
 break
 case 'xs':
 if (isBanned) return reply(mess.ban)
@@ -12271,7 +12461,7 @@ ini_txt += `Link : ${x.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DOWNLOAD*
 └ ${prefix}xvideo [link xvid] = Video`
-itsmevall.sendMessage(from, anu, text, {quoted: mek})
+zyy.sendMessage(from, anu, text, {quoted: mek})
 break
 case 'xvideo':
 case 'xv':
@@ -12280,7 +12470,7 @@ if (!c) return grupinv('Linknya?')
 x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`)
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
-itsmevall.sendMessage(from, vid, video, {quoted: mek})
+zyy.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'listnulis':
   reply(`Example ${prefix}nulis tes
@@ -12295,11 +12485,11 @@ if (!c) return reply(+'Textnya mana gan?')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `${prefix}listnulis`,buttonText:{displayText: `List Nulis🔖`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
+              imageMsg = (await zyy.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
+              buttonsMessage = {footerText:'Created By zyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @_𝙞𝙩𝙨𝙢𝙚𝙫𝙖𝙡𝙡 ☹︎`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              zyy.relayWAMessage(prep)
 break
 case 'nsfw':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -12312,7 +12502,7 @@ if (isBanned) return reply(mess.ban)
 						nsfww.push(from)
 						fs.writeFileSync('./database/nsfww.json', JSON.stringify(nsfww))
 						reply('Sukses mengaktifkan fitur nsfw')
-						itsmevall.sendMessage(from, `Bebas Nyari Hentai 🗿`, text)
+						zyy.sendMessage(from, `Bebas Nyari Hentai 🗿`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isNsfw) return reply('Sudah Mati Kak')
 						var ini = nsfww.indexOf(from)
@@ -12331,9 +12521,9 @@ if (isBanned) return reply(mess.ban)
                     txt = args.join(" ")
                     reply(mess.wait)
                     buffer = await getBuffer(`https://api.zeks.me/api/text3d?apikey=${zekskey}&text=${txt}`)
-                    itsmevall.sendMessage(from, buffer, image, { quoted: mek, caption: mess.success})
+                    zyy.sendMessage(from, buffer, image, { quoted: mek, caption: mess.success})
                     break
-                    case 'ninjalogo':
+                    case 'ninjalogo2':
                     if (isBanned) return reply(mess.ban)
 			if (!isRegistered) return reply(mess.banned)
 					var gh = body.slice(11)
@@ -12342,24 +12532,24 @@ if (isBanned) return reply(mess.ban)
 					if (args.length < 1) return reply(`Example: ${prefix + command} Bot&Indo`)
 					reply(mess.wait)
 					buffer = await getBuffer(`https://ogata-api.herokuapp.com/api/textpro/ninjalogo?text1=${gli}&text2=${tch}&apikey=KFrfhVC4`)
-					itsmevall.sendMessage(from, buffer, image, {quoted: mek, caption: mess.success})
+					zyy.sendMessage(from, buffer, image, {quoted: mek, caption: mess.success})
 					break                   					
 case 'detikvn':
 if (isBanned) return reply(mess.ban)
 encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					mediam = await itsmevall.downloadAndSaveMediaMessage(encmediam)
+					mediam = await zyy.downloadAndSaveMediaMessage(encmediam)
 					cokmatane = Number(args[0])
 					hah = fs.readFileSync(mediam)
-						itsmevall.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', duration: cokmatane, ptt: true, quoted:fvn})
+						zyy.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', duration: cokmatane, ptt: true, quoted:fvn})
 						fs.unlinkSync(mediam)
 				break
 				case 'detikvideo':
 				if (isBanned) return reply(mess.ban)
 				encmedian = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-					median = await itsmevall.downloadAndSaveMediaMessage(encmedian)
+					median = await zyy.downloadAndSaveMediaMessage(encmedian)
 					cokmatane = Number(args[0])
 					hah = fs.readFileSync(median)
-						itsmevall.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: fvid})
+						zyy.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: fvid})
 						fs.unlinkSync(median)
 				break
       case "colongsw": //arif
@@ -12369,8 +12559,8 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          owgi = await itsmevall.downloadAndSaveMediaMessage(ger);
-          itsmevall.sendMessage(sender, fs.readFileSync(owgi), "imageMessage", {
+          owgi = await zyy.downloadAndSaveMediaMessage(ger);
+          zyy.sendMessage(sender, fs.readFileSync(owgi), "imageMessage", {
             caption: q,
           });
           reply("Sukses");
@@ -12380,8 +12570,8 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          owgi = await itsmevall.downloadAndSaveMediaMessage(ger);
-          itsmevall.sendMessage(sender, fs.readFileSync(owgi), "videoMessage", {
+          owgi = await zyy.downloadAndSaveMediaMessage(ger);
+          zyy.sendMessage(sender, fs.readFileSync(owgi), "videoMessage", {
             caption: q,
           });
           reply("Sukses");
@@ -12394,7 +12584,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
       case "caripesan":
       if (isBanned) return reply(mess.ban)
         if (!q) return reply("pesannya apa bang?");
-        let v = await itsmevall.searchMessages(q, from, 10, 1);
+        let v = await zyy.searchMessages(q, from, 10, 1);
         let s = v.messages;
         let el = s.filter((v) => v.message);
         el.shift();
@@ -12403,7 +12593,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
           reply(`Ditemukan ${el.length} pesan`);
           await sleep(3000);
           for (let i = 0; i < el.length; i++) {
-            await itsmevall.sendMessage(from, "Nih pesannya", text, {
+            await zyy.sendMessage(from, "Nih pesannya", text, {
               quoted: el[i],
             });
           }
@@ -12428,7 +12618,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 *Sinopsis* :
 ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.batchSD}\n*Link Download HD* : ${anime.batchHD}`
             ram = await getBuffer(anime.img)
-            itsmevall.sendMessage(from,ram,image,{quoted:dep,caption:rem})
+            zyy.sendMessage(from,ram,image,{quoted:dep,caption:rem})
             break
       case "komiku":
         if (!q) return reply(`judulnya?\n${prefix}komiku mao gakuin`);
@@ -12442,11 +12632,11 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
         sendMediaURL(from, komik.image, result);
         break;
       case "chara":
-        if (!q) return reply(`gambar apa?\n${prefix}chara itsmevall`);
+        if (!q) return reply(`gambar apa?\n${prefix}chara zyy`);
         let im = await hx.chara(q);
         let acak = im[Math.floor(Math.random() * im.length)];
         let li = await getBuffer(acak);
-        await itsmevall.sendMessage(from, li, image, { quoted: mek });
+        await zyy.sendMessage(from, li, image, { quoted: mek });
         break;
       case 'pinterest':
       if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -12458,15 +12648,15 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
         let ac = pin[Math.floor(Math.random() * pin.length)];
         let di = await getBuffer(ac);
 buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await itsmevall.prepareMessageMedia(di, "imageMessage", { thumbnail: di, })).imageMessage
-              buttonsMessage = {footerText:'Created By ZyyXtrime', imageMessage: imageMsg,
+              imageMsg = (await zyy.prepareMessageMedia(di, "imageMessage", { thumbnail: di, })).imageMessage
+              buttonsMessage = {footerText:'Created By zyyXtrime', imageMessage: imageMsg,
               contentText:`𝙅𝙖𝙣𝙜𝙖𝙣 𝙇𝙪𝙥𝙖 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 @spnx.fauzi`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:"https://youtu.be/Ejl9sLbgc1A"}}})
+              zyy.relayWAMessage(prep)
               limitAdd(sender, limit)
         break;
       case "playstore":
-        if (!q) return reply("lu nyari apa?");
+        if (!q) return reply("mau nyari apa kak?");
         let play = await hx.playstore(q);
         let store = "❉─────────────────────❉\n";
         for (let i of play) {
@@ -12501,7 +12691,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
 \`\`\`🦈 Link : ${get_data[i].url}\`\`\``
 }
               ini_buffer = await getBuffer(get_data[0].img_detail[0])
-              itsmevall.sendMessage(from, ini_buffer, image, { quoted: mek, caption: teks })
+              zyy.sendMessage(from, ini_buffer, image, { quoted: mek, caption: teks })
               } catch {
               reply(`Maaf produk ${query} tidak ditemukan`)
 }
@@ -12552,7 +12742,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             "+" + entah
           ).getNumber("internasional")}\n` +
           "END:VCARD".trim();
-        itsmevall.sendMessage(
+        zyy.sendMessage(
           from,
           { displayName: `${nah}`, vcard: vcard },
           contact,
@@ -12568,12 +12758,12 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -12584,7 +12774,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, sticker, options);
+          zyy.sendMessage(from, ini_buffer, sticker, options);
           fs.unlinkSync(file);
         } else {
           reply(`*Reply sticker yang sudah dikirim*`);
@@ -12592,19 +12782,19 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         break;
         case 'tobc':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				itsmevall.updatePresence(from, Presence.composing)
-					anu = await itsmevall.chats.all()
+				zyy.updatePresence(from, Presence.composing)
+					anu = await zyy.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
+						buff = await zyy.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							itsmevall.sendMessage(_.jid, buff, audio, { quoted: ftrol })
+							zyy.sendMessage(_.jid, buff, audio, { quoted: ftrol })
 						}
 						} else if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await itsmevall.downloadMediaMessage(encmedia)
+						buff = await zyy.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							itsmevall.sendMessage(_.jid, buff, sticker, { quoted: foncevid, contextInfo: { forwardingScore: 508, isForwarded: true}})
+							zyy.sendMessage(_.jid, buff, sticker, { quoted: foncevid, contextInfo: { forwardingScore: 508, isForwarded: true}})
 							}
 							} else{
           reply('reply sticker/audio')
@@ -12620,12 +12810,12 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -12636,7 +12826,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, sticker, options);
+          zyy.sendMessage(from, ini_buffer, sticker, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedImage) &&
@@ -12646,12 +12836,12 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -12662,7 +12852,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, image, options);
+          zyy.sendMessage(from, ini_buffer, image, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedAudio) &&
@@ -12672,12 +12862,12 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -12690,7 +12880,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, audio, options);
+          zyy.sendMessage(from, ini_buffer, audio, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedVideo) &&
@@ -12700,12 +12890,12 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -12717,7 +12907,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, video, options);
+          zyy.sendMessage(from, ini_buffer, video, options);
           fs.unlinkSync(file);
         } else {
           reply(
@@ -12736,7 +12926,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         var replace = gh.split("|")[0];
         var target = gh.split("|")[1];
         var bot = gh.split("|")[2];
-        itsmevall.sendMessage(from, `${bot}`, text, {
+        zyy.sendMessage(from, `${bot}`, text, {
           quoted: {
             key: {
               fromMe: false,
@@ -12762,13 +12952,13 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             quotedMessage: { extendedTextMessage: { text: split[0] } },
           },
         };
-        const responye = await itsmevall.sendMessage(
+        const responye = await zyy.sendMessage(
           jids,
           `${split[1]}`,
           MessageType.text,
           options
         );
-        await itsmevall.deleteMessage(jids, {
+        await zyy.deleteMessage(jids, {
           id: responye.messageID,
           remoteJid: jids,
           fromMe: true,
@@ -12781,13 +12971,13 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         ran = getRandom(".mp4");
         exec(`ffmpeg -i ${media} ${ran}`, (err) => {
           fs.unlinkSync(media);
           if (err) return fakegroup(`Err: ${err}`);
           buffer453 = fs.readFileSync(ran);
-          itsmevall.sendMessage(from, buffer453, audio, {
+          zyy.sendMessage(from, buffer453, audio, {
             mimetype: "audio/mp4",
             quoted: mek,
           });
@@ -12801,7 +12991,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         ran = getRandom(".mp4");
         exec(
           `ffmpeg -i ${media} -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2[a]" -map "[v]" -map "[a]" ${ran}`,
@@ -12809,7 +12999,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             fs.unlinkSync(media);
             if (err) return fakegroup(`Err: ${err}`);
             buffer453 = fs.readFileSync(ran);
-            itsmevall.sendMessage(from, buffer453, video, {
+            zyy.sendMessage(from, buffer453, video, {
               mimetype: "video/mp4",
               quoted: mek,
             });
@@ -12822,7 +13012,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         ran = getRandom(".mp4");
         exec(
           `ffmpeg -i ${media} -filter_complex "[0:v]setpts=2*PTS[v];[0:a]atempo=0.5[a]" -map "[v]" -map "[a]" ${ran}`,
@@ -12830,7 +13020,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             fs.unlinkSync(media);
             if (err) return fakegroup(`Err: ${err}`);
             buffer453 = fs.readFileSync(ran);
-            itsmevall.sendMessage(from, buffer453, video, {
+            zyy.sendMessage(from, buffer453, video, {
               mimetype: "video/mp4",
               quoted: mek,
             });
@@ -12842,13 +13032,13 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
         if (!isQuotedVideo) return reply("Reply videonya!");
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         ran = getRandom(".mp4");
         exec(`ffmpeg -i ${media} -vf reverse -af areverse ${ran}`, (err) => {
           fs.unlinkSync(media);
           if (err) return fakegroup(`Err: ${err}`);
           buffer453 = fs.readFileSync(ran);
-          itsmevall.sendMessage(from, buffer453, video, {
+          zyy.sendMessage(from, buffer453, video, {
             mimetype: "video/mp4",
             quoted: mek,
           });
@@ -12860,23 +13050,23 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
               result = `${mathdare}`
               buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Kebenaran atau tantangan?', buttons: buttons, headerType: 1 }
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{})
+              zyy.relayWAMessage(prep)
               break
           case 'buttons6':
               const randomtruth = truth[Math.floor(Math.random() * truth.length)]
               result = `${randomtruth}`
               buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Kebenaran atau tantangan?', buttons: buttons, headerType: 1 }
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{})
+              zyy.relayWAMessage(prep)
               break
           case 'tod':
               result =`*Truth Or Dare*\nPemain diberi pilihan antara menjawab pertanyaan dengan jujur, atau melakukan tantangan yang diberikan`
               buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Kebenaran atau tantangan?', buttons: buttons, headerType: 1 }
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{contextInfo: { mentionedJid: [sender]},quoted:ftex})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{contextInfo: { mentionedJid: [sender]},quoted:ftex})
+              zyy.relayWAMessage(prep)
               break
               case "yuri":
         reply(mess.wait);
@@ -12890,7 +13080,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12912,7 +13102,7 @@ teks += `\`\`\`🦈 Nama : ${get_data[i].name}\`\`\`
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                itsmevall.sendMessage(from, media, image, {
+                zyy.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "NIH",
                 });
@@ -12992,7 +13182,7 @@ case 'listgroup':
                 case 'grouplist':
 if (isBanned) return reply(mess.ban)                
 if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
-  const txs = itsmevall.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`- ${itsmevall.getName(v.jid)}\n${v.jid}\n[${v.read_only ? 'Left' : 'Joined'}]`).join`\n\n`
+  const txs = zyy.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`- ${zyy.getName(v.jid)}\n${v.jid}\n[${v.read_only ? 'Left' : 'Joined'}]`).join`\n\n`
   reply(txs)
   break
               case 'ttp4':  
@@ -13003,7 +13193,7 @@ if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
               if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
 					if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp KurrXdゑ v.3.0`)
 					atetepe = await getBuffer(`https://api.lolhuman.xyz/api/${command}?apikey=${lolkey}&text=${encodeURIComponent(c)}`)
-					itsmevall.sendMessage(from, atetepe, sticker, { quoted: mek })
+					zyy.sendMessage(from, atetepe, sticker, { quoted: mek })
 					limitAdd(sender, limit)
 					break        	
 case 'waifu':
@@ -13018,11 +13208,11 @@ case 'waifu':
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'🐤OWNER'},type:1}]
-              imageMsg = ( await itsmevall.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              imageMsg = ( await zyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Jangan Lupa Donasi Ya Kak ☕', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
-              prep = await itsmevall.prepareMessageFromContent(from,{buttonsMessage},{quoted: foncevid})
-              itsmevall.relayWAMessage(prep)
+              prep = await zyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: foncevid})
+              zyy.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               limitAdd(sender, limit)
               break
@@ -13044,7 +13234,7 @@ case 'waifu':
                 if (isBanned) return reply(mess.ban)
                 reply(mess.wait)
                     getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${lolkey}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, { quoted: mek })
+                        zyy.sendMessage(from, gambar, image, { quoted: mek })
                     })
                     limitAdd(sender, limit)
                     break
@@ -13072,7 +13262,7 @@ case 'waifu':
                 reply(mess.wait)
                 if (!isPremium) return reply(mess.only.premium)
                     await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${lolkey}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, { quoted: mek })
+                        zyy.sendMessage(from, gambar, image, { quoted: mek })
                     })
                     limitAdd(sender, limit)
                     break
@@ -13122,7 +13312,7 @@ case 'waifu':
                 if (isBanned) return reply(mess.ban)
                 reply(mess.wait)                
                     getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=${lolkey}`).then((gambar) => {
-                        itsmevall.sendMessage(from, gambar, image, { quoted: mek })
+                        zyy.sendMessage(from, gambar, image, { quoted: mek })
                     })
                     limitAdd(sender, limit)
                     break              
@@ -13144,16 +13334,15 @@ case 'waifu':
                     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 					if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp Tolol`)
 					atetepe = await getBuffer(`https://api.lolhuman.xyz/api/${command}?apikey=${lolkey}&text=${encodeURIComponent(c)}`)
-					itsmevall.sendMessage(from, atetepe, sticker, { quoted: mek })
+					zyy.sendMessage(from, atetepe, sticker, { quoted: mek })
 					limitAdd(sender, limit)
 					break
    case 'attp':
    if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
    if (isBanned) return reply(mess.ban)
-      if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftroli})
-              if (args.length == 0) return reply(`Example: ${prefix + command} itsmevall`)
+              if (args.length == 0) return reply(`Example: ${prefix + command} zyy`)
               buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
-              itsmevall.sendMessage(from, buffer, sticker, { quoted: mek })
+              zyy.sendMessage(from, buffer, sticker, { quoted: mek })
               limitAdd(sender, limit)
               break
 				case 'resepmasakan':
@@ -13163,7 +13352,7 @@ case 'waifu':
 					hasilresep = `❏ *${anu.results.title}*\n\n❏ Porsi : ${anu.results.servings}\n❏ Waktu : ${anu.results.times}\n❏ Kesulitan : ${anu.results.dificulty}\n❏ Pengguna : ${anu.results.author.user}\n❏ Tanggal Diterbitkan : ${anu.results.author.datePublished}\n❏ Deskripsi : ${anu.results.desc}\n\n────────────────────\n❏ *Tutorial*\n\n❏ Bahan : ${anu.results.ingredient}\n❏ Langkah : ${anu.results.step}`
 					reply(mess.wait)
 					buff = await getBuffer(anu.results.thumb)
-					itsmevall.sendMessage(from, buff, image, {quoted: ftok, caption: hasilresep})
+					zyy.sendMessage(from, buff, image, {quoted: ftok, caption: hasilresep})
 					break 
 					case 'stalkgithub':
       case 'githubstalk':
@@ -13207,7 +13396,7 @@ case 'waifu':
        if (isBanned) return reply(mess.ban)
               if (!isGroup) return reply(mess.only.group)
               try {
-              var pic = await itsmevall.getProfilePicture(from)
+              var pic = await zyy.getProfilePicture(from)
               } catch {
               var pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 }
@@ -13240,7 +13429,7 @@ case 'waifu':
             "+" + entah
           ).getNumber("internasional")}\n` +
           "END:VCARD".trim();
-        itsmevall.sendMessage(
+        zyy.sendMessage(
           from,
           { displayName: `${nah}`, vcard: vcard },
           contact
@@ -13286,12 +13475,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         if (!isQuotedSticker) return replyv("Stiker aja om");
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         anu = args.join(" ").split("|");
         satu = anu[0] !== "" ? anu[0] : `SELF`;
         dua = typeof anu[1] !== "undefined" ? anu[1] : `Sticker By Bot-Alya`;
         require("./lib/fetcher.js").createExif(satu, dua);
-        require("./lib/fetcher.js").modStick(media, itsmevall, mek, from);
+        require("./lib/fetcher.js").modStick(media, zyy, mek, from);
         limitAdd(sender, limit)
         break;
       case "wm":       
@@ -13309,13 +13498,13 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+          media = await zyy.downloadAndSaveMediaMessage(encmedia);
           await createExif(a, b);
           out = getRandom(".webp");
           ffmpeg(media)
             .on("error", (e) => {
               console.log(e);
-              itsmevall.sendMessage(from, "Terjadi kesalahan", "conversation", {
+              zyy.sendMessage(from, "Terjadi kesalahan", "conversation", {
                 quoted: mek,
               });
               fs.unlinkSync(media);
@@ -13330,7 +13519,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                 "-o",
                 _out,
               ]).on("exit", () => {
-                itsmevall.sendMessage(
+                zyy.sendMessage(
                   from,
                   fs.readFileSync(_out),
                   "stickerMessage",
@@ -13360,7 +13549,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          const media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+          const media = await zyy.downloadAndSaveMediaMessage(encmedia);
           pe = args.join("");
           var a = pe.split("|")[0];
           var b = pe.split("|")[1];
@@ -13369,7 +13558,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           ffmpeg(media)
             .on("error", (e) => {
               console.log(e);
-              itsmevall.sendMessage(from, "Terjadi kesalahan", "conversation", {
+              zyy.sendMessage(from, "Terjadi kesalahan", "conversation", {
                 quoted: mek,
               });
               fs.unlinkSync(media);
@@ -13384,7 +13573,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                 "-o",
                 _out,
               ]).on("exit", () => {
-                itsmevall.sendMessage(
+                zyy.sendMessage(
                   from,
                   fs.readFileSync(_out),
                   "stickerMessage",
@@ -13426,7 +13615,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-        const tipes = await itsmevall.downloadAndSaveMediaMessage(dipes);
+        const tipes = await zyy.downloadAndSaveMediaMessage(dipes);
         const bufer = fs.readFileSync(tipes);
         const desc = `${pn}`;
         const title = `${pen}`;
@@ -13435,12 +13624,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         var anu = {
           detectLinks: false,
         };
-        var mat = await itsmevall.generateLinkPreview(url);
+        var mat = await zyy.generateLinkPreview(url);
         mat.title = title;
         mat.description = desc;
         mat.jpegThumbnail = bufer;
         mat.canonicalUrl = buu;
-        itsmevall.sendMessage(from, mat, MessageType.extendedText, anu);
+        zyy.sendMessage(from, mat, MessageType.extendedText, anu);
         limitAdd(sender, limit)
         break;
        case 'antibug':
@@ -13495,7 +13684,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         if (!isGroupAdmins && !mek.key.fromMe) return reply("Perintah Ini hanya bisa di gunakan oleh Admin Grup");
         if (!isGroup) return reply(mess.only.group);
         var value = args.join(" ");
-        var group = await itsmevall.groupMetadata(from);
+        var group = await zyy.groupMetadata(from);
         var member = group["participants"];
         var mem = [];
         member.map(async (adm) => {
@@ -13506,7 +13695,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           contextInfo: { mentionedJid: mem },
           quoted: mek,
         };
-        itsmevall.sendMessage(from, optionshidetag, text);
+        zyy.sendMessage(from, optionshidetag, text);
         limitAdd(sender, limit)
         break;
 //Batas Kontol
@@ -13529,7 +13718,7 @@ if (isBanned) return reply(mess.ban)
 
                 kontol = await getBuffer(anu.result.thumbnail);                		
 				buffer1 = await getBuffer(anu.result.withwm)				
-				itsmevall.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.tag}.mp4`, quoted:mek, caption: 'Nih Gan'})
+				zyy.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.tag}.mp4`, quoted:mek, caption: 'Nih Gan'})
 				sendButLocation(from, `${infomp3}`,`© REALZIBOT`, {jpegThumbnail:kontol}, [{buttonId:`${prefix}menu`,buttonText:{displayText:'MENU'},type:1}], {contextInfo: { mentionedJid: [sender, owner]}})
 				limitAdd(sender, limit)         
 					break		
@@ -13550,7 +13739,7 @@ if (isBanned) return reply(mess.ban)
                     txt += `*Mohon tunggu sebentar, sedang proses pengiriman...*`
                     loli = await getBuffer(data.thumbnail);                    
                     sendButLocation(from, `${txt}`,`© REALZIBOT`, {jpegThumbnail:loli}, [{buttonId:`${prefix}menu`,buttonText:{displayText:'MENU'},type:1}], {contextInfo: { mentionedJid: [sender, owner]}})                    
-                    itsmevall.sendMessage(from , await getBuffer(data.medias[0].url), audio,{ quoted: mek, mimetype: 'audio/mp4' })
+                    zyy.sendMessage(from , await getBuffer(data.medias[0].url), audio,{ quoted: mek, mimetype: 'audio/mp4' })
 				})
 				limitAdd(sender, limit)
 			break
@@ -13651,7 +13840,7 @@ if (isBanned) return reply(mess.ban)
                 xa.Anime(q).then(async data => {
                     let txt = `*-------「 ANIME-SEARCH 」-------*\n\n`
                     for (let i of data) {
-                        txt += `*📫 Title :* ${i.judul}\n`
+                        txt += `*?? Title :* ${i.judul}\n`
                         txt += `*📚 Url :* ${i.link}\n-----------------------------------------------------\n`
                     }
                     sendFileFromUrl(from,data[0].thumbnail,txt,mek)
@@ -13796,7 +13985,7 @@ gbutsan = [
   {buttonId: `playmp4 ${link}`, buttonText: {displayText: 'VIDEO'}, type: 'RESPONSE'},
   {buttonId: `playmp3 ${link}`, buttonText: {displayText: 'AUDIO'}, type: 'RESPONSE'}
 ]
-tes = await itsmevall.prepareMessage('0@s.whatsapp.net', {jpegThumbnail: gambar}, location, {thumbnail: gambar})
+tes = await zyy.prepareMessage('0@s.whatsapp.net', {jpegThumbnail: gambar}, location, {thumbnail: gambar})
  gbuttonan = {
 locationMessage: tes.message.locationMessage,
     contentText: captions,
@@ -13804,7 +13993,7 @@ locationMessage: tes.message.locationMessage,
     buttons: gbutsan,
     headerType: 'LOCATION'
 }
-		itsmevall.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted: mek})
+		zyy.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted: mek})
 			} else if (!arg) {
                            const playy = await axios.get(`https://cililitan2.herokuapp.com/api/ytsearch?q=${m.quoted.text}`)
 							console.log(playy)
@@ -13819,7 +14008,7 @@ gbutsan = [
   {buttonId: `playmp4 ${link}`, buttonText: {displayText: 'VIDEO'}, type: 'RESPONSE'},
   {buttonId: `playmp3 ${link}`, buttonText: {displayText: 'AUDIO'}, type: 'RESPONSE'}
 ]
-tes = await itsmevall.prepareMessage('0@s.whatsapp.net', {jpegThumbnail: gambar}, location, {thumbnail: gambar})
+tes = await zyy.prepareMessage('0@s.whatsapp.net', {jpegThumbnail: gambar}, location, {thumbnail: gambar})
  gbuttonan = {
 locationMessage: tes.message.locationMessage,
     contentText: captions,
@@ -13827,7 +14016,7 @@ locationMessage: tes.message.locationMessage,
     buttons: gbutsan,
     headerType: 'LOCATION'
 }
-		itsmevall.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted: mek})
+		zyy.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted: mek})
 			} 
 			limitAdd(sender, limit)
                             break
@@ -13845,7 +14034,7 @@ locationMessage: tes.message.locationMessage,
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          const media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+          const media = await zyy.downloadAndSaveMediaMessage(encmedia);
           ran = "666.webp";
           await ffmpeg(`./${media}`)
             .input(media)
@@ -13859,7 +14048,7 @@ locationMessage: tes.message.locationMessage,
             })
             .on("end", function () {
               console.log("Finish");
-              itsmevall.sendMessage(from, fs.readFileSync(ran), sticker, {
+              zyy.sendMessage(from, fs.readFileSync(ran), sticker, {
                 quoted: foncevid,
               });
               fs.unlinkSync(media);
@@ -13884,7 +14073,7 @@ locationMessage: tes.message.locationMessage,
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          const media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+          const media = await zyy.downloadAndSaveMediaMessage(encmedia);
           ran = "999.webp";
           reply(mess.wait);
           await ffmpeg(`./${media}`)
@@ -13900,7 +14089,7 @@ locationMessage: tes.message.locationMessage,
             })
             .on("end", function () {
               console.log("Finish");
-              itsmevall.sendMessage(from, fs.readFileSync(ran), sticker, {
+              zyy.sendMessage(from, fs.readFileSync(ran), sticker, {
                 quoted: foncevid,
               });
               fs.unlinkSync(media);
@@ -13929,7 +14118,7 @@ locationMessage: tes.message.locationMessage,
 										reply(mess.wait)
 										var teks2 = args.join(' ')
 										var enmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-										var mediia = await itsmevall.downloadMediaMessage(enmedia)
+										var mediia = await zyy.downloadMediaMessage(enmedia)
 										var njay = await uploadImages(mediia)
 										var resu = `https://api.memegen.link/images/custom/-/${teks2}.png?background=${njay}`
 										sendStickerFromUrl(from,`${resu}`)	
@@ -13946,7 +14135,7 @@ locationMessage: tes.message.locationMessage,
         reply(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
-        media = await itsmevall.downloadAndSaveMediaMessage(encmedia);
+        media = await zyy.downloadAndSaveMediaMessage(encmedia);
         ran = getRandom(".png");
         exec(`ffmpeg -i ${media} ${ran}`, (err) => {
           fs.unlinkSync(media);
@@ -13964,7 +14153,7 @@ locationMessage: tes.message.locationMessage,
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
 					reply(mess.wait)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
-					owgi = await  itsmevall.downloadAndSaveMediaMessage(ger)
+					owgi = await  zyy.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("0ffc503f79f9b051b82e643eb3e3a746", owgi)
 					teks = `${anu.display_url}`
 					ranp = getRandom('.gif')
@@ -13973,7 +14162,7 @@ locationMessage: tes.message.locationMessage,
 					exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					itsmevall.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
+					zyy.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					} else {
@@ -13982,7 +14171,7 @@ locationMessage: tes.message.locationMessage,
 					break
              case 'song':          
                 var teks = `Kirim perintah *${prefix}play query --option*\n\nList Option :\n- --ptt _for send voice notes_\n- --doc _for send document_\n\nContoh :\n*${command} query --ptt*\n*${command} query* Untuk Option Default Mengirim Audio\n\nNote : Fitur ini menggunakan satu limit harian!`
-                if (args.length === 1) return itsmevall.sendMessage(from, teks, text, {quoted: mek, contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `How to Use the Play Music Feature`, mediaType: 2, thumbnail: fs.readFileSync('./itsmevall.jpg'), sourceUrl: `https://wa.me/6289653381067?text=assalamualaikum+bang+`}}})
+                if (args.length === 1) return zyy.sendMessage(from, teks, text, {quoted: mek, contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `How to Use the Play Music Feature`, mediaType: 2, thumbnail: fs.readFileSync('./zyy.jpg'), sourceUrl: `https://wa.me/6289653381067?text=assalamualaikum+bang+`}}})
                 addCountCmd('#play', sender, _cmd)
                 try {
                  reply(mess.wait)
@@ -13992,17 +14181,17 @@ locationMessage: tes.message.locationMessage,
                     if (Number(yut.videos[0].timestamp.replace(':', '').replace(':', '').replace(':', '')) >= 1000) return reply(`Durasi terlalu panjang, maximal 10 menit!`)
                      var thumbna = await getBuffer(thumb)
                      var capt = `*YOUTUBE PLAY MP3*\n\n≻ *Title :* ${title}\n≻ *Duration :* ${yut.videos[0].timestamp}\n≻ *Url :* ${yut.videos[0].url}\n\n_wait a minute, sending audio..._`
-                        itsmevall.sendMessage(from, thumbna, image, {thumbnail: Buffer.alloc(0), quoted: mek, caption: capt})
+                        zyy.sendMessage(from, thumbna, image, {thumbnail: Buffer.alloc(0), quoted: mek, caption: capt})
                         var audionye = await getBuffer(dl_link)
                     if (q.endsWith('--ptt')) {
-                        itsmevall.updatePresence(from, Presence.recording)
-                        itsmevall.sendMessage(from, audionye, audio, {ptt: true, quoted: mek, mimetype: 'audio/mp4', contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
+                        zyy.updatePresence(from, Presence.recording)
+                        zyy.sendMessage(from, audionye, audio, {ptt: true, quoted: mek, mimetype: 'audio/mp4', contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
                             limitAdd(sender, limit)
                     } else if (q.endsWith('--doc')) {
-                        itsmevall.sendMessage(from, audionye, MessageType.document, {quoted: mek, mimetype: 'audio/mp3', filename: `${title}.mp3`, contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
+                        zyy.sendMessage(from, audionye, MessageType.document, {quoted: mek, mimetype: 'audio/mp3', filename: `${title}.mp3`, contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
                             limitAdd(sender, limit)
                     } else {
-                        itsmevall.sendMessage(from, audionye, audio, {quoted: mek, mimetype: 'audio/mp4', contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
+                        zyy.sendMessage(from, audionye, audio, {quoted: mek, mimetype: 'audio/mp4', contextInfo: {externalAdReply: { title: `Youtube Play Music`, body: `${title}`, mediaType: 2, thumbnail: thumbna, mediaUrl: `${yut.videos[0].url}`}}})
                             limitAdd(sender, limit)
                     }
                 } catch (err) {
@@ -14021,7 +14210,7 @@ locationMessage: tes.message.locationMessage,
         try {
           var aramas = await yts(srch);
         } catch {
-          return await itsmevall.sendMessage(
+          return await zyy.sendMessage(
             from,
             "Error!",
             MessageType.text,
@@ -14064,7 +14253,7 @@ locationMessage: tes.message.locationMessage,
               ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                   .extendedTextMessage.contextInfo
               : mek;
-          delb = await itsmevall.downloadMediaMessage(boij);
+          delb = await zyy.downloadMediaMessage(boij);
           fs.writeFileSync(`./media/fake.jpeg`, delb);
           reply("Sukses");
         } else {
@@ -14084,7 +14273,7 @@ locationMessage: tes.message.locationMessage,
               ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                   .extendedTextMessage.contextInfo
               : mek;
-          delb = await itsmevall.downloadMediaMessage(boij);
+          delb = await zyy.downloadMediaMessage(boij);
           fs.writeFileSync(`./media/thumb.jpeg`, delb);
           reply("Sukses");
         } else {
@@ -14143,7 +14332,7 @@ break
 					for (let Y of res.data) {
 					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉──────────────────❉\n`
 					}
-					itsmevall.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
+					zyy.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
 		            }).catch(e => {
 					reply('Terjadi kesalahan, coba beberapa saat lagi')
 					})
@@ -14220,7 +14409,7 @@ case 'stalkig':
               teks += `*Username* : ${get_result[i].username}\n*Full name*: ${get_result[i].full_name}\n*Akun private* : ${get_result[i].private_user}\n*Verified*: ${get_result[i].verified_user}\n*Link*: https://instagram.com/${get_result[i].username}\n\n`
 }
               ini_buffer = await getBuffer(get_result[0].profile_pic)
-              itsmevall.sendMessage(from, ini_buffer, image, { quoted: mek, caption: teks })
+              zyy.sendMessage(from, ini_buffer, image, { quoted: mek, caption: teks })
               } catch {
               reply(`Maaf username ${query} tidak ditemukan`)
 }
@@ -14236,7 +14425,7 @@ case 'stalkig':
           if (!q) return reply("Masukan link group");
           var codeInvite = hen.split("https://chat.whatsapp.com/")[1];
           if (!codeInvite) return reply("pastikan link sudah mekar!");
-          var response = await itsmevall.acceptInvite(codeInvite);
+          var response = await zyy.acceptInvite(codeInvite);
           reply("SUKSES");
         } catch {
           reply("LINK ERROR!");
@@ -14276,12 +14465,12 @@ case 'stalkig':
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -14292,7 +14481,7 @@ case 'stalkig':
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, sticker, options);
+          zyy.sendMessage(from, ini_buffer, sticker, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedImage) &&
@@ -14302,12 +14491,12 @@ case 'stalkig':
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -14318,7 +14507,7 @@ case 'stalkig':
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, image, options);
+          zyy.sendMessage(from, ini_buffer, image, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedAudio) &&
@@ -14328,12 +14517,12 @@ case 'stalkig':
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -14346,7 +14535,7 @@ case 'stalkig':
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, audio, options);
+          zyy.sendMessage(from, ini_buffer, audio, options);
           fs.unlinkSync(file);
         } else if (
           ((isMedia && !mek.message.videoMessage) || isQuotedVideo) &&
@@ -14356,12 +14545,12 @@ case 'stalkig':
             ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : mek;
-          file = await itsmevall.downloadAndSaveMediaMessage(
+          file = await zyy.downloadAndSaveMediaMessage(
             encmedia,
             (filename = getRandom())
           );
           value = args.join(" ");
-          var group = await itsmevall.groupMetadata(from);
+          var group = await zyy.groupMetadata(from);
           var member = group["participants"];
           var mem = [];
           member.map(async (adm) => {
@@ -14373,7 +14562,7 @@ case 'stalkig':
             quoted: mek,
           };
           ini_buffer = fs.readFileSync(file);
-          itsmevall.sendMessage(from, ini_buffer, video, options);
+          zyy.sendMessage(from, ini_buffer, video, options);
           fs.unlinkSync(file);
         } else {
           reply(
@@ -14387,7 +14576,7 @@ case 'stalkig':
     if (isBanned) return reply(mess.ban)  
     if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
             boij = isQuotedImage || isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-            owgi = await itsmevall.downloadMediaMessage(boij)
+            owgi = await zyy.downloadMediaMessage(boij)
             res = await upload(owgi)
             reply(res)
             } else {
@@ -14416,7 +14605,7 @@ case 'stalkig':
             descOwner,
             descTime,
             creation,
-          } = await itsmevall.query({
+          } = await zyy.query({
             json: ["query", "invite", net],
             expect200: true,
           });
@@ -14450,7 +14639,7 @@ ${
                 : "-"
             }`
           );
-          itsmevall.sendMessage(from, par, text, {
+          zyy.sendMessage(from, par, text, {
             quoted: mek,
             contextInfo: { mentionedJid: jids },
           });
@@ -14462,7 +14651,7 @@ ${
         if (isBanned) return reply(mess.ban)
         if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted:mek})
         if (!isOwner && !mek.key.fromMe) return sticOwner(from)
-        itsmevall.sendMessage(
+        zyy.sendMessage(
           from,
           JSON.stringify(eval(budy.slice(5)), null, "\t"),
           text,
@@ -14846,10 +15035,10 @@ _Random Image_
 Aliases : -
 Usage : *${prefix}wallpaperhacker*
 
-4.️ *${prefix}wallpaperharley*
+4.️ *${prefix}wallpaper*
 _Random Image_
 Aliases : -
-Usage :  *${prefix}wallpaperharley*
+Usage :  *${prefix}wallpaper*
 
 5. *${prefix}wallpaperjoker*
 _Random Image_
@@ -14915,10 +15104,15 @@ Usage : *${prefix}bird*
 _Random Image_
 Aliases : -
 Usage : *${prefix}koala*
+
+18. *${prefix}wallpaperanime*
+_Random Image_
+Aliases : wibu
+Usage : *${prefix}wallpaperanime*
 `)
 break
 
-case '🎮':
+case '??':
 if (isBanned) return reply(mess.ban)
 reply(`
 ━━━ 「 *GAME* 」 ━━━
@@ -15650,6 +15844,38 @@ Usage : *${prefix}fast*
 break
 
 
+case '🎵':
+if (isBanned) return reply(mess.ban)
+reply(`━━━ 「 *SOUND* 」 ━━━
+
+1. *${prefix}sound1*
+_Musik ke 1_
+Aliases : -
+Example : -
+
+2. *${prefix}sound2*
+_Musik ke 2_
+Aliases : -
+Example : -
+
+3. *${prefix}sound3*
+_Musik ke 3_
+Aliases : -
+Example : -
+
+4. *${prefix}sound4*
+_Musik ke 4_
+Aliases : -
+Example : -
+
+5. *${prefix}sound5*
+_Musik ke 5_
+Aliases : -
+Example : -
+`)
+break
+
+
 case '👑':
 if (isBanned) return reply(mess.ban)
 reply(`━━━ 「 *ABOUT* 」 ━━━
@@ -15863,6 +16089,22 @@ Aliases : -
 Example : *.antihidetag*`)
 break
 
+case '🌙':
+if (isBanned) return reply(mess.ban)
+reply(`━━━ 「 *ISLAMIC* 」 ━━━
+
+1. *${prefix}jadwalsholat*
+_Jadwal sholat_
+Aliases : -
+Example : *.jadwalsholat (kota)*
+
+2. *${prefix}asmaulhusna*
+_Asmaul husna_
+Aliases : nama2 allah
+Example : *.asmaulhusna*
+`)
+break
+
 case '🌍':
 if (isBanned) return reply(mess.ban)
 reply(`
@@ -15883,6 +16125,7 @@ _Wangi sekali_
 Aliases : -
 Usage : *${prefix}wangy*`)
 break
+
 //------------------< Batas >-------------------
 
 if (!mek.key.fromMe) return;
@@ -15890,7 +16133,7 @@ if (_chats.startsWith('$')){
 if (!isOwner)return// reply(`Perintah ini tidak bisa Di lakukan oleh Jadibot sementara`)
 if (!q)return 
 var itsme = `${sender}`
-var split = `*itsmevall-BotWeA*`
+var split = `*zyy-BotWeA*`
 const term = {
 contextInfo: {
 participant: itsme,
@@ -15902,9 +16145,9 @@ text: split,
 }
 }
 exec(q, (err, stdout) => {
-if (err) return itsmevall.sendMessage(from, ` ${err}`, text, { quoted: mek })
+if (err) return zyy.sendMessage(from, ` ${err}`, text, { quoted: mek })
 if (stdout) {
-itsmevall.sendMessage(from, stdout, text, term)
+zyy.sendMessage(from, stdout, text, term)
 }
 })
 }
@@ -15914,7 +16157,7 @@ if (!mek.key.fromMe) return;
 if (_chats.startsWith('$')){
 if (!q)return 
 var itsme = `${sender}`
-var split = `*itsmevall-BotWeA*`
+var split = `*zyy-BotWeA*`
 const term = {
 contextInfo: {
 participant: itsme,
@@ -15926,15 +16169,15 @@ text: split,
 }
 }
 exec(q, (err, stdout) => {
-if (err) return itsmevall.sendMessage(from, ` ${err}`, text, { quoted: mek })
+if (err) return zyy.sendMessage(from, ` ${err}`, text, { quoted: mek })
 if (stdout) {
-itsmevall.sendMessage(from, stdout, text, term)
+zyy.sendMessage(from, stdout, text, term)
 }
 })
 }      
       if (budy.startsWith('x')){
 try {
-return itsmevall.sendMessage(from, JSON.stringify(eval(budy.slice(2)),null,'\t'),text, {quoted: mek})
+return zyy.sendMessage(from, JSON.stringify(eval(budy.slice(2)),null,'\t'),text, {quoted: mek})
 } catch(err) {
 e = String(err)
 reply(e)
@@ -15961,7 +16204,7 @@ reply(String(e))
 if (!mek.key.fromMe) return;
         if (_chats.startsWith(">")) {
           try {
-            return itsmevall.sendMessage(
+            return zyy.sendMessage(
               from,
               JSON.stringify(eval(budy.slice(2)), null, "\t"),
               text,
@@ -16015,7 +16258,7 @@ if (!mek.key.fromMe) return;
      if (!mek.key.fromMe) return;
         if (_chats.startsWith(">")) {
           try {
-            return itsmevall.sendMessage(
+            return zyy.sendMessage(
               from,
               JSON.stringify(eval(budy.slice(2)), null, "\t"),
               text,
@@ -16031,8 +16274,8 @@ if (!mek.key.fromMe) return;
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[SELFBOT]", "red"),
-        "Created By ZyyXtrime",
+        color("[REALZI]", "red"),
+        "Created By zyyXtrime",
         color(sender.split("@")[0])
       );
     }
@@ -16044,4 +16287,4 @@ if (!mek.key.fromMe) return;
     // console.log(e)
   }
 };
-// 𝙈𝙚𝙣𝙜𝙜𝙖𝙗𝙪𝙩シ︎
+// CREATED BY zyyXtrime
