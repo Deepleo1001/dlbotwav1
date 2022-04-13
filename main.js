@@ -48,10 +48,10 @@ const runtime = function (seconds) {
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 fakenomor = '0@s.whatsapp.net'
-const gcrevoke = ["6289503657396-1621430788@g.us"]
+const gcrevoke = ["62859175387852-1621430788@g.us"]
 prefix = '#'
 shp = '⬡'
-owner = "6289503657396@s.whatsapp.net"
+owner = "62859175387852@s.whatsapp.net"
 spc1 = '         '
 spc2 = '\n                           '
 spc3 = '                   '
@@ -72,7 +72,7 @@ const starts = async (client = new WAConnection()) => {
       color("!", "blue"),
       color("]", "white"),
       color(" Scan bang"),
-      client.sendMessage(`6289503657396@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Berhasil Terhubung!_`, MessageType.extendedText)
+      client.sendMessage(`62859175387852@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Berhasil Terhubung!_`, MessageType.extendedText)
           
     );
   });
@@ -82,7 +82,7 @@ const starts = async (client = new WAConnection()) => {
     start("2", "Connecting...");
   });
   client.on("open", () => {
-    success("2", "Connect Sukses > Follow @spnx.fauzi");
+    success("2", "Connect Sukses > Follow @spnx.deepleo");
 console.log(color(figlet.textSync(`${spc1}            SelfBot`, {
 font: 'Standard',
 horizontalLayout: 'default',
@@ -90,7 +90,7 @@ vertivalLayout: 'default',
 width: 80,
 whitespaceBreak: false
 }), 'cyan'))
-console.log(color(`${spc2}[ • CREATOR BOT Realzi • ]` ,'cyan'))
+console.log(color(`${spc2}[ • CREATOR BOT DLBOT • ]` ,'cyan'))
 console.log(color(`${spc4}< ================================================== >`, 'cyan'))
 console.log(color(`${spc3}[•]`, 'aqua'), color(`Hai        : ${ucapanWaktu}`, 'white'))
 console.log(color(`${spc3}[•]`, 'aqua'), color(`Bot Version : 2.1.2`, 'white'))
@@ -98,19 +98,17 @@ console.log(color(`${spc3}[•]`, 'aqua'), color(`Status      : Online!`, 'white
 console.log(color(`${spc3}[•]`, 'aqua'), color(`Owner       : ${fakeyoi}`, 'white'))
 console.log(color(`${spc4}< ================================================== >`, 'cyan'))
 
-    console.log(color('⎇','red'), color('𝗦𝗰𝗿𝗶𝗽𝘁 𝗜𝗻𝗶 𝗚𝘄 𝗦𝘂𝘀𝘂𝗻 𝗦𝗲𝗻𝗱𝗶𝗿𝗶!\n𝗡𝗼𝘁𝗲: 𝗝𝗮𝗻𝗴𝗮𝗻 𝗟𝘂𝗽𝗮 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 HY FAUZI シ︎', 'yellow'))
+    console.log(color('⎇','red'), color('!\n𝗡𝗼𝘁𝗲: 𝗝𝗮𝗻𝗴𝗮𝗻 𝗟𝘂𝗽𝗮 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 HY Deepleo シ︎', 'yellow'))
     console.log(color('⎇','red'), color('𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗼𝗱𝗲 𝗩𝗲𝗿𝘀𝗶𝗼𝗻:', 'aqua'), color(version))
-    console.log(color('⎇','red'), color('𝗕𝘂𝗴? 𝗘𝗿𝗿𝗼𝗿? 𝗦𝘂𝗴𝗴𝗲𝘀𝘁𝗶𝗼𝗻? 𝗩𝗶𝘀𝗶𝘁 𝗛𝗲𝗿𝗲:', 'aqua'), color('https://wa.me/6289503657396'))
-    console.log(color('[REALZI]'), color('𝗦𝗲𝗹𝗳𝗯𝗼𝘁 & PUBLIC BOT BY ZyyXtrime ㋛︎', 'aqua'))
-    console.log(color('[DEV]', 'cyan'), color('𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗕𝗮𝗰𝗸, 𝗢𝘄𝗻𝗲𝗿! 𝗛𝗼𝗽𝗲 𝗬𝗼𝘂 𝗔𝗿𝗲 𝗗𝗼𝗶𝗻𝗴 𝗪𝗲𝗹𝗹~', 'magenta'))
-    console.log(color('⎇','green'), color('𝗠𝗮𝗸𝗮𝘀𝗶𝗵 𝗗𝗵 𝗣𝗮𝗸𝗲', 'white'))
+    console.log(color('⎇','red'), color('𝗕𝘂𝗴? 𝗘𝗿𝗿𝗼𝗿? 𝗦𝘂𝗴𝗴𝗲𝘀𝘁𝗶𝗼𝗻? 𝗩𝗶𝘀𝗶𝘁 𝗛𝗲𝗿𝗲:', 'aqua'), color('https://wa.me/62859175387852'))
+
   });
 await client.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync("./session.json",JSON.stringify(client.base64EncodedAuthInfo(), null, "\t"));
  teks = `https://chat.whatsapp.com/YKG5RpbpQO96C`
  client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
- client.sendMessage(`6289503657396@s.whatsapp.net`, `*Hai Owner Realzi, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer REALZI",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./zyy.jpg'),sourceUrl:"https://wa.me/62858157008612?text=Assalamualaikum"}}})
+ client.sendMessage(`62859175387852@s.whatsapp.net`, `*Hai Deepleo, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer REALZI",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./zyy.jpg'),sourceUrl:"https://wa.me/62858157008612?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
@@ -196,7 +194,7 @@ console.log(`- [ Group Setting Change ] - In ${metdata.subject}`)
 hehe = await getBuffer(pp_user)
 if (anu.action == "add" && !mem.includes(client.user.jid)) {
         mdata = await client.groupMetadata(anu.jid);
-        tag = "6282182623238@s.whatsapp.net";
+        tag = "628591753878528@s.whatsapp.net";
         memeg = mdata.participants.length;
         num = anu.participants[0];
         let v = client.contacts[num] || { notify: num.replace(/@.+/, "") };
@@ -215,10 +213,10 @@ if (anu.action == "add" && !mem.includes(client.user.jid)) {
         buff = await getBuffer(
           `http://hadi-api.herokuapp.com/api/card/welcome2?nama=${encodeURI(anu_user)}&descriminator=${memeg}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&gcicon=${pp_grup}&pp=${pp_user}&bg=${pp_grup}`
         );
-        client.sendMessage(anu.jid, { contentText: `${teks}`, footerText: `Welcome Messages by Realzibotz`, buttons: [{ buttonId: `Welcome👋🏻`, buttonText: { displayText: 'Welcome👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')}
+        client.sendMessage(anu.jid, { contentText: `${teks}`, footerText: `Welcome Messages by Deepleo`, buttons: [{ buttonId: `Welcome👋🏻`, buttonText: { displayText: 'Welcome👋🏻' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {mentionedJid: [num]}}}, 'buttonsMessage')}
             if (anu.action == "remove" && !mem.includes(client.user.jid)) {
         mdata = await client.groupMetadata(anu.jid);
-        tag = "6289503657396@s.whatsapp.net";
+        tag = "62859175387852@s.whatsapp.net";
         num = anu.participants[0];
         let w = client.contacts[num] || { notify: num.replace(/@.+/, "") };
         anu_user = w.vname || w.notify || num.split("@")[0];

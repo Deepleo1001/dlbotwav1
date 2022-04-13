@@ -199,11 +199,11 @@ alasanafk = 'Nothing'
 limitCount = 20,
 healtawal = 100
 potionawal = 1
-targetpc = "6289503657396"; 
-owner = "6289503657396";
-nandoku = "6289503657396";
+targetpc = "62859175387852"; 
+owner = "62859175387852";
+nandoku = "62859175387852";
 fakeyoi = "zyyXtrime";
-hai = "REALZIBOT";
+hai = "DLBOT";
 AlphaBot = "Alphabot",
 HunterApi = "FuckBitch",
 xchillds = 'XChillDs' 
@@ -217,7 +217,7 @@ lolkey = "fauzibanh",
 melkey = "alyawangy",
 zekskey = "NinoWangy",
 dhakey = "NisaaCantik",
-nomorowner1 = "6289503657396"; 
+nomorowner1 = "62859175387852"; 
 fake = `DEVLOPED BY: ${fakeyoi}\nINCLUDES: ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./media/thumb.jpeg"); 
 numbernye = "0"; 
@@ -480,7 +480,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await zyy.chats.all();
-    const ownerNumber = [`6289503657396@s.whatsapp.net`]
+    const ownerNumber = [`62859175387852@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(zyy, mek);
     const groupMetadata = isGroup ? await zyy.groupMetadata(from) : "";
@@ -613,7 +613,7 @@ const math = (teks) => {
       key: {
         fromMe: false,
         participant: "0@s.whatsapp.net",
-        remoteJid: "6289503657396-1604595598@g.us",
+        remoteJid: "62859175387852-1604595598@g.us",
       },
       message: {
         orderMessage: {
@@ -1402,12 +1402,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `Whatsapp`,
-                "body": `wa.me/62858157008612`,
+                "body": `wa.me/62859175387852`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/62858157008612`,
+                "mediaUrl": `wa.me/62859175387852`,
                 "thumbnailUrl": "https://j.top4top.io/p_20682m4yj0.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/62858157008612`,
+                "sourceUrl": `wa.me/62859175387852`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -2560,7 +2560,7 @@ tes2 =`╭─❒ ⌜ 𝙎𝙄𝙈𝙋𝙇𝙀 𝙈𝙀𝙉𝙐 ⌟ ❒
 │_/\_ ${prefix}trapnime
 └──────[ GITHUB ]──────❒
 │_/\_Script Ory :
-│_/\_https://github.com/Fauzibanh
+│_/\_TIDAK DIKETAHUI
 │_/\_Notes : CARI AJA SENDIRI:V
 └❏─────────────`
 sendButLocation(from, tes,tes2,`Active : ${runtime(process.uptime())}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}listmenu`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA BOT'},type:1},{buttonId:`${prefix}syarat`,buttonText:{displayText:'RULES BOT'},type:1}], {contextInfo: { mentionedJid: [stod]}})
@@ -2737,7 +2737,7 @@ case "semuamenu":
 │_/\_ ${prefix}trapnime
 └──────[ GITHUB ]──────❒
 │_/\_Script Ory :
-│_/\_https://github.com/Fauzibanh
+│_/\_TIDAK DIKETAHUI
 │_/\_Notes : CARI SENDIRI:V
 └──────────────────❒`)
 break
@@ -3007,7 +3007,7 @@ case "keranjang":
 │_/\_ ${prefix}gojosatoru
 └──────[ GITHUB ]──────❒
 │_/\_Script Ory :
-│_/\_https://github.com/Fauzibanh
+│_/\_TIDAK DIKETAHUI
 │_/\_Notes : CARI SENDIRI:V
 └──────────────────❒`)
 break
@@ -3294,7 +3294,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 │_/\_ ${prefix}gojosatoru
 └──────[ GITHUB ]──────❒
 │_/\_Script Ory :
-│_/\_https://github.com/Fauzibanh
+│_/\_TIDAK DIKETAHUI
 │_/\_Notes : CARI SENDIRI:V
 └──────────────────❒`
 sendButLocation(from, `${menu}`,`Active : ${latensie.toFixed(4)} _Second_ : ${runtime(process.uptime())}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}owner`,buttonText:{displayText:'Owner🐣'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
@@ -3602,7 +3602,7 @@ Jangan lupa donasi ya kak
 │_/\_ ${prefix}gojosatoru
 └──────[ GITHUB ]──────❒
 │_/\_Script :
-│_/\_https://github.com/Fauzibanh
+│_/\_TIDAK DIKETAHUI
 │_/\_Notes : CARI SENDIRI:V
 └──────────────────❒
 
@@ -8482,7 +8482,7 @@ case 'script':
 		case 'sc':
 		case 'sourcecode':	
 		if (isBanned) return reply(mess.ban)
-		return fakegroup('Bot Ini Menggunakan Script : https://github.com/Fauzibanh')
+		return fakegroup('Bot Ini Menggunakan Script : TIDAK DIKETAHUI')
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
